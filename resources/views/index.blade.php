@@ -22,9 +22,9 @@
             <form class="flex flex-col ">
                 <label class="text-xl">Huella de carbono *</label>
                 <input type="number" step="0.001" name="footprint" placeholder="Ingrese huella de carbono en toneladas"
-                    class="border border-black p-2 rounded-md shadow-md w-2/3 mb-6" value="{{ old('footprint') }}">
+                    class="border border-black p-2 rounded-md shadow-md mb-6" value="{{ old('footprint') }}">
                 <input type="submit" value="Calcular"
-                    class="rounded-md shadow-md bg-blue-500 text-white w-1/4 mx-auto py-2">
+                    class="rounded-md shadow-md bg-blue-500 text-white mx-auto p-2">
             </form>
         </div>
 
