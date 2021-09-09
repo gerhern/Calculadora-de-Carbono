@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Artf Co2</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -13,12 +13,12 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 ">
     {{-- div principal --}}
-    <div class="w-3/4 border border-black mx-auto my-6 p-4 rounded-md shadow-md">
+    <div class="w-3/4 border border-black mx-auto p-4 rounded-md shadow-md">
         {{-- div de formulario de calculo --}}
         <div class=" w-2/3 py-4 px-2 mx-auto">
-            <h2 class=" text-center text-xl mb-6">Calculo de arboles para compensacion de carbono</h2>
+            <h2 class=" text-center text-xl mb-6">Cálculo de árboles para compensación de carbono</h2>
             <form class="flex flex-col ">
                 <label class="text-xl">Huella de carbono *</label>
                 <input type="number" step="0.001" name="footprint" placeholder="Ingrese huella de carbono en toneladas"
@@ -45,15 +45,15 @@
 
 
             @isset($data)
-                <table class="table-fixed border-collapse border border-black w-2/3 mx-auto text-center shadow-lg">
-                    <tr class="text-xl border border-black bg-gray-300">
-                        <th>#</th>
-                        <th>Especie</th>
+                <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
+                    <tr class="text-lg border border-black bg-gray-300">
+                        <th class="w-1/2">#</th>
+                        <th class="w-1/2">Especie</th>
                     </tr>
                     @foreach ($data as $name => $tree)
                         <tr class="text-md">
                             <td class="border border-black">{{ $tree }}</td>
-                            <td class="border border-black"> {{ $name }}</td>
+                            <td class="border border-black px-4"> {{ $name }}</td>
                         </tr>
                     @endforeach
                 </table>
