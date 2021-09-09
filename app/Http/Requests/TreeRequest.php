@@ -33,7 +33,7 @@ class TreeRequest extends FormRequest
         
         return [
             'footprint.between' => 'La huella de carbono debe estar entre 0 y 500',
-            'footprint.numeric' => 'La huella de carbono es un numero requerido'
+            'footprint.numeric' => 'La huella de carbono es un número requerido'
         ];
     }
 }
