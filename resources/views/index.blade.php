@@ -16,6 +16,7 @@
 <body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 lg:h-screen">
     {{-- div principal --}}
     <div class="w-3/4 border border-black mx-auto p-4 rounded-md shadow-md">
+
         {{-- div de formulario de calculo --}}
         <div class=" w-2/3 py-4 px-2 mx-auto">
             <h2 class=" text-center text-xl mb-6">Cálculo de árboles para compensación de carbono</h2>
@@ -49,6 +50,7 @@
                     <tr class="text-lg border border-black bg-gray-300">
                         <th class="w-1/2">#</th>
                         <th class="w-1/2">Especie</th>
+
                     </tr>
                     @foreach ($data as $name => $tree)
                         <tr class="text-md">
