@@ -13,7 +13,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 ">
+<body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 lg:h-screen">
     {{-- div principal --}}
     <div class="w-3/4 border border-black mx-auto p-4 rounded-md shadow-md">
         {{-- div de formulario de calculo --}}
