@@ -13,7 +13,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 lg:h-screen">
+<body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 bg-fixed">
     {{-- div principal --}}
     <div class="w-3/4 border border-black mx-auto p-4 rounded-md shadow-md">
 
@@ -45,9 +45,9 @@
 
 
             @isset($data)
-            <div class="flex ">
-                <div class="">
-                    <h2 class=" text-center text-xl">Para compensar tu huella de carbono necesitas plantar los siguientes árboles:</h2>
+            <div class="lg:flex ">
+                <div class="my-2">
+                    <h2 class=" text-center text-xl mb-2">Para compensar tu huella de carbono necesitas plantar los siguientes árboles:</h2>
                     <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
                         <tr class="text-lg border border-black bg-gray-300">
                             <th class="w-1/2">#</th>
@@ -63,8 +63,8 @@
                     </table>
                 </div>
 
-                <div class="">
-                    <h2 class=" text-center text-xl">Y las siguientes plantas de cultivo (Desde crecimiento hasta maduracion)</h2>
+                <div class="my-2">
+                    <h2 class=" text-center text-xl mb-2">Y las siguientes plantas de cultivo (Desde crecimiento hasta maduracion)</h2>
                     <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
                         <tr class="text-lg border border-black bg-gray-300">
                             <th class="w-1/2">#</th>
