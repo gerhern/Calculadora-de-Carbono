@@ -24,8 +24,7 @@
                 <label class="text-xl">Huella de carbono *</label>
                 <input type="number" step="0.001" name="footprint" placeholder="Ingrese huella de carbono en toneladas"
                     class="border border-black p-2 rounded-md shadow-md mb-6" value="{{ old('footprint') }}">
-                <input type="submit" value="Calcular"
-                    class="rounded-md shadow-md bg-blue-500 text-white mx-auto p-2">
+                <input type="submit" value="Calcular" class="rounded-md shadow-md bg-blue-500 text-white mx-auto p-2">
             </form>
         </div>
 
@@ -42,23 +41,47 @@
 
         {{-- div de muestreo de resultados --}}
         <div>
-            <h2 class=" text-center text-xl">Para compensar tu huella de carbono necesitas plantar:</h2>
+            {{-- <h2 class=" text-center text-xl">Para compensar tu huella de carbono necesitas plantar:</h2> --}}
 
 
             @isset($data)
-                <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
-                    <tr class="text-lg border border-black bg-gray-300">
-                        <th class="w-1/2">#</th>
-                        <th class="w-1/2">Especie</th>
-
-                    </tr>
-                    @foreach ($data as $name => $tree)
-                        <tr class="text-md">
-                            <td class="border border-black">{{ $tree }}</td>
-                            <td class="border border-black px-4"> {{ $name }}</td>
+            <div class="flex ">
+                <div class="">
+                    <h2 class=" text-center text-xl">Para compensar tu huella de carbono necesitas plantar los siguientes árboles:</h2>
+                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
+                        <tr class="text-lg border border-black bg-gray-300">
+                            <th class="w-1/2">#</th>
+                            <th class="w-1/2">Especie</th>
+    
                         </tr>
-                    @endforeach
-                </table>
+                        @foreach ($data['trees'] as $name => $tree)
+                            <tr class="text-md">
+                                <td class="border border-black">{{ $tree }}</td>
+                                <td class="border border-black px-4"> {{ $name }}</td>
+                            </tr>
+                        @endforeach
+                    </table>
+                </div>
+
+                <div class="">
+                    <h2 class=" text-center text-xl">Y las siguientes plantas de cultivo (Desde crecimiento hasta maduracion)</h2>
+                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
+                        <tr class="text-lg border border-black bg-gray-300">
+                            <th class="w-1/2">#</th>
+                            <th class="w-1/2">Especie</th>
+        
+                        </tr>
+                        @foreach ($data['cultures'] as $name => $tree)
+                            <tr class="text-md">
+                                <td class="border border-black">{{ $tree }}</td>
+                                <td class="border border-black px-4"> {{ $name }}</td>
+                            </tr>
+                        @endforeach
+                    </table>
+                </div>
+            </div>
+            
+
             @endisset
         </div>
 
