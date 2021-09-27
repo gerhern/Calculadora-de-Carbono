@@ -25,7 +25,7 @@ class TreeRequest extends FormRequest
     {
         return [
             //
-            'footprint' => 'numeric | between:0,500'
+            'footprint' => 'numeric | between:0,50000'
         ];
     }
 

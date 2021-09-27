@@ -15,6 +15,7 @@ use App\Http\Controllers\CompensationController;
 */
 
 Route::get('/', [CompensationController::class, 'index']);
+Route::get('calcular', [CompensationController::class, 'calculate'])->name('calcular');
 
 // Route::get('/', function () {
 //     return view('welcome');

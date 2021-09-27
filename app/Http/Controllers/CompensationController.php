@@ -9,7 +9,7 @@ use App\Http\Requests\TreeRequest;
 class CompensationController extends Controller
 {
     //
-    public function index(TreeRequest $request){
+    public function calculate(TreeRequest $request){
 
         if($request->footprint != null){
             $aux = new Tree($request->footprint);
@@ -18,9 +18,13 @@ class CompensationController extends Controller
             $data = null;
         }
 
-        return view('index', [
+        return view('tol', [
             'data' => $data
         ]);
+    }
+
+    public function index(){
+        return view('index');
     }
 
     

@@ -14,76 +14,61 @@
 </head>
 
 <body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 bg-fixed">
+
     {{-- div principal --}}
-    <div class="w-3/4 border border-black mx-auto p-4 rounded-md shadow-md">
+    <div class="mx-auto p-4 xl:w-3/4">
 
-        {{-- div de formulario de calculo --}}
-        <div class=" w-2/3 py-4 px-2 mx-auto">
-            <h2 class=" text-center text-xl mb-6">Cálculo de árboles para compensación de carbono</h2>
-            <form class="flex flex-col ">
-                <label class="text-xl">Huella de carbono *</label>
-                <input type="number" step="0.001" name="footprint" placeholder="Ingrese huella de carbono en toneladas"
-                    class="border border-black p-2 rounded-md shadow-md mb-6" value="{{ old('footprint') }}">
-                <input type="submit" value="Calcular" class="rounded-md shadow-md bg-blue-500 text-white mx-auto p-2">
-            </form>
-        </div>
+        <h1 class="text-center text-2xl lg:text-5xl lg:mb-20">Alternativas para compensar la huella de carbono</h1>
 
-        {{-- div de muestra de errores --}}
-        @if ($errors->any())
-            <div class="text-center w-2/3 mx-auto p-4 bg-red-400 text-white rounded-md shadow-md">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+        {{-- div para mostrar informacion --}}
+        <div class="my-2 mx-auto">
+            <h3 class="text-xl xl:text-4xl text-center my-4 font-semibold">¿Qué es la huella de carbono?</h3>
 
-        {{-- div de muestreo de resultados --}}
-        <div>
-            {{-- <h2 class=" text-center text-xl">Para compensar tu huella de carbono necesitas plantar:</h2> --}}
+            <p class="text-lg p-2 leading-snug lg:text-2xl">La huella de carbono es una forma de medir la cantidad de emisiones de gases de efecto invernadero que son producidas y liberadas a la atmósfera directa o indirectamente por una organización o individuo.</p>
 
+            <h3 class="text-xl xl:text-4xl text-center my-4 font-semibold">¿Como calcular tu huella de carbono?</h3>
 
-            @isset($data)
-            <div class="lg:flex ">
-                <div class="my-2">
-                    <h2 class=" text-center text-xl mb-2">Para compensar tu huella de carbono necesitas plantar los siguientes árboles:</h2>
-                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
-                        <tr class="text-lg border border-black bg-gray-300">
-                            <th class="w-1/2">#</th>
-                            <th class="w-1/2">Especie</th>
+            <p class="text-lg p-2 leading-snug lg:text-2xl">Para poder realizar una estimacion sobre tu huella de carbono personal te recomendamos los siguientes sitios:</p>
+
+            <p class="pb-2">(Dar click en imagen)</p>
+
+            {{-- div para cards de calculdaoras --}}
+            <div class="lg:flex lg:justify-evenly lg:my-4">
+                {{-- div card 1 --}}
+                <div class="border border-black rounded-md shadow-md p-2 lg:w-5/12 lg:flex lg:flex-col lg:justify-evenly">
     
-                        </tr>
-                        @foreach ($data['trees'] as $name => $tree)
-                            <tr class="text-md">
-                                <td class="border border-black">{{ $tree }}</td>
-                                <td class="border border-black px-4"> {{ $name }}</td>
-                            </tr>
-                        @endforeach
-                    </table>
+                    <a href="https://footprintcalculator.henkel.com/mx" target="_blank">
+                        <img
+                            src="https://footprintcalculator.henkel.com/assets/images/HENKEL.png"
+                            alt="Henkel-Logo" class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4">
+                    </a>
+
+                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Calculadora de huella de carbono Henkel</h3>
+
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Calculadora creada por la empresa alemana de productos de limpieza Henkel</p>
+
+                </div>
+                
+                {{-- div card 2 --}}
+                <div class="border border-black rounded-md shadow-md p-2 my-6 lg:my-0 lg:w-5/12 lg:flex lg:flex-col lg:justify-evenly">
+    
+                    <a href="https://www.footprintcalculator.org/home/es" target="_blank">
+                        <img
+                            src="https://www.footprintcalculator.org/assets/images/logo/logo-GFN-white.png"
+                            alt="GFN-Logo" class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4">
+                    </a>
+
+                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Calculadora de huella de carbono de Global Footprint Network</h3>
+
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Calculadora creada por la ONG de proteccion al medio ambiente Global Footprint Network </p>
+
                 </div>
 
-                <div class="my-2">
-                    <h2 class=" text-center text-xl mb-2">Y las siguientes plantas de cultivo (Desde crecimiento hasta maduracion)</h2>
-                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
-                        <tr class="text-lg border border-black bg-gray-300">
-                            <th class="w-1/2">#</th>
-                            <th class="w-1/2">Especie</th>
-        
-                        </tr>
-                        @foreach ($data['cultures'] as $name => $tree)
-                            <tr class="text-md">
-                                <td class="border border-black">{{ $tree }}</td>
-                                <td class="border border-black px-4"> {{ $name }}</td>
-                            </tr>
-                        @endforeach
-                    </table>
-                </div>
             </div>
-            
 
-            @endisset
-        </div>
+
+            <a href="{{ route('calcular') }}" class="font-light underline text-purple-900 text-xl text-center shadow-md mt-2">Si ya cuentas con tu huella de carbono da click aqui -></a>
+
 
     </div>
 
