@@ -22,11 +22,11 @@
 
         {{-- div para mostrar informacion --}}
         <div class="my-2 mx-auto">
-            <h3 class="text-xl xl:text-4xl text-center my-4 font-semibold">¿Qué es la huella de carbono?</h3>
+            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Qué es la huella de carbono?</h3>
 
             <p class="text-lg p-2 leading-snug lg:text-2xl">La huella de carbono es una forma de medir la cantidad de emisiones de gases de efecto invernadero que son producidas y liberadas a la atmósfera directa o indirectamente por una organización o individuo.</p>
 
-            <h3 class="text-xl xl:text-4xl text-center my-4 font-semibold">¿Como calcular tu huella de carbono?</h3>
+            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Como calcular tu huella de carbono?</h3>
 
             <p class="text-lg p-2 leading-snug lg:text-2xl">Para poder realizar una estimacion sobre tu huella de carbono personal te recomendamos los siguientes sitios:</p>
 
