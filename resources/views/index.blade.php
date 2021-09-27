@@ -26,9 +26,9 @@
 
             <p class="text-lg p-2 leading-snug lg:text-2xl">La huella de carbono es una forma de medir la cantidad de emisiones de gases de efecto invernadero que son producidas y liberadas a la atmósfera directa o indirectamente por una organización o individuo.</p>
 
-            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Como calcular tu huella de carbono?</h3>
+            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Cómo calcular tu huella de carbono?</h3>
 
-            <p class="text-lg p-2 leading-snug lg:text-2xl">Para poder realizar una estimacion sobre tu huella de carbono personal te recomendamos los siguientes sitios:</p>
+            <p class="text-lg p-2 leading-snug lg:text-2xl">Para poder realizar una estimación sobre tu huella de carbono personal te recomendamos los siguientes sitios:</p>
 
             <p class="pb-2">(Dar click en imagen)</p>
 
@@ -60,14 +60,14 @@
 
                     <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Calculadora de huella de carbono de Global Footprint Network</h3>
 
-                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Calculadora creada por la ONG de proteccion al medio ambiente Global Footprint Network </p>
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Calculadora creada por la ONG de protección al medio ambiente Global Footprint Network </p>
 
                 </div>
 
             </div>
 
 
-            <a href="{{ route('calcular') }}" class="font-light underline text-purple-900 text-xl text-center shadow-md mt-2">Si ya cuentas con tu huella de carbono da click aqui -></a>
+            <a href="{{ route('calcular') }}" class="font-light underline text-purple-900 text-xl text-center shadow-md mt-2">-> Si ya cuentas con tu huella de carbono da click aquí <-</a>
 
 
     </div>
