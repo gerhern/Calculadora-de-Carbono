@@ -15,22 +15,22 @@
 
 <body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 bg-fixed">
     {{-- div principal --}}
-    <div class="w-3/4 border border-black mx-auto p-4 rounded-md shadow-md">
+    <div class="p-4">
 
         {{-- div de formulario de calculo --}}
         <div class=" w-2/3 py-4 px-2 mx-auto">
-            <h2 class=" text-center text-xl mb-6">Cálculo de árboles para compensación de carbono</h2>
+            <h2 class=" text-center text-xl mb-6 lg:text-5xl">Cálculo de árboles para compensación de carbono</h2>
             <form class="flex flex-col ">
-                <label class="text-xl">Huella de carbono *</label>
+                <label class="text-xl lg:text-2xl">Huella de carbono *</label>
                 <input type="number" step="0.001" name="footprint" placeholder="Ingrese huella de carbono en toneladas"
-                    class="border border-black p-2 rounded-md shadow-md mb-6" value="{{ old('footprint') }}">
-                <input type="submit" value="Calcular" class="rounded-md shadow-md bg-blue-500 text-white mx-auto p-2">
+                    class="border border-black p-2 rounded-md shadow-md mb-6 lg:text-xl" value="{{ old('footprint') }}">
+                <input type="submit" value="Calcular" class="rounded-md shadow-md bg-blue-500 text-white mx-auto p-2 lg:text-lg hover:bg-blue-800">
             </form>
         </div>
 
         {{-- div de muestra de errores --}}
         @if ($errors->any())
-            <div class="text-center w-2/3 mx-auto p-4 bg-red-400 text-white rounded-md shadow-md">
+            <div class="text-center w-2/3 mx-auto p-4 bg-red-500 text-white rounded-md shadow-md lg:text-lg lg:w-1/3">
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
@@ -45,10 +45,10 @@
 
 
             @isset($data)
-            <div class="lg:flex ">
-                <div class="my-2">
-                    <h2 class=" text-center text-xl mb-2">Para compensar tu huella de carbono necesitas plantar los siguientes árboles:</h2>
-                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
+            <div class="lg:flex lg:justify-evenly ">
+                <div class="my-2 lg:w-5/12">
+                    <h2 class=" text-center text-xl mb-2 lg:text-2xl">Para compensar tu huella de carbono necesitas plantar los siguientes árboles:</h2>
+                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg lg:text-xl">
                         <tr class="text-lg border border-black bg-gray-300">
                             <th class="w-1/2">#</th>
                             <th class="w-1/2">Especie</th>
@@ -63,9 +63,9 @@
                     </table>
                 </div>
 
-                <div class="my-2">
-                    <h2 class=" text-center text-xl mb-2">Y las siguientes plantas de cultivo (Desde crecimiento hasta maduracion)</h2>
-                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg">
+                <div class="my-2 lg:w-5/12">
+                    <h2 class=" text-center text-xl mb-2 lg:text-2xl">Y las siguientes plantas de cultivo (Desde nacimiento hasta maduracion)</h2>
+                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg lg:text-xl">
                         <tr class="text-lg border border-black bg-gray-300">
                             <th class="w-1/2">#</th>
                             <th class="w-1/2">Especie</th>
@@ -80,7 +80,12 @@
                     </table>
                 </div>
             </div>
+
+            <div class="mt-6 w-3/4 p-4 bg-blue-500 text-white rounded-md shadow-md mx-auto text-center lg:text-xl lg:w-1/6 hover:bg-blue-800">
+                <a href="{{ route('offset') }}">Compensar huella</a>
+            </div>
             
+
 
             @endisset
         </div>

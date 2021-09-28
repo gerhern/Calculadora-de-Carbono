@@ -9,6 +9,10 @@ use App\Http\Requests\TreeRequest;
 class CompensationController extends Controller
 {
     //
+    public function index(){
+        return view('index');
+    }
+
     public function calculate(TreeRequest $request){
 
         if($request->footprint != null){
@@ -23,9 +27,11 @@ class CompensationController extends Controller
         ]);
     }
 
-    public function index(){
-        return view('index');
-    }
+    public function offset(){
+        
+        return view('offset',[
 
+        ]);
+    }
     
 }

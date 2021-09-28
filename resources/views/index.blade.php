@@ -18,7 +18,7 @@
     {{-- div principal --}}
     <div class="mx-auto p-4 xl:w-3/4">
 
-        <h1 class="text-center text-2xl lg:text-5xl lg:mb-20">Alternativas para compensar la huella de carbono</h1>
+        <h1 class="text-center text-2xl lg:text-5xl lg:mb-20">Cálculo y compensación de huella de carbono</h1>
 
         {{-- div para mostrar informacion --}}
         <div class="my-2 mx-auto">
