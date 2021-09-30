@@ -28,7 +28,7 @@
             <p class="text-lg p-2 leading-snug lg:text-2xl">Conocer el tamaño de nuestra huella de carbono es importante ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
 
             <p class="text-lg p-2 leading-snug lg:text-2xl">Compensar nuestra huella de carbono consiste en la aportacion voluntaria de una cantidad económica variable a diversos proyectos de reforestación, generación y ahorro
-                de energía sustentables o tratamiento de residuos para así contribuirn con el medio ambiente.</p>
+                de energía sustentables o tratamiento de residuos para así contribuir con el medio ambiente.</p>
 
             <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Cómo compensar tu huella de carbono?</h3>
 
