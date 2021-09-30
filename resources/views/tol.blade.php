@@ -23,7 +23,7 @@
             <form class="flex flex-col ">
                 <label class="text-xl lg:text-2xl">Huella de carbono *</label>
                 <input type="number" step="0.001" name="footprint" placeholder="Ingrese huella de carbono en toneladas"
-                    class="border border-black p-2 rounded-md shadow-md mb-6 lg:text-xl" value="{{ old('footprint') }}">
+                    class="border border-black p-2 rounded-md shadow-md mb-6 lg:text-xl">
                 <input type="submit" value="Calcular" class="rounded-md shadow-md bg-blue-500 text-white mx-auto p-2 lg:text-lg hover:bg-blue-800">
             </form>
         </div>
@@ -45,9 +45,10 @@
 
 
             @isset($data)
+            <h2 class=" text-center text-xl mb-2 lg:text-2xl">Para compensar {{ $footprint }} toneladas de CO<sub>2</sub> debes plantar uno de los siguientes tipos de árboles/cultivos.</h2>
             <div class="lg:flex lg:justify-evenly ">
                 <div class="my-2 lg:w-5/12">
-                    <h2 class=" text-center text-xl mb-2 lg:text-2xl">Para compensar tu huella de carbono necesitas plantar los siguientes árboles:</h2>
+                    
                     <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg lg:text-xl">
                         <tr class="text-lg border border-black bg-gray-300">
                             <th class="w-1/2">#</th>
@@ -63,8 +64,8 @@
                     </table>
                 </div>
 
-                <div class="my-2 lg:w-5/12">
-                    <h2 class=" text-center text-xl mb-2 lg:text-2xl">Y las siguientes plantas de cultivo (Desde nacimiento hasta maduracion)</h2>
+                <div class="my-6 lg:w-5/12">
+                    
                     <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg lg:text-xl">
                         <tr class="text-lg border border-black bg-gray-300">
                             <th class="w-1/2">#</th>
@@ -79,6 +80,13 @@
                         @endforeach
                     </table>
                 </div>
+
+                
+            </div>
+
+            <div class="">
+                <h2 class=" text-center text-xl mb-2 lg:text-2xl">* La cantidad de árboles deben ser plantados por un periodo de un año.</h2>
+                <h2 class=" text-center text-xl mb-2 lg:text-2xl">* Las plantas de cultivo deben ser plantadas desde nacimiento hasta maduracion.</h2>
             </div>
 
             <div class="mt-6 w-3/4 p-4 bg-blue-500 text-white rounded-md shadow-md mx-auto text-center lg:text-xl lg:w-1/6 hover:bg-blue-800">

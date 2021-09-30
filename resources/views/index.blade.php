@@ -67,7 +67,7 @@
             </div>
 
 
-            <a href="{{ route('calcular') }}" class="font-light underline text-purple-900 text-xl text-center shadow-md mt-2">-> Si ya cuentas con tu huella de carbono da click aquí <-</a>
+            <a href="{{ route('calcular') }}" class="mx-auto font-light underline text-purple-900 text-xl text-center shadow-md mt-2"><button class="rounded-md shadow-md bg-blue-700 text-white mx-auto p-2 lg:text-lg hover:bg-blue-800">Si ya cuentas con tu huella de carbono da click aquí</button></a>
 
 
     </div>
