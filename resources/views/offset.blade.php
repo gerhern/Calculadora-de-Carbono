@@ -22,16 +22,13 @@
 
         {{-- div para mostrar informacion --}}
         <div class="my-2 mx-auto">
-            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Por qué compensar nuestra huella de carbono?
+            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Por qué conocer y compensar nuestra huella de carbono?
             </h3>
 
-            <p class="text-lg p-2 leading-snug lg:text-2xl">Conocer el tamaño de nuestra huella de carbono es importante
-                ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de
-                CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
+            <p class="text-lg p-2 leading-snug lg:text-2xl">Conocer el tamaño de nuestra huella de carbono es importante ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
 
-            <p class="text-lg p-2 leading-snug lg:text-2xl">Compensar nuestra huella de carbono consiste en la aportacion
-                voluntaria de una cantidad económica variable a diversos proyectos de reforestación, generación y ahorro
-                de energía sustentables o tratamiento de residuos.</p>
+            <p class="text-lg p-2 leading-snug lg:text-2xl">Compensar nuestra huella de carbono consiste en la aportacion voluntaria de una cantidad económica variable a diversos proyectos de reforestación, generación y ahorro
+                de energía sustentables o tratamiento de residuos para así contribuirn con el medio ambiente.</p>
 
             <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Cómo compensar tu huella de carbono?</h3>
 
@@ -68,8 +65,7 @@
                             alt="Reforestamos-Logo" class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4">
                     </a>
 
-                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Adopta un arbol con
-                        Reforestamos México</h3>
+                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Adopta un arbol con Reforestamos México</h3>
 
                     <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Mediante una contribución
                         económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
@@ -95,7 +91,7 @@
                         <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Usa focos ahorradores</h3>
 
                         <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Realiza el cambio a focos
-                            ahorradores de energía de luz LED en lugar de los tradicionales focos incandecentes.</p>
+                            ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes.</p>
 
                     </div>
 
@@ -111,7 +107,7 @@
 
                         <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Diversos aparatos
                             eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso
-                            cuando no se utilizan</p>
+                            cuando no se utilizan.</p>
 
                     </div>
 
@@ -124,8 +120,8 @@
 
                         <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Usa energía renovable</h3>
 
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Cambia a calentador de agua
-                            solar ó paneles solares para generar eléctricidad para tu hogar y asi ahorrar en gas y/ó eléctricidad.</p>
+                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Usa calentador de agua
+                            solar ó paneles solares para generar energía limpia para tu hogar y asi ahorrar en gas ó eléctricidad.</p>
 
                     </div>
 
@@ -138,7 +134,7 @@
 
                         <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Usa menos el automóvil</h3>
 
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Reduce emisiones compartiendo viajes en automóvil y reduciendo su uso en lo posible, asi como caminando más o usar bicicleta como alternativa.</p>
+                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Reduce emisiones compartiendo viajes en automóvil y reduciendo su uso en medida de lo posible, asi como caminando más o usar bicicleta como alternativa.</p>
 
                     </div>
 
@@ -151,8 +147,10 @@
 
                         <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Recicla</h3>
 
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Recuerda aplicar siempre que sea posible las 3 R<br>
-                        Reduce-Reutiliza-Recicla</p>
+                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">
+                        <span class="font-semibold">Reduce</span> la cantidad de desechos que generas<br>
+                        <span class="font-semibold">Reutiliza</span> para aumentar la durabilidad de los objetos y disminuir la cantidad de basura<br>
+                        <span class="font-semibold">Recicla</span> para aprovechar materiales y que crear nuevos productos.</p>
 
                     </div>
 
