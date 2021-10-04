@@ -21,8 +21,8 @@
         <main class="flex w-screen h-screen overflow-y-auto">
             
             {{--Header/menu vertical--}}
-            <header class="h-screen flex flex-col text-center w-52 sticky top-0 z-50 bg-forest shadow-md">
-                <nav class="h-screen text-2xl flex flex-col justify-evenly items-center relative text-white">
+            <header class="sidebar h-screen flex flex-col text-center lg:w-48 w-2/5 lg:sticky top-0 z-50 bg-forest shadow-lg space-y-6 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out  lg:translate-x-0">
+                <nav class="h-screen lg:text-2xl text-lg flex flex-col justify-evenly items-center relative text-white ">
     
                     <a href="{{ route('home') }}"
                         class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Inicio</a>
@@ -43,4 +43,11 @@
             </section>
         </main>
     </body>
+    <script>
+        const btn = document.querySelector('.mobile-menu-button');
+        const sidebar = document.querySelector('.sidebar');
+        btn.addEventListener("click", () => {
+            sidebar.classList.toggle("-translate-x-full");
+        });
+    </script>
 </html>
