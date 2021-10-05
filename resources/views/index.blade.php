@@ -22,13 +22,12 @@
             <div class="flex flex-col">
 
                 <div class="flex lg:flex-row flex-col items-center lg: justify-around">
-                    <img src="https://images.pexels.com/photos/9252093/pexels-photo-9252093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Contaminación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
+                    <img src="https://images.pexels.com/photos/929385/pexels-photo-929385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
 
-                    <img src="https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <img src="https://images.pexels.com/photos/6435429/pexels-photo-6435429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                         alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0">
 
-                    <img src="https://images.pexels.com/photos/2229887/pexels-photo-2229887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <img src="https://images.pexels.com/photos/2869610/pexels-photo-2869610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
 
                 </div>

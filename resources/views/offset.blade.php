@@ -24,13 +24,12 @@
             <div class="flex flex-col">
 
                 <div class="flex lg:flex-row flex-col items-center lg: justify-around">
-                    <img src="https://images.pexels.com/photos/9252093/pexels-photo-9252093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Contaminación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
+                    <img src="https://images.pexels.com/photos/735468/pexels-photo-735468.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
 
                     <img src="https://images.pexels.com/photos/7656332/pexels-photo-7656332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0">
 
-                    <img src="https://images.pexels.com/photos/2229887/pexels-photo-2229887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <img src="https://images.pexels.com/photos/87403/cheetah-leopard-animal-big-87403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
 
                 </div>
@@ -91,11 +90,11 @@
 
                 {{-- Tips --}}
                 <div class="my-2 lg:my-20">
-                    <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Cómo reducir tu huella de carbono?
+                    <h3 class="text-xl lg:text-4xl text-center my-4 lg:my-20  font-semibold">¿Cómo reducir tu huella de carbono?
                     </h3>
 
                     {{-- div de cards de tips --}}
-                    <div class="flex flex-col justify-evenly items-center lg:my-4 lg:flex-wrap">
+                    <div class="flex flex-col lg:flex-row justify-evenly items-center lg:my-4 lg:flex-wrap">
                         {{-- Card 1 --}}
                         <x-tipcard
                             img="https://images.pexels.com/photos/542619/pexels-photo-542619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -128,11 +127,8 @@
                         {{-- Card 5 --}}
                         <x-tipcard
                             img="https://images.pexels.com/photos/4668356/pexels-photo-4668356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="recycle" title="Recicla" description="Reduce la cantidad de desechos que generas<br>
-                        Reutiliza para aumentar la durabilidad de los objetos y
-                        disminuir la cantidad de basura<br>
-                        Recicla para aprovechar materiales y que crear nuevos
-                        productos."></x-tipcard>
+                            alt="recycle" title="Recicla" description="Reduce la cantidad de desechos que generas y
+                        recicla para aprovechar materiales y que crear nuevos productos."></x-tipcard>
 
                     </div>
                 </div>

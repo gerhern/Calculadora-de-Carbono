@@ -33,8 +33,8 @@
                         <a href="{{  route('offset') }}"
                         class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Compensar</a>
     
-                        <a href=""
-                        class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Reducción</a>
+                        <a href="#"
+                        class="w-full flex flex-grow items-center justify-center transition duration-200">Proximamente</a>
                         
                 </nav>
             </header>
