@@ -16,7 +16,7 @@
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
-    <body class="flex relative">
+    <body class="flex relative bg-marine">
         
         <main class="flex w-screen h-screen overflow-y-auto">
             
