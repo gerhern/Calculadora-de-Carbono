@@ -1,164 +1,143 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Artf Co2</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-
-<body class=" py-6 bg-gradient-to-b from-blue-200 to-green-600 bg-fixed">
+@extends('app')
+@section('content')
 
     {{-- div principal --}}
-    <div class="mx-auto p-4 xl:w-3/4">
+    <div class="flex flex-col text-white">
 
-        <h1 class="text-center text-2xl lg:text-5xl lg:mb-20">Alternativas para compensar la huella de carbono</h1>
+        {{-- Imagen y titulo principal --}}
+        <div class="bg-center bg-cover w-full"
+            style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
 
-        {{-- div para mostrar informacion --}}
-        <div class="my-2 mx-auto">
-            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Por qué conocer y compensar nuestra huella de carbono?
-            </h3>
-
-            <p class="text-lg p-2 leading-snug lg:text-2xl">Conocer el tamaño de nuestra huella de carbono es importante ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
-
-            <p class="text-lg p-2 leading-snug lg:text-2xl">Compensar nuestra huella de carbono consiste en la aportacion voluntaria de una cantidad económica variable a diversos proyectos de reforestación, generación y ahorro
-                de energía sustentables o tratamiento de residuos para así contribuir con el medio ambiente.</p>
-
-            <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Cómo compensar tu huella de carbono?</h3>
-
-            <p class="text-lg p-2 leading-snug lg:text-2xl">Para poder realizar una compensación de tu huella de carbono
-                personal te recomendamos las siguientes opciones:</p>
-
-            <p class="pb-2">(Dar click en imagen)</p>
-
-            {{-- div para cards de plataformas de compensacion --}}
-            <div class="lg:flex lg:justify-evenly lg:my-4">
-                {{-- div card 1 --}}
-                <div
-                    class="border border-black rounded-md shadow-md p-2 lg:w-5/12 lg:flex lg:flex-col lg:justify-evenly">
-
-                    <a href="https://offset.climateneutralnow.org/AllProjects" target="_blank">
-                        <img src="https://unfccc.int/themes/custom/unfccc/images/logo.png" alt="UNCC-Logo"
-                            class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4">
-                    </a>
-
-                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Plataforma de compensación de
-                        las Naciones Unidas</h3>
-
-                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Plataforma de compensacion en
-                        proyectos de mitigacion de Gases de Efecto Invernadero (GEI) alrededor de todo el mundo </p>
-
-                </div>
-
-                {{-- div card 2 --}}
-                <div
-                    class="border border-black rounded-md shadow-md p-2 my-6 lg:my-0 lg:w-5/12 lg:flex lg:flex-col lg:justify-evenly">
-
-                    <a href="https://www.reforestamosmexico.org/adoptaunarbol" target="_blank">
-                        <img src="https://static.wixstatic.com/media/b1748a_e68a34ab791443259e1dce6cd0cc520e~mv2.png/v1/fill/w_222,h_117,al_c,lg_1,q_85/221x116.webp"
-                            alt="Reforestamos-Logo" class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4">
-                    </a>
-
-                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Adopta un arbol con Reforestamos México</h3>
-
-                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Mediante una contribución
-                        económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
-                        adopción</p>
-
-                </div>
-
-            </div>
-
-            {{-- div de tips de conservacion --}}
-            <div class="my-2 mx-auto lg:my-20">
-                <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Cómo reducir tu huella de carbono?
-                </h3>
-
-                {{-- div de cards de tips --}}
-                <div class="lg:flex lg:justify-evenly lg:my-4 lg:flex-wrap">
-
-                    {{-- div card 1(inpar) --}}
-                    <div class="p-2 lg:w-2/6">
-                        <img src="https://images.pexels.com/photos/542619/pexels-photo-542619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="led-light" class="w-3/4 mx-auto my-2 rounded-md lg:w-2/4">
-
-                        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Usa focos ahorradores</h3>
-
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Realiza el cambio a focos
-                            ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes.</p>
-
-                    </div>
-
-                    {{-- div card 2 --}}
-                    <div
-                        class="p-2 lg:w-2/6">
-
-                        <img src="https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="wire" class="w-3/4 mx-auto my-2 rounded-md lg:w-2/4">
-
-                        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Si no lo usas desconéctalo
-                        </h3>
-
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Diversos aparatos
-                            eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso
-                            cuando no se utilizan.</p>
-
-                    </div>
-
-                    {{-- div card 3 --}}
-                    <div
-                        class="p-2 lg:w-2/6">
-
-                        <img src="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="panel" class="w-3/4 mx-auto my-2 rounded-md lg:w-2/4">
-
-                        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Usa energía renovable</h3>
-
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Usa calentador de agua
-                            solar ó paneles solares para generar energía limpia para tu hogar y asi ahorrar en gas ó eléctricidad.</p>
-
-                    </div>
-
-                    {{-- div card 4 --}}
-                    <div
-                        class="p-2 lg:w-2/6">
-
-                        <img src="https://images.pexels.com/photos/6630622/pexels-photo-6630622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="bicycle" class="w-3/4 mx-auto my-2 rounded-md lg:w-2/4">
-
-                        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Usa menos el automóvil</h3>
-
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Reduce emisiones compartiendo viajes en automóvil y reduciendo su uso en medida de lo posible, asi como caminando más o usar bicicleta como alternativa.</p>
-
-                    </div>
-
-                    {{-- div card 5 --}}
-                    <div
-                        class="p-2 lg:w-2/6">
-
-                        <img src="https://images.pexels.com/photos/4668356/pexels-photo-4668356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="recycle" class="w-3/4 mx-auto my-2 rounded-md lg:w-2/4">
-
-                        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Recicla</h3>
-
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">
-                        <span class="font-semibold">Reduce</span> la cantidad de desechos que generas<br>
-                        <span class="font-semibold">Reutiliza</span> para aumentar la durabilidad de los objetos y disminuir la cantidad de basura<br>
-                        <span class="font-semibold">Recicla</span> para aprovechar materiales y que crear nuevos productos.</p>
-
-                    </div>
-
-                </div>
-            </div>
+            <x-hammenu></x-hammenu>
+            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-60">Alternativas para compensar la huella de carbono
+            </h1>
 
         </div>
 
-</body>
+        {{-- div para mostrar informacion --}}
+        {{-- 1er seccion informativa --}}
+        <div class="bg-feather">
 
-</html>
+            <h3 class="lg:text-5xl text-3xl text-center my-20 py-2 font-medium italic">¿Por qué conocer y compensar nuestra
+                huella de carbono?</h3>
+
+            <div class="flex flex-col">
+
+                <div class="flex lg:flex-row flex-col items-center lg: justify-around">
+                    <img src="https://images.pexels.com/photos/9252093/pexels-photo-9252093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Contaminación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
+
+                    <img src="https://images.pexels.com/photos/7656332/pexels-photo-7656332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0">
+
+                    <img src="https://images.pexels.com/photos/2229887/pexels-photo-2229887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
+
+                </div>
+
+                <div class="w-3/4 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
+                    <p class="leading-snug lg:text-2xl text-lg text-center py-8 px-3 ">Conocer el tamaño de nuestra huella
+                        de carbono es importante
+                        ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de
+                        CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
+
+                    <p class="leading-snug lg:text-2xl text-lg text-center pt-8 pb-16 px-3">Compensar nuestra huella de
+                        carbono consiste en la
+                        aportacion voluntaria de una cantidad económica variable a diversos proyectos de reforestación,
+                        generación y ahorro
+                        de energía sustentables o tratamiento de residuos para así contribuir con el medio ambiente.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        {{-- 2da seccion informativa --}}
+        <div class="bg-gradient-to-b from-marine to-forest">
+
+            <h3 class="lg:text-5xl text-3xl text-center pt-20 px-6 font-medium italic">¿Cómo compensar tu huella de carbono?
+            </h3>
+
+            <div class="flex flex-col">
+                <div class="w-3/4 mx-auto my-8 rounded-md">
+                    <p class="leading-snug lg:text-xl text-lg text-center py-8
+                    pb-8">Para realizar una
+                        compensación de tu huella de carbono
+                        personal te recomendamos las siguientes opciones:</p>
+                </div>
+
+                <div class="flex  items-center justify-around">
+
+                    {{-- div para cards de calculdaoras --}}
+                    <div class="lg:flex lg:justify-evenly lg:my-4">
+
+                        {{-- div card 1 --}}
+                        <x-calculatorcard link="https://offset.climateneutralnow.org/AllProjects"
+                            img="https://unfccc.int/themes/custom/unfccc/images/logo.png" alt="UNCC-Logo"
+                            title="Plataforma de compensación de las Naciones Unidas"
+                            description="Plataforma de compensacion en proyectos de mitigacion de Gases de Efecto Invernadero (GEI) alrededor de todo el mundo">
+                        </x-calculatorcard>
+
+                        {{-- div card 2 --}}
+                        <x-calculatorcard link="https://www.reforestamosmexico.org/adoptaunarbol"
+                            img="https://static.wixstatic.com/media/b1748a_e68a34ab791443259e1dce6cd0cc520e~mv2.png/v1/fill/w_222,h_117,al_c,lg_1,q_85/221x116.webp"
+                            alt="Reforestamos-Logo" title="Adopta un arbol con
+                                Reforestamos México" description="Mediante una contribución
+                                económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
+                                adopción">
+                        </x-calculatorcard>
+                    </div>
+                </div>
+
+                {{-- Tips --}}
+                <div class="my-2 lg:my-20">
+                    <h3 class="text-xl lg:text-4xl text-center my-4 font-semibold">¿Cómo reducir tu huella de carbono?
+                    </h3>
+
+                    {{-- div de cards de tips --}}
+                    <div class="flex flex-col justify-evenly items-center lg:my-4 lg:flex-wrap">
+                        {{-- Card 1 --}}
+                        <x-tipcard
+                            img="https://images.pexels.com/photos/542619/pexels-photo-542619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="led-light" title="Usa focos ahorradores"
+                            description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes.">
+                        </x-tipcard>
+
+                        {{-- Card 2 --}}
+                        <x-tipcard
+                            img="https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="wire" title="Si no lo usas desconéctalo"
+                            description="Diversos aparatos eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso cuando no se utilizan.">
+                        </x-tipcard>
+
+                        {{-- Card 3 --}}
+                        <x-tipcard
+                            img="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="panel" title="Usa energía renovable"
+                            description="Usa calentador de agua solar ó paneles solares para generar energía limpia para tu hogar y asi ahorrar en gas ó eléctricidad.">
+                        </x-tipcard>
+
+                        {{-- Card 4 --}}
+                        <x-tipcard
+                            img="https://images.pexels.com/photos/6630622/pexels-photo-6630622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="bicycle" title="Usa menos el automóvil"
+                            description="Reduce emisiones
+                    compartiendo viajes en automóvil y reduciendo su uso en medida de lo posible, asi como caminando más o usar bicicleta como alternativa.">
+                        </x-tipcard>
+
+                        {{-- Card 5 --}}
+                        <x-tipcard
+                            img="https://images.pexels.com/photos/4668356/pexels-photo-4668356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="recycle" title="Recicla" description="Reduce la cantidad de desechos que generas<br>
+                        Reutiliza para aumentar la durabilidad de los objetos y
+                        disminuir la cantidad de basura<br>
+                        Recicla para aprovechar materiales y que crear nuevos
+                        productos."></x-tipcard>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endsection

@@ -12,9 +12,10 @@
             compensación de carbono</h2>
         </div>
 
-        <form class="w-11/12 mx-auto max-w-lg bg-forest bg-opacity-30 p-3">
-            <div class="flex flex-wrap -mx-3">
-                <div class="w-full md:w-1/2 px-3 mb-6 lg:mb-0">
+        {{-- Formulario  --}}
+        <form class="w-11/12 mx-auto max-w-lg lg:max-w-none bg-forest bg-opacity-30 p-3">
+            <div class="flex flex-wrap -mx-3 lg:flex-col">
+                <div class="w-full lg:w-1/2 px-3 mb-6 lg:mb-0">
                     <label class=" text-white block uppercase tracking-wide text-xs font-bold mb-2" for="grid-first-name">
                         Huella de carbono*
                     </label>
@@ -24,7 +25,7 @@
 
                 </div>
                 <input type="submit" value="Calcular"
-                    class="rounded-md shadow-lg bg-forest text-white mx-6 p-2 lg:text-lg hover:bg-marine transition duration-200">
+                    class="rounded-md shadow-lg bg-forest text-white mx-6 p-2 lg:text-lg hover:bg-marine transition duration-200 lg:w-1/12">
             </div>
         </form>
     </div>
@@ -41,7 +42,7 @@
     @endif
 
     {{-- div de muestreo de resultados --}}
-    <div class="bg-marine mt-6 p-3">
+    <div class="bg-gradient-to-b from-marine to-forest mt-6 p-3">
 
         @isset($data)
 
@@ -49,7 +50,7 @@
                 debes plantar uno de los siguientes tipos de árboles/cultivos.</p>
                 
             {{-- Tablas --}}
-            <div class="lg:flex lg:justify-evenly ">
+            <div class="lg:flex lg:justify-evenly lg:items-center ">
 
                 {{-- Tabla1 --}}
                 <div class="my-2 lg:w-5/12">
@@ -88,7 +89,7 @@
             </div>
 
             {{-- Aclaraciones --}}
-            <div class="bg-forest bg-opacity-30 border border-black rounded-md shadow-xl p-2">
+            <div class="bg-forest bg-opacity-30 border border-black rounded-md shadow-xl py-2 px-4  lg:w-3/4 lg:mx-auto">
                 <h2 class="text-center text-xl lg:text-2xl">* La cantidad de árboles deben ser
                     plantados por un periodo de un año.</h2>
 
@@ -96,8 +97,8 @@
                     nacimiento hasta maduracion.</h2>
             </div>
 
-            <div class="lg:mx-auto mx-4 rounded-md shadow-md bg-forest text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 mb-8 ">
-                <a href="{{ route('calcular') }}"
+            <div class="lg:w-1/4 lg:mx-auto mx-4 rounded-md shadow-md bg-forest text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 mb-8 ">
+                <a href="{{ route('offset') }}"
                 class="">Compensar</a>
             </div>
 
