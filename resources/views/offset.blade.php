@@ -23,16 +23,45 @@
 
             <div class="flex flex-col">
 
-                <div class="flex lg:flex-row flex-col items-center lg: justify-around">
-                    <img src="https://images.pexels.com/photos/735468/pexels-photo-735468.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
+                {{-- Carrusel --}}
+                <div
+                    class=" w-11/12 mx-auto rounded-md py-8 bg-gradient-to-b from-white to-feather bg-opacity-20 shadow-2xl">
 
-                    <img src="https://images.pexels.com/photos/7656332/pexels-photo-7656332.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0">
+                    {{-- slide1 --}}
+                    <div id="slide1" class="container">
+                        <div class="flex justify-evenly">
+                            <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                    <img src="https://images.pexels.com/photos/87403/cheetah-leopard-animal-big-87403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="Reforestación" class="lg:w-1/4 w-3/4 rounded-md shadow-2xl my-4 lg:my-0 hidden lg:block">
+                            <img src="https://images.pexels.com/photos/7000/fre-sonneveld-powerlines.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                        </div>
+                    </div>
+
+                    {{-- slide2 --}}
+                    <div id="slide2" class="container">
+                        <div class="flex justify-evenly">
+                            <img src="https://images.pexels.com/photos/7655920/pexels-photo-7655920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+
+                            <img src="https://images.pexels.com/photos/9198/nature-sky-twilight-grass-9198.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                        </div>
+                    </div>
+
+                    {{-- slide3 --}}
+                    <div id="slide3" class="container">
+                        <div class="flex justify-evenly">
+                            <img src="https://images.pexels.com/photos/46254/leopard-wildcat-big-cat-botswana-46254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+
+                            <img src="https://images.pexels.com/photos/46235/emperor-penguins-antarctic-life-animal-46235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                        </div>
+                    </div>
 
                 </div>
+                {{-- fin carrusel --}}
 
                 <div class="w-3/4 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                     <p class="leading-snug lg:text-2xl text-lg text-center py-8 px-3 ">Conocer el tamaño de nuestra huella
@@ -81,36 +110,71 @@
                         <x-calculatorcard link="https://www.reforestamosmexico.org/adoptaunarbol"
                             img="https://static.wixstatic.com/media/b1748a_e68a34ab791443259e1dce6cd0cc520e~mv2.png/v1/fill/w_222,h_117,al_c,lg_1,q_85/221x116.webp"
                             alt="Reforestamos-Logo" title="Adopta un arbol con
-                                Reforestamos México" description="Mediante una contribución
-                                económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
-                                adopción">
+                                                            Reforestamos México" description="Mediante una contribución
+                                                            económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
+                                                            adopción">
                         </x-calculatorcard>
                     </div>
                 </div>
 
+
+                <h3 class="lg:text-5xl text-3xl text-center pt-20 px-6 font-medium italic">¿Cómo compensar tu huella de carbono?
+                </h3>
                 {{-- Tips --}}
-                <div class="my-2 lg:my-20">
-                    <h3 class="text-xl lg:text-4xl text-center my-4 lg:my-20  font-semibold">¿Cómo reducir tu huella de carbono?
-                    </h3>
+                <div class=" flex flex-wrap justify-evenly  m-2 lg:mt-20 lg:mb-10">
 
-                    {{-- div de cards de tips --}}
-                    <div class="flex flex-col lg:flex-row justify-evenly items-center lg:my-4 lg:flex-wrap">
-                        {{-- Card 1 --}}
-                        <x-tipcard
-                            img="https://images.pexels.com/photos/542619/pexels-photo-542619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="led-light" title="Usa focos ahorradores"
-                            description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes.">
-                        </x-tipcard>
+                    {{-- coin1 --}}
+                    <x-coin 
+                    coin="1"
+                    img="https://images.pexels.com/photos/397998/pexels-photo-397998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"></x-coin>
 
-                        {{-- Card 2 --}}
-                        <x-tipcard
+                    {{-- coin2 --}}
+                    <x-coin 
+                    coin="2"
+                    img="https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></x-coin>
+
+                    {{-- coin3 --}}
+                    <x-coin 
+                    coin="3"
+                    img="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></x-coin>
+
+                    {{-- coin4 --}}
+                    <x-coin 
+                    coin="4"
+                    img="https://images.pexels.com/photos/6630622/pexels-photo-6630622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></x-coin>
+
+                    {{-- coin5 --}}
+                    <x-coin 
+                    coin="5"
+                    img="https://images.pexels.com/photos/4668356/pexels-photo-4668356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></x-coin>
+                    
+
+                    
+
+
+                </div>
+
+                <div class="">
+                    
+                    {{-- Card 1 --}}
+                    <x-tipcard
+                        card="1" 
+                        img="https://images.pexels.com/photos/397998/pexels-photo-397998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                        title="Usa focos ahorradores"
+                        description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes.">
+                    </x-tipcard>
+
+                    {{-- Card 2 --}}
+                        <x-tipcard 
+                            card="2"
                             img="https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                             alt="wire" title="Si no lo usas desconéctalo"
                             description="Diversos aparatos eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso cuando no se utilizan.">
                         </x-tipcard>
 
                         {{-- Card 3 --}}
-                        <x-tipcard
+                        <x-tipcard 
+                            card="3"
                             img="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                             alt="panel" title="Usa energía renovable"
                             description="Usa calentador de agua solar ó paneles solares para generar energía limpia para tu hogar y asi ahorrar en gas ó eléctricidad.">
@@ -118,22 +182,23 @@
 
                         {{-- Card 4 --}}
                         <x-tipcard
+                            card="4"
                             img="https://images.pexels.com/photos/6630622/pexels-photo-6630622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                             alt="bicycle" title="Usa menos el automóvil"
                             description="Reduce emisiones
-                    compartiendo viajes en automóvil y reduciendo su uso en medida de lo posible, asi como caminando más o usar bicicleta como alternativa.">
+                                        compartiendo viajes en automóvil y reduciendo su uso en medida de lo posible, asi como caminando más o usar bicicleta como alternativa.">
                         </x-tipcard>
 
                         {{-- Card 5 --}}
                         <x-tipcard
+                            card="5"
                             img="https://images.pexels.com/photos/4668356/pexels-photo-4668356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                             alt="recycle" title="Recicla" description="Reduce la cantidad de desechos que generas y
-                        recicla para aprovechar materiales y que crear nuevos productos."></x-tipcard>
-
-                    </div>
+                                            recicla para aprovechar materiales y que crear nuevos productos."></x-tipcard>
                 </div>
             </div>
         </div>
     </div>
+
 
 @endsection
