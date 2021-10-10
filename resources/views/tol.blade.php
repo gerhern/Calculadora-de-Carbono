@@ -8,11 +8,11 @@
         <div class="">
             {{-- Titulo --}}
             <div class="">
-                    <h2 class=" py-16 px-10 text-center text-2xl mb-6 lg:text-5xl italic">Cálculo de árboles para
+                        <h2 class="  py-16 px-10 text-center text-2xl mb-6 lg:text-5xl italic">Cálculo de árboles para
             compensación de carbono</h2>
         </div>
 
-        {{-- Formulario  --}}
+        {{-- Formulario --}}
         <form class="w-11/12 mx-auto max-w-lg lg:max-w-none bg-forest bg-opacity-30 p-3">
             <div class="flex flex-wrap -mx-3 lg:flex-col">
                 <div class="w-full lg:w-1/2 px-3 mb-6 lg:mb-0">
@@ -21,7 +21,7 @@
                     </label>
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-forest rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                        type="number" step="0.001" name="footprint"placeholder="Ingrese huella de carbono en toneladas">
+                        type="number" step="0.001" name="footprint" placeholder="Ingrese huella de carbono en toneladas">
 
                 </div>
                 <input type="submit" value="Calcular"
@@ -32,7 +32,8 @@
 
     {{-- div de muestra de errores --}}
     @if ($errors->any())
-        <div class="text-center w-2/3 mx-auto my-6 p-4 bg-red-600 text-white rounded-md shadow-md lg:text-2xl text-xl lg:w-1/3">
+        <div
+            class="text-center w-2/3 mx-auto my-6 p-4 bg-red-600 text-white rounded-md shadow-md lg:text-2xl text-xl lg:w-1/3">
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
@@ -46,9 +47,10 @@
 
         @isset($data)
 
-            <p class=" text-center text-xl my-2 py-3 lg:text-2xl">Para compensar <span class="text-forest font-bold italic">{{ $footprint }} </span> toneladas de CO<sub>2</sub>
+            <p class=" text-center text-xl my-2 py-3 lg:text-2xl">Para compensar <span
+                    class="text-forest font-bold italic">{{ $footprint }} </span> toneladas de CO<sub>2</sub>
                 debes plantar uno de los siguientes tipos de árboles/cultivos.</p>
-                
+
             {{-- Tablas --}}
             <div class="lg:flex lg:justify-evenly lg:items-center ">
 
@@ -68,7 +70,7 @@
                         @endforeach
                     </table>
                 </div>
-                
+
                 {{-- tabla 2 --}}
                 <div class="my-6 lg:w-5/12">
                     <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg lg:text-xl">
@@ -96,16 +98,14 @@
                 <h2 class=" text-center text-xl my-6 lg:text-2xl">* Las plantas de cultivo deben ser plantadas desde
                     nacimiento hasta maduracion.</h2>
             </div>
-
-            <div class="lg:w-1/4 lg:mx-auto mx-4 rounded-md shadow-md bg-forest text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 mb-8 ">
-                <a href="{{ route('offset') }}"
-                class="">Compensar</a>
-            </div>
+            {{-- boton de compensar --}}
+            <a href="{{ route('offset') }}" class=""><p class=" lg:w-1/4 lg:mx-auto mx-4 rounded-md shadow-md bg-forest
+                text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 mb-8 ">Compensar</p></a>
 
 
 
-        @endisset
-    </div>
+            @endisset
+        </div>
 
-    </div>
+        </div>
 @endsection

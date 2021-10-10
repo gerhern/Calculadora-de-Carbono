@@ -110,95 +110,109 @@
                         <x-calculatorcard link="https://www.reforestamosmexico.org/adoptaunarbol"
                             img="https://static.wixstatic.com/media/b1748a_e68a34ab791443259e1dce6cd0cc520e~mv2.png/v1/fill/w_222,h_117,al_c,lg_1,q_85/221x116.webp"
                             alt="Reforestamos-Logo" title="Adopta un arbol con
-                                                            Reforestamos México" description="Mediante una contribución
-                                                            económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
-                                                            adopción">
+                                                                            Reforestamos México" description="Mediante una contribución
+                                                                            económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
+                                                                            adopción">
                         </x-calculatorcard>
                     </div>
                 </div>
 
 
-                <h3 class="lg:text-5xl text-3xl text-center pt-20 px-6 font-medium italic">¿Cómo compensar tu huella de carbono?
-                </h3>
                 {{-- Tips --}}
-                <div class=" flex flex-wrap justify-evenly  m-2 lg:mt-20 lg:mb-10">
+                <h3 class="lg:text-5xl text-3xl text-center pt-20 px-6 font-medium italic">¿Cómo reducir tu huella de
+                    carbono?
+                </h3>
 
-                    {{-- coin1 --}}
-                    <x-coin 
-                    coin="1"
-                    img="https://images.pexels.com/photos/397998/pexels-photo-397998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"></x-coin>
+                {{-- cards --}}
+                <div>
+                    {{-- Card 0 --}}
+                    <div class="ontainer mx-auto bg-cover bg-center object-fill lg:my-16 my-8"
+                        style="background-image: url(https://images.pexels.com/photos/7048023/pexels-photo-7048023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
+                        id="card0">
 
-                    {{-- coin2 --}}
-                    <x-coin 
-                    coin="2"
-                    img="https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></x-coin>
+                        <div class="h-auto text-white py-32 px-10 bg-black bg-opacity-60">
 
-                    {{-- coin3 --}}
-                    <x-coin 
-                    coin="3"
-                    img="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></x-coin>
+                            <p class="font-bold text-sm uppercase lg:block hidden">Click en imagen</p>
+                            <p class="lg:text-3xl text-xl font-bold my-2 leading-none">Aquí se muestran 5 tips para reducir
+                                tu huella de carbono</p>
+                            <p class="lg:text-2xl text-lg mb-10 leading-tight">Actualmente nos encontramos en un momento
+                                crítico en el
+                                que tenemos la oportunidad de cambiar el futuro de nuestro planeta y así tener un futuro
+                                mejor para las próximas generaciones, si no actuamos hoy puede que no tengamos un mañana
+                                para hacerlo.</p>
+                        </div>
+                    </div>
 
-                    {{-- coin4 --}}
-                    <x-coin 
-                    coin="4"
-                    img="https://images.pexels.com/photos/6630622/pexels-photo-6630622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></x-coin>
-
-                    {{-- coin5 --}}
-                    <x-coin 
-                    coin="5"
-                    img="https://images.pexels.com/photos/4668356/pexels-photo-4668356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></x-coin>
-                    
-
-                    
-
-
-                </div>
-
-                <div class="">
-                    
                     {{-- Card 1 --}}
-                    <x-tipcard
-                        card="1" 
+                    <x-tipcard card="1"
                         img="https://images.pexels.com/photos/397998/pexels-photo-397998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
                         title="Usa focos ahorradores"
-                        description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes.">
+                        description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes, así como electrodomésticos de bajo consumo energético.">
                     </x-tipcard>
 
                     {{-- Card 2 --}}
-                        <x-tipcard 
-                            card="2"
-                            img="https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="wire" title="Si no lo usas desconéctalo"
-                            description="Diversos aparatos eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso cuando no se utilizan.">
-                        </x-tipcard>
+                    <x-tipcard card="2"
+                        img="https://images.pexels.com/photos/1028674/pexels-photo-1028674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="wire" title="Si no lo usas desconéctalo"
+                        description="Diversos aparatos eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso cuando no se utilizan.">
+                    </x-tipcard>
 
-                        {{-- Card 3 --}}
-                        <x-tipcard 
-                            card="3"
-                            img="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="panel" title="Usa energía renovable"
-                            description="Usa calentador de agua solar ó paneles solares para generar energía limpia para tu hogar y asi ahorrar en gas ó eléctricidad.">
-                        </x-tipcard>
+                    {{-- Card 3 --}}
+                    <x-tipcard card="3"
+                        img="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="panel" title="Usa fuentes de energía renovable"
+                        description="Los calentadores de agua o paneles solares no emiten gases de efecto invernadero y ayudan a ahorrar gas y electricidad y sus respectivos costos.">
+                    </x-tipcard>
 
-                        {{-- Card 4 --}}
-                        <x-tipcard
-                            card="4"
-                            img="https://images.pexels.com/photos/6630622/pexels-photo-6630622.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                            alt="bicycle" title="Usa menos el automóvil"
-                            description="Reduce emisiones
-                                        compartiendo viajes en automóvil y reduciendo su uso en medida de lo posible, asi como caminando más o usar bicicleta como alternativa.">
-                        </x-tipcard>
+                    {{-- Card 4 --}}
+                    <x-tipcard 
+                        link="#"
+                        card="4" img="https://cdn.local.mx/wp-content/uploads/2019/06/gran-rodada-1.jpg"
+                        alt="bicycle" title="Usa medios alternos de transporte"
+                        description="Algunos medios de transporte, como los automóviles producen gran cantidad de gases contaminantes, por eso es aconsejable utilizar medios de transporte alternativos de bajas emisiones, como el tren, la bicicleta o incluso caminar.">
+                    </x-tipcard>
 
-                        {{-- Card 5 --}}
-                        <x-tipcard
-                            card="5"
-                            img="https://images.pexels.com/photos/4668356/pexels-photo-4668356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            alt="recycle" title="Recicla" description="Reduce la cantidad de desechos que generas y
-                                            recicla para aprovechar materiales y que crear nuevos productos."></x-tipcard>
+                    {{-- Card 5 --}}
+                    <x-tipcard card="5"
+                        img="https://images.pexels.com/photos/7048024/pexels-photo-7048024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="recycle" title="Recicla"
+                        description="Reduce la cantidad de desechos que generas, reutiliza la mayor cantidad posible y recicla para aprovechar materiales y crear nuevos productos.">
+                    </x-tipcard>
+                </div>
+
+                <div class=" flex flex-wrap justify-evenly  m-2 lg:mb-20" id="coins">
+
+                    {{-- coin1 --}}
+                    <x-coin coin="1"
+                        img="https://images.pexels.com/photos/3946155/pexels-photo-3946155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </x-coin>
+
+                    {{-- coin2 --}}
+                    <x-coin coin="2"
+                        img="https://images.pexels.com/photos/218445/pexels-photo-218445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </x-coin>
+
+                    {{-- coin3 --}}
+                    <x-coin coin="3"
+                        img="https://images.pexels.com/photos/9800031/pexels-photo-9800031.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </x-coin>
+
+                    {{-- coin4 --}}
+                    <x-coin coin="4" img="https://cdn.local.mx/wp-content/uploads/2019/06/gran-rodada-4.webp">
+                    </x-coin>
+
+                    {{-- coin5 --}}
+                    <x-coin coin="5"
+                        img="https://images.pexels.com/photos/7262405/pexels-photo-7262405.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    </x-coin>
+
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
+    <script src="{{ asset('js/coinCard.js') }}"></script>
 
 @endsection

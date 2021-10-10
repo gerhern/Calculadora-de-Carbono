@@ -25,30 +25,36 @@
                 {{-- slide1 --}}
                 <div id="slide1" class="container">
                     <div class="flex justify-evenly">
-                            <img src="https://images.pexels.com/photos/9252093/pexels-photo-9252093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+                        <img src="https://images.pexels.com/photos/9252093/pexels-photo-9252093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                            <img src="https://images.pexels.com/photos/2083840/pexels-photo-2083840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                        <img src="https://images.pexels.com/photos/2083840/pexels-photo-2083840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
                     </div>
                 </div>
 
                 {{-- slide2 --}}
                 <div id="slide2" class="container">
                     <div class="flex justify-evenly">
-                            <img src="https://images.pexels.com/photos/4388606/pexels-photo-4388606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+                        <img src="https://images.pexels.com/photos/4388606/pexels-photo-4388606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                            <img src="https://images.pexels.com/photos/5273091/pexels-photo-5273091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                        <img src="https://images.pexels.com/photos/5273091/pexels-photo-5273091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
                     </div>
                 </div>
 
                 {{-- slide3 --}}
                 <div id="slide3" class="container">
                     <div class="flex justify-evenly">
-                        <img src="https://images.pexels.com/photos/3147058/pexels-photo-3147058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+                        <img src="https://images.pexels.com/photos/3147058/pexels-photo-3147058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                        <img src="https://images.pexels.com/photos/2574997/pexels-photo-2574997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                        <img src="https://images.pexels.com/photos/2574997/pexels-photo-2574997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
             {{-- fin carrusel --}}
 
@@ -93,7 +99,7 @@
                         <x-calculatorcard link="https://footprintcalculator.henkel.com/mx"
                             img="https://footprintcalculator.henkel.com/assets/images/HENKEL.png" alt="Henkel-Logo"
                             title="Calculadora de huella de carbono Henkel" description="Calculadora creada
-                                por la empresa alemana de productos de limpieza Henkel"></x-calculatorcard>
+                                    por la empresa alemana de productos de limpieza Henkel"></x-calculatorcard>
 
 
                         {{-- div card 2 --}}
@@ -132,4 +138,7 @@
             </div>
         </div>
     </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
 @endsection
