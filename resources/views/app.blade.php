@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -37,6 +37,9 @@
 
                 <a href="{{ route('offset') }}"
                     class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Compensar</a>
+
+                <a href="{{ route('transport') }}"
+                    class="w-full flex flex-grow items-center justify-center transition duration-200">Medios de transporte</a>
 
                 <a href="#"
                     class="w-full flex flex-grow items-center justify-center transition duration-200">Proximamente</a>

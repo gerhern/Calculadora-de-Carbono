@@ -166,7 +166,7 @@
 
                     {{-- Card 4 --}}
                     <x-tipcard 
-                        link="#"
+                        link="{{ route('transport') }}"
                         card="4" img="https://cdn.local.mx/wp-content/uploads/2019/06/gran-rodada-1.jpg"
                         alt="bicycle" title="Usa medios alternos de transporte"
                         description="Algunos medios de transporte, como los automóviles producen gran cantidad de gases contaminantes, por eso es aconsejable utilizar medios de transporte alternativos de bajas emisiones, como el tren, la bicicleta o incluso caminar.">
@@ -212,7 +212,7 @@
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="{{ asset('js/slide.js') }}"></script>
-    <script src="{{ asset('js/coinCard.js') }}"></script>
+    <script src="{{ secure_asset('js/slide.js') }}"></script>
+    <script src="{{ secure_asset('js/coinCard.js') }}"></script>
 
 @endsection
