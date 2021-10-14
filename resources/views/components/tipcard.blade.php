@@ -1,5 +1,5 @@
 <div  class="container mx-auto bg-cover bg-center object-fill lg:my-16 my-8 "
-    style="background-image: url({{ $img }})">
+    style="background-image: url({{ $img }})" title="{{ $author }}">
 
     <div class="h-auto text-white lg:py-32 py-16 px-10 bg-black bg-opacity-60 hidden" id="card{{$card}}">
 

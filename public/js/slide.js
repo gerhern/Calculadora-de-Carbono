@@ -9,8 +9,8 @@ function loopSlider() {
 
         $("#slide" + slide).fadeOut(400);
         $("#slide" + cont)
-            .delay(400)
-            .fadeIn(400);
+            .delay(600)
+            .fadeIn(600);
 
         slide++;
         cont++;
@@ -19,7 +19,7 @@ function loopSlider() {
             slide = 1;
             cont = 2;
         }
-    }, 5000);
+    }, 10000);
 }
 
 function reinitLoop(time) {

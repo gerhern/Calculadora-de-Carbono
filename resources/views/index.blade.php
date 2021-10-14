@@ -5,11 +5,11 @@
     <div class="flex flex-col text-white">
 
         {{-- Imagen y titulo principal --}}
-        <div class="bg-center bg-cover w-full"
-            style="background-image: url('https://images.pexels.com/photos/5641969/pexels-photo-5641969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+        <div class="bg-bottom bg-cover w-full"
+            style="background-image: url('https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/09/10-Chepe_Chih_Cortesia-Sectur-Chih.jpg')" title="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido">
 
             <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-72">Cálculo y compensación de huella de carbono</h1>
+            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-72 py-12 bg-black bg-opacity-20">Cálculo y compensación de huella de carbono</h1>
 
         </div>
 
@@ -24,33 +24,34 @@
 
                 {{-- slide1 --}}
                 <div id="slide1" class="container">
-                    <div class="flex justify-evenly">
-                        <img src="https://images.pexels.com/photos/9252093/pexels-photo-9252093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <div class="flex justify-evenly" title="Fotos: Archivo/Iván Stephens/EL UNIVERSAL(2016-2019)/En tan solo 3 años ha aumentado drásticamente la cantidad de partículas PM2.5 y Ozono en la Zona Metropolitana del Valle de México">
+                        <img src="https://interactivo.eluniversal.com.mx/nota/contingencia-cdmx-antes-despues/img/contingencia-cdmx-1.jpg"
                             class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                        <img src="https://images.pexels.com/photos/2083840/pexels-photo-2083840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        <img src="https://interactivo.eluniversal.com.mx/nota/contingencia-cdmx-antes-despues/img/contingencia-cdmx-2.jpg"
                             class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
                     </div>
                 </div>
 
                 {{-- slide2 --}}
                 <div id="slide2" class="container">
-                    <div class="flex justify-evenly">
-                        <img src="https://images.pexels.com/photos/4388606/pexels-photo-4388606.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <div class="flex justify-evenly" title="Fotos: SANTIAGO ARAU/Deforestación en la selva Lacandona en el municipio de Marqués de Comillas, Chiapas y Laguna de Metzabok antes y después de la atípica sequía Foto:  Facebook Damián Sánchez .
+                    ">
+                        <img src="https://imagenes.elpais.com/resizer/o3opLyhPJLv0ieO9ygnWxeQjFYM=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7WACEYXO6WXG62ZLVT6HDLVLVQ.jpg"
                             class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                        <img src="https://images.pexels.com/photos/5273091/pexels-photo-5273091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        <img src="https://www.infobae.com/new-resizer/1Kf-Yimka6sa5i8Gs9RwbwtB6kI=/992x441/filters:format(jpg):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/08/13164028/metzabok-selva-lacandona-2.jpg"
                             class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
                     </div>
                 </div>
 
                 {{-- slide3 --}}
                 <div id="slide3" class="container">
-                    <div class="flex justify-evenly">
-                        <img src="https://images.pexels.com/photos/3147058/pexels-photo-3147058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    <div class="flex justify-evenly" title="Fotos: María Paula Martínez/ UNAM Especialistas del Instituto de Geofísica de la UNAM declaran extinto el glaciar de Ayoloco en el Iztaccíhuatl. Colocan placa de la deshonra.">
+                        <img src="https://cdn.cdmxenlared.com/wp-content/uploads/2021/04/extinto-el-glaciar-de-Ayoloco-en-el-Iztaccihuatl-scaled.jpg"
                             class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                        <img src="https://images.pexels.com/photos/2574997/pexels-photo-2574997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        <img src="https://pbs.twimg.com/media/Ezl7GY5UcAEeMKt?format=jpg&name=4096x4096"
                             class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
                     </div>
                 </div>

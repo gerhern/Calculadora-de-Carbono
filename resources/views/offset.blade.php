@@ -6,7 +6,7 @@
 
         {{-- Imagen y titulo principal --}}
         <div class="bg-center bg-cover w-full"
-            style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
+            style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')" title="Fotografía de: Tara Winstead from Pexels">
 
             <x-hammenu></x-hammenu>
             <h1 class="text-center lg:text-6xl text-4xl font-semibold my-60">Alternativas para compensar la huella de carbono
@@ -31,10 +31,12 @@
                     <div id="slide1" class="container">
                         <div class="flex justify-evenly">
                             <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl"
+                                title="Fotografía de: Pixabay from pexels">
 
                             <img src="https://images.pexels.com/photos/7000/fre-sonneveld-powerlines.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block"
+                                title="Fotografía de: Snapwire from pexels">
                         </div>
                     </div>
 
@@ -42,10 +44,12 @@
                     <div id="slide2" class="container">
                         <div class="flex justify-evenly">
                             <img src="https://images.pexels.com/photos/7655920/pexels-photo-7655920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl"
+                                title="Fotografía de: Thirdman from pexels">
 
                             <img src="https://images.pexels.com/photos/9198/nature-sky-twilight-grass-9198.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block"
+                                title="Fotografía de: Skitterphoto from pexels">
                         </div>
                     </div>
 
@@ -53,10 +57,12 @@
                     <div id="slide3" class="container">
                         <div class="flex justify-evenly">
                             <img src="https://images.pexels.com/photos/46254/leopard-wildcat-big-cat-botswana-46254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl"
+                                title="Fotografía de: Pixabay from pexels">
 
                             <img src="https://images.pexels.com/photos/46235/emperor-penguins-antarctic-life-animal-46235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
+                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block"
+                                title="Fotografía de: Pixabay from pexels">
                         </div>
                     </div>
 
@@ -126,9 +132,9 @@
                 {{-- cards --}}
                 <div>
                     {{-- Card 0 --}}
-                    <div class="ontainer mx-auto bg-cover bg-center object-fill lg:my-16 my-8"
+                    <div class="container mx-auto bg-cover bg-center object-fill lg:my-16 my-8"
                         style="background-image: url(https://images.pexels.com/photos/7048023/pexels-photo-7048023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
-                        id="card0">
+                        id="card0" title="Fotografía de: Artem Podrez from Pexels">
 
                         <div class="h-auto text-white py-32 px-10 bg-black bg-opacity-60">
 
@@ -147,21 +153,24 @@
                     <x-tipcard card="1"
                         img="https://images.pexels.com/photos/397998/pexels-photo-397998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
                         title="Usa focos ahorradores"
-                        description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes, así como electrodomésticos de bajo consumo energético.">
+                        description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes, así como electrodomésticos de bajo consumo energético."
+                        author="Fotografías de: Mohamed Khaled(Tip) y Riki Risnandar(Coin) from Pexels">
                     </x-tipcard>
 
                     {{-- Card 2 --}}
                     <x-tipcard card="2"
                         img="https://images.pexels.com/photos/1028674/pexels-photo-1028674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt="wire" title="Si no lo usas desconéctalo"
-                        description="Diversos aparatos eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso cuando no se utilizan.">
+                        description="Diversos aparatos eléctricos como los cargadores de teléfonos celulares siguen consumiendo energía incluso cuando no se utilizan."
+                        author="Fotografías de: Steve Johnson(Tip) y Markus Spiske(Coin) from Pexels">
                     </x-tipcard>
 
                     {{-- Card 3 --}}
                     <x-tipcard card="3"
                         img="https://images.pexels.com/photos/2850347/pexels-photo-2850347.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt="panel" title="Usa fuentes de energía renovable"
-                        description="Los calentadores de agua o paneles solares no emiten gases de efecto invernadero y ayudan a ahorrar gas y electricidad y sus respectivos costos.">
+                        description="Los calentadores de agua o paneles solares no emiten gases de efecto invernadero y ayudan a ahorrar gas y electricidad y sus respectivos costos."
+                        author="Fotografías de: Vivint Solar(Tip) y Kindel Media(Coin) from Pexels">
                     </x-tipcard>
 
                     {{-- Card 4 --}}
@@ -169,14 +178,16 @@
                         link="{{ route('transport') }}"
                         card="4" img="https://cdn.local.mx/wp-content/uploads/2019/06/gran-rodada-1.jpg"
                         alt="bicycle" title="Usa medios alternos de transporte"
-                        description="Algunos medios de transporte, como los automóviles producen gran cantidad de gases contaminantes, por eso es aconsejable utilizar medios de transporte alternativos de bajas emisiones, como el tren, la bicicleta o incluso caminar.">
+                        description="Algunos medios de transporte, como los automóviles producen gran cantidad de gases contaminantes, por eso es aconsejable utilizar medios de transporte alternativos de bajas emisiones, como el tren, la bicicleta o incluso caminar."
+                        author="Fotografías de: Facebook Muévete en Bici(Tip) y (Coin)">
                     </x-tipcard>
 
                     {{-- Card 5 --}}
                     <x-tipcard card="5"
                         img="https://images.pexels.com/photos/7048024/pexels-photo-7048024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt="recycle" title="Recicla"
-                        description="Reduce la cantidad de desechos que generas, reutiliza la mayor cantidad posible y recicla para aprovechar materiales y crear nuevos productos.">
+                        description="Reduce la cantidad de desechos que generas, reutiliza la mayor cantidad posible y recicla para aprovechar materiales y crear nuevos productos."
+                        author="Fotografías de: Artem Podrez(Tip) y Sarah Chai(Coin) from Pexels">
                     </x-tipcard>
                 </div>
 

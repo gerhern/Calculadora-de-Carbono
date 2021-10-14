@@ -25,7 +25,7 @@
                     </h3>
 
                     <img src="https://images.pexels.com/photos/310983/pexels-photo-310983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Ride-bicycle" class="w-11/12 rounded-md shadow-2xl">
+                        alt="Ride-bicycle" class="w-11/12 rounded-md shadow-2xl" title="Fotografía de: Snapwire from Pexels">
 
                         <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                             <p class="leading-tight lg:text-xl text-lg text-center py-8 px-3 ">Con el pasar de los años el uso de la
@@ -57,7 +57,7 @@
                     </div>
 
                     <img src="https://images.pexels.com/photos/4254893/pexels-photo-4254893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Bicycle-parking" class="lg:w-8/12 rounded-md shadow-2xl lg:block hidden">
+                        alt="Bicycle-parking" class="lg:w-8/12 rounded-md shadow-2xl lg:block hidden" title="Fotografía de: Maarten van den Heuvel from Pexels">
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start px-8">Autonoma</h5>
@@ -73,7 +73,7 @@
                     </div>
 
                     <img src="https://images.pexels.com/photos/5820158/pexels-photo-5820158.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="Bicycle-old" class="lg:w-8/12 rounded-md shadow-2xl lg:block hidden">
+                        alt="Bicycle-old" class="lg:w-8/12 rounded-md shadow-2xl lg:block hidden" title="Fotografía de: Mehmet Turgut Kirkgoz from Pexels">
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start px-8">Saludable</h5>
@@ -94,7 +94,7 @@
                     </div>
 
                     <img src="https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    alt="Ride-bicycle" class="lg:w-8/12 rounded-md shadow-2xl">
+                    alt="Ride-bicycle" class="lg:w-8/12 rounded-md shadow-2xl" title="Fotogr afía de: Genaro Servín from Pexels">
 
                     <div class="w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <p class="leading-snug lg:text-xl text-lg text-center py-8 px-3 ">Pese a la gran cantidad de ventajas
@@ -121,6 +121,14 @@
                         alt="Ecobici"
                         title="Sistema de bicicletas públicas de la Ciudad de México"
                         description="Usuarios con una suscripción pueden tomar una bicicleta y devolverla en la cicloestación más cercana a su destino en trayectos de 45 minutos."
+                    ></x-bicyclecard>
+
+                    <x-bicyclecard
+                        link="https://www.dgsgm.unam.mx/bicipuma"
+                        img="https://static.wixstatic.com/media/4394a8_c5d58703be9547aeb63a1674f1efc594~mv2.png/v1/fill/w_548,h_122,al_c,q_85,usm_0.66_1.00_0.01/4394a8_c5d58703be9547aeb63a1674f1efc594~mv2.webp"
+                        alt="Bicipuma"
+                        title="Sistema de prestamo de bicicletas de Ciudad Universitaria"
+                        description="Sistema de transporte gratuito que fomenta la movilidad sustentable y la salud de la Comunidad Universitaria."
                     ></x-bicyclecard>
 
                     <x-bicyclecard

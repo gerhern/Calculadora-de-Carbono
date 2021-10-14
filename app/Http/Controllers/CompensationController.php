@@ -20,7 +20,7 @@ class CompensationController extends Controller
 
         return view('tol', [
             'data' => $data,
-            'footprint' => $request->footprint
+            'footprint' => $request->footprint,
         ]);
     }
     
