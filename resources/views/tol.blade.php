@@ -59,16 +59,16 @@
                     {{-- Tabla1 --}}
                     <div class="my-2 flex flex-wrap justify-evenly w-full ">
                         @foreach ($data['data'] as $tree)
-                                <div class="m-2 rounded-md shadow-2xl">
+                                <div class="m-2 rounded-md shadow-2xl flex lg:flex-col">
                                     <img src="{{ $tree[3] }}"
-                                        alt="{{ $tree[1] }}" class="lg:w-60 lg:h-60 w-52 h-52 rounded-t-2xl" title="Fotografia de: {{ $tree[4] }}">
-                                        <div class="flex flex-col justify-around lg:w-60 w-52 p-2 items-center bg-black bg-opacity-60 rounded-b-2xl">
-                                            <h3 class="text-xl px-2 w-full text-center font-bold">{{ $tree[1] }}</h3>
-                                            <h3 class="lg:text-5xl text-4xl my-2 px-2 w-full text-center">{{ $tree[5] }}</h3>
-                                            <h3 class="text-lg px-2 w-full font-semibold">Nombre cientifico:</h3>
-                                            <h3 class="text-lg px-2 w-full italic">{{ $tree[2] }}</h3>
-                                            <p class="text-lg px-2 w-full font-semibold">Capacidad de absorcion:</p>
-                                            <p class="text-lg px-2 w-full italic">{{ $tree[0] }} kg/año</p>
+                                        alt="{{ $tree[1] }}" class="lg:w-60 lg:h-60 w-36 lg:rounded-t-2xl lg:rounded-none rounded-l-2xl " title="Fotografia de: {{ $tree[4] }}">
+                                        <div class="flex flex-col justify-around lg:w-60 p-2 items-center bg-black bg-opacity-60 lg:rounded-b-2xl lg:rounded-none rounded-r-2xl">
+                                            <h3 class="lg:text-xl text-md px-2 w-full text-center font-bold">{{ $tree[1] }}</h3>
+                                            <h3 class="lg:text-5xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }}</h3>
+                                            <h3 class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre cientifico:</h3>
+                                            <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[2] }}</h3>
+                                            <p class="lg:text-lg text-sm px-2 w-full font-semibold">Capacidad de absorcion:</p>
+                                            <p class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[0] }} kg/año</p>
                                         </div>
                                 </div>
                         @endforeach
@@ -133,7 +133,7 @@
                 <a href="{{ route('offset') }}" class="">
                     <p
                         class=" lg:w-1/4 lg:mx-auto mx-4 rounded-md shadow-md bg-forest
-                text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 mb-8 ">
+                text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 mb-8 border border-white">
                         Compensar</p>
                 </a>
 
