@@ -29,7 +29,7 @@
 
                         <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                             <p class="leading-tight lg:text-xl text-lg text-center py-8 px-3 ">Con el pasar de los años el uso de la
-                                bicicleta como medio de transporte ecologico ha tomado una mayor importancia en la movilidad y la
+                                bicicleta como medio de transporte ecológico ha tomado una mayor importancia en la movilidad y la
                                 salud de las personas, he aquí las principales razones por las cuales deberias pensar en utilizar
                                 este medio de transporte.</p>
                         </div>
@@ -38,21 +38,21 @@
                         <h5 class="text-2xl self-start p-3">Eficaz</h5>
                         <p class="leading-tight lg:text-xl text-lg  p-3">Una bicicleta puede cubrir de manera
                             eficiente viajes de hasta 7 km, esto es un dato importante ya que la mitad de los viajes en
-                            automovil recorren menos de 5 km, distancia que en terreno plano puede recorrer una bici de 10 a
+                            automóvil recorren menos de 5 km, distancia que en terreno plano puede recorrer una bici de 10 a
                             20 minutos alcanzando velocidades de hasta 30 km/h.</p>
 
                         <p class="leading-tight lg:text-xl text-lg p-3">La bicicleta permite una flexibilidad en la
-                            duracion de viaje, ya que esta al ocupar menos espacio es mas facil evitar el embotellamiento
-                            vial de los viajes en automovil.</p>
+                            duración de viaje, ya que esta al ocupar menos espacio es mas fácil evitar el embotellamiento
+                            vial de los viajes en automóvil.</p>
 
                         <p class="leading-tight lg:text-xl text-lg p-3">De la misma forma en trayectos cortos(~5 km)
-                            la velocidad de la bicicleta es competitiva con la del transporte publico debido a que
-                            "caminar-esperar-autobus-caminar" suele tomar mas tiempo que el transporte de un punto A a un B
+                            la velocidad de la bicicleta es competitiva con la del transporte público debido a que
+                            "caminar-esperar-autobús-caminar" suele tomar mas tiempo que el transporte de un punto A a un B
                             en bicicleta.</p>
 
-                        <p class="leading-tight lg:text-xl text-lg p-3">Las bicicletas son vehiculos pequeños,
-                            ligeros, ecologicos y silenciosos, lo que los hace faciles de conducir y aparcar, ademas son de
-                            facil manutencion ya que una bici cuesta 30-40 veces menos que un automovil.</p>
+                        <p class="leading-tight lg:text-xl text-lg p-3">Las bicicletas son vehículos pequeños,
+                            ligeros, ecológicos y silenciosos, lo que los hace faciles de conducir y aparcar, ademas son de
+                            facil manutencion ya que una bici cuesta 30-40 veces menos que un automóvil.</p>
 
                     </div>
 
@@ -60,9 +60,9 @@
                         alt="Bicycle-parking" class="lg:w-8/12 rounded-md shadow-2xl lg:block hidden" title="Fotografía de: Maarten van den Heuvel from Pexels">
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start px-8">Autonoma</h5>
+                        <h5 class="text-2xl self-start px-8">Autónoma</h5>
                         <p class="leading-tight lg:text-xl text-lg p-3">El uso de bicicleta se puede realizar a
-                            cualquier hora del dia, por lo que es mas practico que esperar por un autobus.</p>
+                            cualquier hora del día, por lo que es mas práctico que esperar por un autobús.</p>
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
@@ -84,13 +84,13 @@
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start px-8">Ecologica</h5>
-                        <p class="leading-tight lg:text-xl p-3">En circulacion una bicicleta no emite
-                            contaminantes a la atmosfera aunque durante su ciclo de vida completo desde fabricacion hasta la
-                            conversion en residuo la cantidad de contaminantes que genera es tan solo de 5g de
-                            CO<sub>2</sub>por km*.</p>
-                        <p class="leading-tight lg:text-xl text-lg p-3 ">La circulacion de bicicletas reduce notablemente la
-                            contaminacion auditiva.</p>
+                        <h5 class="text-2xl self-start px-8">Ecológica</h5>
+                        <p class="leading-tight lg:text-xl p-3">En circulación una bicicleta no emite
+                            contaminantes a la atmósfera aunque durante su ciclo de vida completo desde fabricación hasta la
+                            conversión en residuo la cantidad de contaminantes que genera es tan solo de 5g de
+                            CO<sub>2</sub> por km*.</p>
+                        <p class="leading-tight lg:text-xl text-lg p-3 ">La circulación de bicicletas reduce notablemente la
+                            contaminación auditiva.</p>
                     </div>
 
                     <img src="https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
@@ -99,7 +99,7 @@
                     <div class="w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <p class="leading-snug lg:text-xl text-lg text-center py-8 px-3 ">Pese a la gran cantidad de ventajas
                             con las que contamos al usar este medio de transporte, este no es perfecto y aun cuenta con algunas
-                            desventajas como es la barrera climatica.</p>
+                            desventajas como es la barrera climática.</p>
                     </div>
                         
 
@@ -154,7 +154,7 @@
                         img="https://scontent.fmex3-1.fna.fbcdn.net/v/t39.30808-6/222431659_247465797276063_588141798271356116_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=dRy1dg_tu4YAX8MqxS3&_nc_ht=scontent.fmex3-1.fna&oh=5c9433800fd3d370650ba932eee9cf3f&oe=616A0061"
                         alt="Muyu-Bikers"
                         title="Club de ciclismo Muyu Bikers"
-                        description="Grupo de ciclismo nocturno con salidas cada jueves y domingos."
+                        description="Grupo de ciclismo nocturno con salidas cada jueves y domingo."
                     ></x-bicyclecard>
 
                     <h5 class=" my-10 text-3xl self-start px-8">¿No sabes andar en bicicleta?</h5>
@@ -174,7 +174,7 @@
                         img="https://static.wixstatic.com/media/cc6c6c_fdc23fd45a6c4be687813179fc9a02e0~mv2.png/v1/fill/w_727,h_132,al_c,q_85,usm_0.66_1.00_0.01/cc6c6c_fdc23fd45a6c4be687813179fc9a02e0~mv2.webp"
                         alt="Dezba"
                         title="Dezba"
-                        description="Aplicación de renta de bicicletas eléctricas o mecanicas compartidas por subscripcion mensual o anual."
+                        description="Aplicación de renta de bicicletas eléctricas o mecánicas compartidas por subscripción mensual o anual."
                     ></x-bicyclecard>
 
                     <x-bicyclecard
