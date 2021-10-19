@@ -5,8 +5,8 @@
     <div class="flex flex-col text-white">
 
         {{-- Imagen y titulo principal --}}
-        <div class="bg-bottom bg-cover w-full"
-            style="background-image: url('https://www.mexicodesconocido.com.mx/wp-content/uploads/2018/09/10-Chepe_Chih_Cortesia-Sectur-Chih.jpg')" title="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido">
+        <div class="lg:bg-bottom bg-cover w-full"
+            style="background-image: url('https://visitachihuahua.com/wp-content/uploads/2019/12/chepe-regional-1.jpg')" title="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido">
 
             <x-hammenu></x-hammenu>
             <h1 class="text-center lg:text-6xl text-4xl font-semibold my-72 py-12 bg-black bg-opacity-20">Cálculo y compensación de huella de carbono</h1>
