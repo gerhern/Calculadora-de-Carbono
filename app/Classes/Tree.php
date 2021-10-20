@@ -18,70 +18,70 @@ class Tree
             'Mezquite',
             'Prosopis',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Velvet_mesquite.jpg/1024px-Velvet_mesquite.jpg',
-            'De Sue in az - Trabajo propio, CC BY-SA 3.0'
+            'Sue in az/Trabajo propio/wikipedia'
         ],
         [
             30.564,
             'Fresno',
             'Fraxinus uhdei',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Starr_030405-0078_Fraxinus_uhdei.jpg/800px-Starr_030405-0078_Fraxinus_uhdei.jpg',
-            'De Forest & Kim Starr, CC BY 3.0'
+            'Forest & Kim Starr/wikipedia'
         ],
         [
             31.101,
             'Mandarino',
             'Citrus Reticulata',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Limonaia_del_Castel_-_DSC02147.JPG/800px-Limonaia_del_Castel_-_DSC02147.JPG',
-            'De Daderot - Fotografía propia, Dominio público.'
+            'Daderot/Fotografía propia/Dominio público.'
         ],
         [
             38.706,
             'Manglar blanco',
             'Laguncularia Racemosa',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mangrove_in_la_manzanilla.jpg/1280px-Mangrove_in_la_manzanilla.jpg',
-            'De Tomas Castelazo - Trabajo propio, CC BY-SA 3.0'
+            'Tomas Castelazo/Trabajo propio/wikipedia'
         ],
         [
             49.345,
             'Naranjo',
             'Citrus × Sinensis',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Laranxeira_Naranjo_GFDL.JPG/1280px-Laranxeira_Naranjo_GFDL.JPG',
-            'De Luis Miguel Bugallo Sánchez (Lmbuga Commons)(Lmbuga Galipedia)Publicada por/Publish by: Luis Miguel Bugallo Sánchez - Trabajo propio, CC BY-SA 3.0'
+            'Luis Miguel Bugallo Sánchez/Trabajo propio/wikipedia'
         ],
         [
             106.933,
             'Limonero',
             'Citrus × Limon',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Citrus_limonum_3.JPG/1280px-Citrus_limonum_3.JPG',
-            'De Vicenç Salvador Torres Guerola - Trabajo propio, CC BY-SA 3.0'
+            'Vicenç Salvador Torres Guerola/Trabajo propio/wikipedia'
         ],
         [
             162.257,
             'Eucalipto blanco',
             'Eucalyptus Globulus',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Starr_031214-0076_Eucalyptus_globulus.jpg/800px-Starr_031214-0076_Eucalyptus_globulus.jpg',
-            'De Forest & Kim Starr, CC BY 3.0'
+            'Forest & Kim Starr/wikipedia'
         ],
         [
             182.63,
             'Pirul',
             'Schinus molle',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Schinus_molle01.jpg/800px-Schinus_molle01.jpg',
-            'De Georges Jansoone - own photo, made at Evora, Portugal, CC BY 2.5'
+            'Georges Jansoone/own photo, made at Evora, Portugal/wikipedia'
         ],
         [
             221.03,
             'Palmera de abanico',
             'Washingtonia Robusta',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Washingtonia_robusta.jpg/800px-Washingtonia_robusta.jpg',
-            'De en:user:Geographer - en:Image:Washingtonia_robusta.jpg, CC BY 2.5'
+            'Geographer/Image: Washingtonia_robusta.jpg/wikipedia'
         ],
         [
             229.28,
             'Roble sedoso',
             'Grevillea Robusta',
             'https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Grevillea_robusta_flowering_in_Gan_Shmuel01.jpg/800px-Grevillea_robusta_flowering_in_Gan_Shmuel01.jpg',
-            'De RickP 08:32, 14 April 2006 (UTC) - self-made, based on a 1:50000 map of the area, and the maps on the signs posted at several sites along the route of the project., CC BY 2.5'
+            'RickP/14/04/2006/self-made,/wikipedia'
         ]
     ];
 
