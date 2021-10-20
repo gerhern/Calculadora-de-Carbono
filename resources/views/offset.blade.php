@@ -133,9 +133,9 @@
                     {{-- Card 0 --}}
                     <div class="container mx-auto bg-cover bg-center object-fill lg:my-16 my-8"
                         style="background-image: url(https://images.pexels.com/photos/7048023/pexels-photo-7048023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
-                        id="card0" title="Fotografía de: Artem Podrez from Pexels">
+                        id="card0">
 
-                        <div class="h-auto text-white py-32 px-10 bg-black bg-opacity-60">
+                        <div class="h-auto text-white py-32 px-10 bg-black bg-opacity-60 has-tooltip ">
 
                             <p class="font-bold text-sm uppercase lg:block hidden">Click en imagen</p>
                             <p class="lg:text-3xl text-xl font-bold my-2 leading-none">Aquí se muestran 5 tips para reducir
@@ -145,6 +145,7 @@
                                 que tenemos la oportunidad de cambiar el futuro de nuestro planeta y así tener un futuro
                                 mejor para las próximas generaciones, si no actuamos hoy puede que no tengamos un mañana
                                 para hacerlo.</p>
+                            <x-tooltip-coin-card text="Fotografía de: Artem Podrez from Pexels"></x-tooltip-coin-card>
                         </div>
                     </div>
 

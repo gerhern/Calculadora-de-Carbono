@@ -1,4 +1,4 @@
-<div class="tooltip bg-black bg-opacity-60 p-4 rounded-md text-xs">
+<div class="tooltip text-xs my-10">
     <p>{{ $text }}</p>
 </div>
 
