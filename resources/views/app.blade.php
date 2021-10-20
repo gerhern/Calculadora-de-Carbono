@@ -19,6 +19,18 @@
 
 </head>
 
+<style>
+    .tooltip {
+        visibility: hidden;
+    }
+
+    .has-tooltip:hover .tooltip {
+        visibility: visible;
+        z-index: 100;
+    }
+
+</style>
+
 <body class="flex relative bg-marine">
 
     <main class="flex w-screen h-screen overflow-y-auto">
@@ -39,7 +51,8 @@
                     class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Compensar</a>
 
                 <a href="{{ route('transport') }}"
-                    class="w-full flex flex-grow items-center justify-center transition duration-200">Medios de transporte</a>
+                    class="w-full flex flex-grow items-center justify-center transition duration-200">Medios de
+                    transporte</a>
 
                 <a href="#"
                     class="w-full flex flex-grow items-center justify-center transition duration-200">Proximamente</a>

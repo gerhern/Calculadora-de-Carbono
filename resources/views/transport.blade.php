@@ -24,8 +24,11 @@
                         transporte
                     </h3>
 
-                    <img src="https://images.pexels.com/photos/310983/pexels-photo-310983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Ride-bicycle" class="w-11/12 rounded-md shadow-2xl" title="Fotografía de: Snapwire from Pexels">
+                    <div class="has-tooltip w-11/12">
+                        <img src="https://images.pexels.com/photos/310983/pexels-photo-310983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Ride-bicycle" class="rounded-md shadow-2xl">
+                            <x-tooltip-index text="Fotografía de: Snapwire from Pexels"></x-tooltip-index>
+                    </div>
 
                         <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                             <p class="leading-tight lg:text-xl text-lg text-center py-8 px-3 ">Con el pasar de los años el uso de la
@@ -56,8 +59,12 @@
 
                     </div>
 
-                    <img src="https://images.pexels.com/photos/4254893/pexels-photo-4254893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                        alt="Bicycle-parking" class="lg:w-8/12 rounded-md shadow-2xl lg:block hidden" title="Fotografía de: Maarten van den Heuvel from Pexels">
+                    <div class="lg:w-8/12 has-tooltip">
+                        <img src="https://images.pexels.com/photos/4254893/pexels-photo-4254893.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Bicycle-parking"
+                        class="rounded-md shadow-2xl lg:block hidden">
+                        <x-tooltip-index text="Fotografía de: Maarten van den Heuvel/Pexels"></x-tooltip-index>
+                    </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start px-8">Autónoma</h5>
@@ -72,8 +79,12 @@
                             personas de edad avanzada pueden usarla.</p>
                     </div>
 
-                    <img src="https://images.pexels.com/photos/5820158/pexels-photo-5820158.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="Bicycle-old" class="lg:w-8/12 rounded-md shadow-2xl lg:block hidden" title="Fotografía de: Mehmet Turgut Kirkgoz from Pexels">
+                    <div class="lg:w-8/12 has-tooltip">
+                        <img src="https://images.pexels.com/photos/5820158/pexels-photo-5820158.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="Bicycle-old"
+                        class="rounded-md shadow-2xl lg:block hidden w-full">
+                        <x-tooltip-index text="Fotografía de: Mehmet Turgut Kirkgoz/Pexels"></x-tooltip-index>
+                    </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start px-8">Saludable</h5>
@@ -93,8 +104,12 @@
                             contaminación auditiva.</p>
                     </div>
 
-                    <img src="https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    alt="Ride-bicycle" class="lg:w-8/12 rounded-md shadow-2xl" title="Fotogr afía de: Genaro Servín from Pexels">
+                    <div class="lg:w-8/12 has-tooltip">
+                        <img src="https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Ride-bicycle"
+                        class="rounded-md shadow-2xl lg:block hidden w-full">
+                        <x-tooltip-index text="Fotografía de: Genaro Servín/Pexels"></x-tooltip-index>
+                    </div>
 
                     <div class="w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <p class="leading-snug lg:text-xl text-lg text-center py-8 px-3 ">Pese a la gran cantidad de ventajas

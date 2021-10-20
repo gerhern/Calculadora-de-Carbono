@@ -59,50 +59,27 @@
                     {{-- Tabla1 --}}
                     <div class="my-2 flex flex-wrap justify-evenly w-full ">
                         @foreach ($data['data'] as $tree)
-                                <div class="m-2 rounded-md shadow-2xl flex lg:flex-col">
-                                    <img src="{{ $tree[3] }}"
-                                        alt="{{ $tree[1] }}" class="lg:w-60 lg:h-60 w-36 lg:rounded-t-2xl lg:rounded-none rounded-l-2xl " title="Fotografia de: {{ $tree[4] }}">
-                                        <div class="flex flex-col justify-around lg:w-60 p-2 items-center bg-black bg-opacity-60 lg:rounded-b-2xl lg:rounded-none rounded-r-2xl">
-                                            {{-- nombre --}}
-                                            <h3 class="lg:text-xl text-md px-2 w-full text-center font-bold">{{ $tree[1] }}</h3>
-                                            {{-- cantidad --}}
-                                            <h3 class="lg:text-5xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }} <span class="lg:text-3xl text-lg">uds.</span></h3>
-                                            <h3 class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre cientifico:</h3>
-                                            <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[2] }}</h3>
-                                            <p class="lg:text-lg text-sm px-2 w-full font-semibold">Capacidad de absorcion:</p>
-                                            <p class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[0] }} kg/año</p>
-                                        </div>
+                            <div class="m-2 rounded-md shadow-2xl flex lg:flex-col has-tooltip relative">
+                                <img src="{{ $tree[3] }}" alt="{{ $tree[1] }}"
+                                    class="lg:w-60 lg:h-60 w-36 lg:rounded-t-2xl lg:rounded-none rounded-l-2xl">
+                                <div
+                                    class="flex flex-col justify-around lg:w-60 p-2 items-center bg-black bg-opacity-60 lg:rounded-b-2xl lg:rounded-none rounded-r-2xl">
+                                    {{-- nombre --}}
+                                    <h3 class="lg:text-xl text-md px-2 w-full text-center font-bold">{{ $tree[1] }}</h3>
+                                    {{-- cantidad --}}
+                                    <h3 class="lg:text-5xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }} <span
+                                            class="lg:text-3xl text-lg">uds.</span></h3>
+                                    <h3 class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre cientifico:</h3>
+                                    <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[2] }}</h3>
+                                    <p class="lg:text-lg text-sm px-2 w-full font-semibold">Capacidad de absorcion:</p>
+                                    <p class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[0] }} kg/año</p>
                                 </div>
+                                <x-tooltip-tree text="Fotografia de: {{ $tree[4] }}"></x-tooltip-tree>
+                            </div>
                         @endforeach
                     </div>
 
-                    {{-- tabla 2 --}}
-                    {{-- <div class="my-6 lg:w-5/12">
-                    <table class="table-fixed border-collapse border border-black mx-auto text-center shadow-lg lg:text-xl">
-                        <tr class="text-lg border border-black bg-forest">
-                            <th class="w-1/2">#</th>
-                            <th class="w-1/2">Especie</th>
-
-                        </tr>
-                        @foreach ($data['cultures'] as $name => $tree)
-                            <tr class="text-md bg-forest bg-opacity-30">
-                                <td class="border border-black">{{ $tree }}</td>
-                                <td class="border border-black px-4"> {{ $name }}</td>
-                            </tr>
-                        @endforeach
-                    </table>
-                </div> --}}
-
                 </div>
-
-                {{-- Aclaraciones --}}
-                {{-- <div class="bg-forest bg-opacity-30 border border-black rounded-md shadow-xl py-2 px-4  lg:w-3/4 lg:mx-auto">
-                <h2 class="text-center text-xl lg:text-2xl">* La cantidad de árboles deben ser
-                    plantados por un periodo de un año.</h2>
-
-                <h2 class=" text-center text-xl my-6 lg:text-2xl">* Las plantas de cultivo deben ser plantadas desde
-                    nacimiento hasta maduracion.</h2>
-            </div> --}}
 
                 <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                     <p class="leading-tight lg:text-xl text-lg p-3">Para llegar a la cantidad estimada de árboles de
@@ -129,7 +106,9 @@
 
                     </ol>
 
-                    <p class="leading-tight lg:text-2xl text-lg p-3 italic font-semibold">*La capacidad de absorción de carbono puede variar dependiendo del crecimiento del individuo, su diámetro a la altura del pecho (DAP) y a la zona donde se localiza.</p>
+                    <p class="leading-tight lg:text-2xl text-lg p-3 italic font-semibold">*La capacidad de absorción de carbono
+                        puede variar dependiendo del crecimiento del individuo, su diámetro a la altura del pecho (DAP) y a la
+                        zona donde se localiza.</p>
                 </div>
                 {{-- boton de compensar --}}
                 <a href="{{ route('offset') }}" class="">

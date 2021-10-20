@@ -5,12 +5,14 @@
     <div class="flex flex-col text-white">
 
         {{-- Imagen y titulo principal --}}
-        <div class="bg-center bg-cover w-full"
-            style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')" title="Fotografía de: Tara Winstead from Pexels">
+        <div class="bg-center bg-cover w-full has-tooltip"
+            style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
 
             <x-hammenu></x-hammenu>
             <h1 class="text-center lg:text-6xl text-4xl font-semibold my-60">Alternativas para compensar la huella de carbono
             </h1>
+
+            <x-tooltip-index text="Fotografía de: Tara Winstead from Pexels"></x-tooltip-index>
 
         </div>
 
@@ -28,42 +30,39 @@
                     class=" w-11/12 mx-auto rounded-md py-8 bg-gradient-to-b from-white to-feather bg-opacity-20 shadow-2xl">
 
                     {{-- slide1 --}}
-                    <div id="slide1" class="container">
+                    <div id="slide1" class="container has-tooltip relative">
                         <div class="flex justify-evenly">
-                            <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl"
-                                title="Fotografía de: Pixabay from pexels">
+                            <img src="https://www.eleconomista.com.mx/__export/1566424039592/sites/eleconomista/img/2019/08/21/parque-eolico-engie-cortesia-gober-tamaulipas.jpg_132249826.jpg"
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                            <img src="https://images.pexels.com/photos/7000/fre-sonneveld-powerlines.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block"
-                                title="Fotografía de: Snapwire from pexels">
+                            <img src="https://www.altonivel.com.mx/wp-content/uploads/2018/03/paneles-solares.jpg"
+                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
                         </div>
+                        <x-tooltip-slide text="Fotos: El Economista twitter/@fgcabezadevaca (Parque Eólico Tres Mesas, Tamaulipas) y Altonivel/Roberto Arteaga (Campo de paneles solares, Viesca, Coahuila)."></x-tooltip-slide>
                     </div>
 
                     {{-- slide2 --}}
-                    <div id="slide2" class="container">
+                    <div id="slide2" class="container has-tooltip relative">
                         <div class="flex justify-evenly">
                             <img src="https://images.pexels.com/photos/7655920/pexels-photo-7655920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl"
-                                title="Fotografía de: Thirdman from pexels">
+                                class="w-5/6 lg:w-5/12 hidden lg:block mx-auto rounded-md shadow-2xl">
 
-                            <img src="https://images.pexels.com/photos/9198/nature-sky-twilight-grass-9198.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block"
-                                title="Fotografía de: Skitterphoto from pexels">
+                            <img src="https://www.archivo.cdmx.gob.mx/storage/app/uploads/public/58e/d61/4c3/thumb_4487_1153_706_0_0_crop.jpg"
+                                class="w-5/6 lg:w-5/12 mx-auto rounded-md shadow-2xl block">
                         </div>
+                        <x-tooltip-slide text="Fotos: Pexels/Thirdman(Save the planet) y Archivo.cdmx.gob(Parque Nacional Viveros Coyoacán)."></x-tooltip-slide>
                     </div>
 
                     {{-- slide3 --}}
-                    <div id="slide3" class="container">
+                    <div id="slide3" class="container has-tooltip relative">
                         <div class="flex justify-evenly">
-                            <img src="https://images.pexels.com/photos/46254/leopard-wildcat-big-cat-botswana-46254.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl"
-                                title="Fotografía de: Pixabay from pexels">
+                            <img src="https://cdn.ntmx.me/media/2020/02/12/_hdb291065bfb66d0b59805bf3ebc6d217bcad87d50.jpg"
+                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
 
-                            <img src="https://images.pexels.com/photos/46235/emperor-penguins-antarctic-life-animal-46235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block"
-                                title="Fotografía de: Pixabay from pexels">
+                            <img src="https://www.gob.mx/cms/uploads/image/file/563418/_WWF_Mexico__2019_LOBOS_DEL_ZOOLOGICO_COYOTES_ALTA-0849.jpg"
+                                class="w-5/6 lg:w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
                         </div>
+                        <x-tooltip-slide text="Fotos: Netnoticias.mx (Jaguar, especie en peligro de extinción) y Wwf/ (Lobo Mexicano, especie que desafía la extinción)."></x-tooltip-slide>
                     </div>
 
                 </div>
@@ -134,9 +133,9 @@
                     {{-- Card 0 --}}
                     <div class="container mx-auto bg-cover bg-center object-fill lg:my-16 my-8"
                         style="background-image: url(https://images.pexels.com/photos/7048023/pexels-photo-7048023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)"
-                        id="card0" title="Fotografía de: Artem Podrez from Pexels">
+                        id="card0">
 
-                        <div class="h-auto text-white py-32 px-10 bg-black bg-opacity-60">
+                        <div class="h-auto text-white py-32 px-10 bg-black bg-opacity-60 has-tooltip ">
 
                             <p class="font-bold text-sm uppercase lg:block hidden">Click en imagen</p>
                             <p class="lg:text-3xl text-xl font-bold my-2 leading-none">Aquí se muestran 5 tips para reducir
@@ -146,6 +145,7 @@
                                 que tenemos la oportunidad de cambiar el futuro de nuestro planeta y así tener un futuro
                                 mejor para las próximas generaciones, si no actuamos hoy puede que no tengamos un mañana
                                 para hacerlo.</p>
+                            <x-tooltip-coin-card text="Fotografía de: Artem Podrez from Pexels"></x-tooltip-coin-card>
                         </div>
                     </div>
 
