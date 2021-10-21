@@ -106,9 +106,16 @@
 
                     </ol>
 
+                    <p class="leading-tight lg:text-xl text-lg p-3">-Para plantar árboles debes de asegurarte que los
+                        especímenes no tengan plagas o enfermedades y estos tengan una altura óptima de entre 1 metro a 1.5 y no
+                        menor a 60 centímetros de altura, esto para garantizar la supervivencia de los mismos.</p>
+
                     <p class="leading-tight lg:text-2xl text-lg p-3 italic font-semibold">*La capacidad de absorción de carbono
                         puede variar dependiendo del crecimiento del individuo, su diámetro a la altura del pecho (DAP) y a la
                         zona donde se localiza.</p>
+                    <p class="leading-tight text-xs px-3">Fuente: Guía para la plantación de árboles del municipio de Mérida(2018)</p>
+                    <a class="leading-tight text-xs px-3 underline"
+                        href="http://www.merida.gob.mx/sustentable/contenidos/doc/guia-de-plantacion-de-arboles.pdf">http://www.merida.gob.mx/sustentable/contenidos/doc/guia-de-plantacion-de-arboles.pdf</a>
                 </div>
                 {{-- boton de compensar --}}
                 <a href="{{ route('offset') }}" class="">
