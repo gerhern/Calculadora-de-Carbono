@@ -38,8 +38,8 @@ class Tree
             38.706,
             'Manglar blanco',
             'Laguncularia Racemosa',
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Mangrove_in_la_manzanilla.jpg/1280px-Mangrove_in_la_manzanilla.jpg',
-            'Tomas Castelazo/Trabajo propio/wikipedia'
+            'http://3.bp.blogspot.com/-6vhcV5bqDbA/UWB73STgcHI/AAAAAAAAAH8/-WJLfT_VyPg/s640/manglares+2.JPG',
+            'Autor desconocido/infinitanaturaleza.com'
         ],
         [
             49.345,

@@ -67,8 +67,8 @@
                                     {{-- nombre --}}
                                     <h3 class="lg:text-xl text-md px-2 w-full text-center font-bold">{{ $tree[1] }}</h3>
                                     {{-- cantidad --}}
-                                    <h3 class="lg:text-5xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }} <span
-                                            class="lg:text-3xl text-lg">uds.</span></h3>
+                                    <h3 class="lg:text-5xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }}
+                                    <p class="lg:text-3xl text-lg">individuos</p></h3>
                                     <h3 class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre cientifico:</h3>
                                     <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[2] }}</h3>
                                     <p class="lg:text-lg text-sm px-2 w-full font-semibold">Capacidad de absorcion:</p>
@@ -115,7 +115,7 @@
                         zona donde se localiza.</p>
                     <p class="leading-tight text-xs px-3">Fuente: Guía para la plantación de árboles del municipio de Mérida(2018)</p>
                     <a class="leading-tight text-xs px-3 underline"
-                        href="http://www.merida.gob.mx/sustentable/contenidos/doc/guia-de-plantacion-de-arboles.pdf">http://www.merida.gob.mx/sustentable/contenidos/doc/guia-de-plantacion-de-arboles.pdf</a>
+                        href="http://www.merida.gob.mx/sustentable/contenidos/doc/guia-de-plantacion-de-arboles.pdf">Guia-de-plantacion-de-arboles.pdf</a>
                 </div>
                 {{-- boton de compensar --}}
                 <a href="{{ route('offset') }}" class="">
