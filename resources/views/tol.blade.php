@@ -67,7 +67,7 @@
                                     {{-- nombre --}}
                                     <h3 class="lg:text-xl text-md px-2 w-full text-center font-bold">{{ $tree[1] }}</h3>
                                     {{-- cantidad --}}
-                                    <h3 class="lg:text-5xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }}
+                                    <h3 class="lg:text-4xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }}
                                     <p class="lg:text-3xl text-lg">individuos</p></h3>
                                     <h3 class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre cientifico:</h3>
                                     <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[2] }}</h3>
