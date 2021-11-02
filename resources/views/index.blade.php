@@ -5,69 +5,46 @@
     <div class="flex flex-col text-white">
 
         {{-- Imagen y titulo principal --}}
-        <div class="lg:bg-bottom bg-cover w-full has-tooltip"
-            style="background-image: url('https://visitachihuahua.com/wp-content/uploads/2019/12/chepe-regional-1.jpg')">
-
-            <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-72 py-12 bg-black bg-opacity-20">Cálculo y compensación de huella de carbono</h1>
-
-            <x-tooltip-index text="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido"></x-tooltip-index>
-
-        </div>
+        <x-cover-page img="https://visitachihuahua.com/wp-content/uploads/2019/12/chepe-regional-1.jpg"
+            coverText="Cálculo y compensación de huella de carbono"
+            tooltipText="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido."></x-cover-page>
 
         {{-- div para mostrar informacion --}}
-        {{-- 1er seccion informativa --}}
         <div class="bg-feather">
-
+            
+            {{-- 1er seccion informativa --}}
             <h3 class="lg:text-5xl text-3xl text-center my-40 py-2 font-medium italic">¿Qué es la huella de carbono?</h3>
 
             {{-- Carrusel --}}
             <div class=" w-11/12 mx-auto rounded-md py-8 bg-gradient-to-b from-white to-feather bg-opacity-20 shadow-2xl">
 
                 {{-- slide1 --}}
-                <div id="slide1" class="container has-tooltip relative">
-                    <div class="flex justify-evenly">
-                        <img src="https://interactivo.eluniversal.com.mx/nota/contingencia-cdmx-antes-despues/img/contingencia-cdmx-1.jpg"
-                            class="w-5/6 lg:w-5/12 hidden lg:block mx-auto rounded-md shadow-2xl">
-
-                        <img src="https://interactivo.eluniversal.com.mx/nota/contingencia-cdmx-antes-despues/img/contingencia-cdmx-2.jpg"
-                            class="w-5/6 lg:w-5/12 mx-auto rounded-md shadow-2xl block">
-                    </div>
-
-                    <x-tooltip-slide text="Fotos: Archivo/Iván Stephens/EL UNIVERSAL(2016-2019)/En tan solo 3 años ha aumentado drásticamente la cantidad de partículas PM2.5 y Ozono en la Zona Metropolitana del Valle de México"></x-tooltip-slide>
-                </div>
+                <x-carrusel-slide slide="slide1"
+                    img1="https://interactivo.eluniversal.com.mx/nota/contingencia-cdmx-antes-despues/img/contingencia-cdmx-1.jpg"
+                    img2="https://interactivo.eluniversal.com.mx/nota/contingencia-cdmx-antes-despues/img/contingencia-cdmx-2.jpg"
+                    tooltip="Fotos: Archivo/Iván Stephens/EL UNIVERSAL(2016-2019)/En tan solo 3 años ha aumentado drásticamente la cantidad de partículas PM2.5 y Ozono en la Zona Metropolitana del Valle de México.">
+                </x-carrusel-slide>
 
                 {{-- slide2 --}}
-                <div id="slide2" class="container has-tooltip relative">
-                    <div class="flex justify-evenly">
-                        <img src="https://imagenes.elpais.com/resizer/o3opLyhPJLv0ieO9ygnWxeQjFYM=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7WACEYXO6WXG62ZLVT6HDLVLVQ.jpg"
-                            class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
-
-                        <img src="https://www.infobae.com/new-resizer/1Kf-Yimka6sa5i8Gs9RwbwtB6kI=/992x441/filters:format(jpg):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/08/13164028/metzabok-selva-lacandona-2.jpg"
-                            class="w-5/6 lg:w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
-                    </div>
-
-                    <x-tooltip-slide text="Fotos: SANTIAGO ARAU y Facebook Damián Sánchez/Uno de los estados más afectados es el de Chiapas cuyos territorios como la selva Lacandona en el municipio de Marqués de Comillas o la Laguna de Metzabok, se han visto gravemente alterados."></x-tooltip-slide>
-                </div>
+                <x-carrusel-slide slide="slide2"
+                    img1="https://imagenes.elpais.com/resizer/o3opLyhPJLv0ieO9ygnWxeQjFYM=/1960x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/7WACEYXO6WXG62ZLVT6HDLVLVQ.jpg"
+                    img2="https://www.infobae.com/new-resizer/1Kf-Yimka6sa5i8Gs9RwbwtB6kI=/992x441/filters:format(jpg):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/08/13164028/metzabok-selva-lacandona-2.jpg"
+                    tooltip="Fotos: SANTIAGO ARAU y Facebook Damián Sánchez/Uno de los estados más afectados es el de Chiapas cuyos territorios como la selva Lacandona en el municipio de Marqués de Comillas o la Laguna de Metzabok, se han visto gravemente alterados.">
+                </x-carrusel-slide>
 
                 {{-- slide3 --}}
-                <div id="slide3" class="container has-tooltip relative">
-                    <div class="flex justify-evenly">
-                        <img src="https://cdn.cdmxenlared.com/wp-content/uploads/2021/04/extinto-el-glaciar-de-Ayoloco-en-el-Iztaccihuatl-scaled.jpg"
-                            class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
-
-                        <img src="https://pbs.twimg.com/media/Ezl7GY5UcAEeMKt?format=jpg&name=4096x4096"
-                            class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
-                    </div>
-                    <x-tooltip-slide text="Fotos: María Paula Martínez/ UNAM Especialistas del Instituto de Geofísica de la UNAM declaran extinto el glaciar de Ayoloco en el Iztaccíhuatl. Colocan placa de la deshonra."></x-tooltip-slide>
-                </div>
+                <x-carrusel-slide slide="slide3"
+                    img2="https://cdn.cdmxenlared.com/wp-content/uploads/2021/04/extinto-el-glaciar-de-Ayoloco-en-el-Iztaccihuatl-scaled.jpg"
+                    img1="https://pbs.twimg.com/media/Ezl7GY5UcAEeMKt?format=jpg&name=4096x4096"
+                    tooltip="Fotos: María Paula Martínez/ UNAM Especialistas del Instituto de Geofísica de la UNAM declaran extinto el glaciar de Ayoloco en el Iztaccíhuatl. Colocan placa de la deshonra.">
+                </x-carrusel-slide>
 
             </div>
             {{-- fin carrusel --}}
 
             <div class="flex flex-col">
 
-                <div class="w-3/4 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
+                <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                     <p class="leading-snug lg:text-2xl text-lg text-center py-8 px-3 ">La
                         huella de carbono es una forma de medir la cantidad de emisiones de gases de efecto invernadero que
                         son
@@ -138,14 +115,12 @@
                     </div>
                 </div>
 
-                <a href="{{ route('calcular') }}"
-                    class="lg:mx-auto mx-4 rounded-md shadow-md bg-forest text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 border border-marine hover:border-feather ">Si
-                    ya
-                    cuentas con tu huella de carbono da click aquí</a>
+                <x-button route="calcular" text="Si ya cuentas con tu huella de carbono da click aquí"></x-button>
+
             </div>
         </div>
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="{{ secure_asset('js/slide.js') }}"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
 @endsection

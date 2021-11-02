@@ -45,7 +45,7 @@
         @endif
 
         {{-- div de muestreo de resultados --}}
-        <div class="bg-gradient-to-b from-marine to-forest mt-6 py-3">
+        <div class="bg-gradient-to-b from-marine to-forest mt-6 py-6 flex flex-col ">
 
             @isset($data)
 
@@ -118,14 +118,8 @@
                         href="http://www.merida.gob.mx/sustentable/contenidos/doc/guia-de-plantacion-de-arboles.pdf">Guia-de-plantacion-de-arboles.pdf</a>
                 </div>
                 {{-- boton de compensar --}}
-                <a href="{{ route('offset') }}" class="">
-                    <p
-                        class=" lg:w-1/4 lg:mx-auto mx-4 rounded-md shadow-md bg-forest
-                text-white text-center lg:text-2xl text-lg hover:bg-marine transition duration-200 p-4 mt-16 mb-8 border border-white">
-                        Compensar</p>
-                </a>
-
-
+                
+                    <x-button route="compensar" text="Compensar"></x-button>
 
             @endisset
         </div>
