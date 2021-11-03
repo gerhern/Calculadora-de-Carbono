@@ -8,8 +8,9 @@
         
         
         @if ($link ?? '')
-        <a href="{{ $link }}"
-        class="bg-forest py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-marine">Conoce más</a>
+        <x-button
+        route="{{$link}}"
+        text="Conoce más"></x-button>
         @endif
         
         <x-tooltip-coin-card text="{{ $author }}"></x-tooltip-coin-card>

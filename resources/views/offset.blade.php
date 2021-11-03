@@ -20,7 +20,7 @@
         {{-- 1er seccion informativa --}}
         <div class="bg-feather">
 
-            <h3 class="lg:text-5xl text-3xl text-center my-20 py-2 font-medium italic">¿Por qué conocer y compensar nuestra
+            <h3 class="lg:text-5xl text-3xl text-center my-40 py-2 font-medium italic">¿Por qué conocer y compensar nuestra
                 huella de carbono?</h3>
 
             <div class="flex flex-col">
@@ -30,45 +30,28 @@
                     class=" w-11/12 mx-auto rounded-md py-8 bg-gradient-to-b from-white to-feather bg-opacity-20 shadow-2xl">
 
                     {{-- slide1 --}}
-                    <div id="slide1" class="container has-tooltip relative">
-                        <div class="flex justify-evenly">
-                            <img src="https://www.eleconomista.com.mx/__export/1566424039592/sites/eleconomista/img/2019/08/21/parque-eolico-engie-cortesia-gober-tamaulipas.jpg_132249826.jpg"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
-
-                            <img src="https://www.altonivel.com.mx/wp-content/uploads/2018/03/paneles-solares.jpg"
-                                class="w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
-                        </div>
-                        <x-tooltip-slide text="Fotos: El Economista twitter/@fgcabezadevaca (Parque Eólico Tres Mesas, Tamaulipas) y Altonivel/Roberto Arteaga (Campo de paneles solares, Viesca, Coahuila)."></x-tooltip-slide>
-                    </div>
+                    <x-carrusel-slide slide="slide1"
+                    img1="https://www.eleconomista.com.mx/__export/1566424039592/sites/eleconomista/img/2019/08/21/parque-eolico-engie-cortesia-gober-tamaulipas.jpg_132249826.jpg"
+                    img2="https://www.altonivel.com.mx/wp-content/uploads/2018/03/paneles-solares.jpg"
+                    tooltip="Fotos: El Economista twitter/@fgcabezadevaca (Parque Eólico Tres Mesas, Tamaulipas) y Altonivel/Roberto Arteaga (Campo de paneles solares, Viesca, Coahuila)."></x-carrusel-slide>
+                   
 
                     {{-- slide2 --}}
-                    <div id="slide2" class="container has-tooltip relative">
-                        <div class="flex justify-evenly">
-                            <img src="https://images.pexels.com/photos/7655920/pexels-photo-7655920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                class="w-5/6 lg:w-5/12 hidden lg:block mx-auto rounded-md shadow-2xl">
+                    <x-carrusel-slide slide="slide2"
+                    img1="https://images.pexels.com/photos/7655920/pexels-photo-7655920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    img2="https://www.archivo.cdmx.gob.mx/storage/app/uploads/public/58e/d61/4c3/thumb_4487_1153_706_0_0_crop.jpg"
+                    tooltip="Fotos: Pexels/Thirdman(Save the planet) y Archivo.cdmx.gob(Parque Nacional Viveros Coyoacán)."></x-carrusel-slide>
 
-                            <img src="https://www.archivo.cdmx.gob.mx/storage/app/uploads/public/58e/d61/4c3/thumb_4487_1153_706_0_0_crop.jpg"
-                                class="w-5/6 lg:w-5/12 mx-auto rounded-md shadow-2xl block">
-                        </div>
-                        <x-tooltip-slide text="Fotos: Pexels/Thirdman(Save the planet) y Archivo.cdmx.gob(Parque Nacional Viveros Coyoacán)."></x-tooltip-slide>
-                    </div>
 
                     {{-- slide3 --}}
-                    <div id="slide3" class="container has-tooltip relative">
-                        <div class="flex justify-evenly">
-                            <img src="https://cdn.ntmx.me/media/2020/02/12/_hdb291065bfb66d0b59805bf3ebc6d217bcad87d50.jpg"
-                                class="w-5/6 lg:w-5/12 block mx-auto rounded-md shadow-2xl">
-
-                            <img src="https://www.gob.mx/cms/uploads/image/file/563418/_WWF_Mexico__2019_LOBOS_DEL_ZOOLOGICO_COYOTES_ALTA-0849.jpg"
-                                class="w-5/6 lg:w-5/12 mx-auto rounded-md shadow-2xl hidden lg:block">
-                        </div>
-                        <x-tooltip-slide text="Fotos: Netnoticias.mx (Jaguar, especie en peligro de extinción) y Wwf/ (Lobo Mexicano, especie que desafía la extinción)."></x-tooltip-slide>
-                    </div>
-
+                    <x-carrusel-slide slide="slide3"
+                    img1="https://cdn.ntmx.me/media/2020/02/12/_hdb291065bfb66d0b59805bf3ebc6d217bcad87d50.jpg"
+                    img2="https://www.gob.mx/cms/uploads/image/file/563418/_WWF_Mexico__2019_LOBOS_DEL_ZOOLOGICO_COYOTES_ALTA-0849.jpg"
+                    tooltip="Fotos: Netnoticias.mx (Jaguar, especie en peligro de extinción) y Wwf/ (Lobo Mexicano, especie que desafía la extinción)."></x-carrusel-slide>
                 </div>
                 {{-- fin carrusel --}}
 
-                <div class="w-3/4 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
+                <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                     <p class="leading-snug lg:text-2xl text-lg text-center py-8 px-3 ">Conocer el tamaño de nuestra huella
                         de carbono es importante
                         ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de
@@ -101,7 +84,7 @@
 
                 <div class="flex  items-center justify-around">
 
-                    {{-- div para cards de calculdaoras --}}
+                    {{-- div para cards de sitios de compensacion --}}
                     <div class="lg:flex lg:justify-evenly lg:my-4">
 
                         {{-- div card 1 --}}
@@ -115,10 +98,27 @@
                         <x-calculatorcard link="https://www.reforestamosmexico.org/adoptaunarbol"
                             img="https://static.wixstatic.com/media/b1748a_e68a34ab791443259e1dce6cd0cc520e~mv2.png/v1/fill/w_222,h_117,al_c,lg_1,q_85/221x116.webp"
                             alt="Reforestamos-Logo" title="Adopta un arbol con
-                                                                            Reforestamos México" description="Mediante una contribución
-                                                                            económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
-                                                                            adopción">
+                                                                                Reforestamos México" description="Mediante una contribución
+                                                                                económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
+                                                                                adopción">
                         </x-calculatorcard>
+
+                        {{-- div card 3 --}}
+                        <div
+                            class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
+
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg>
+
+                                <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Proximamente</h3>
+
+                                <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Nos encontramos en negociacion para brindarles una nueva forma de compensar, disculpe las molestias.</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -174,10 +174,9 @@
                     </x-tipcard>
 
                     {{-- Card 4 --}}
-                    <x-tipcard 
-                        link="{{ route('transport') }}"
-                        card="4" img="https://cdn.local.mx/wp-content/uploads/2019/06/gran-rodada-1.jpg"
-                        alt="bicycle" title="Usa medios alternos de transporte"
+                    <x-tipcard link="{{ route('transport') }}" card="4"
+                        img="https://cdn.local.mx/wp-content/uploads/2019/06/gran-rodada-1.jpg" alt="bicycle"
+                        title="Usa medios alternos de transporte"
                         description="Algunos medios de transporte, como los automóviles producen gran cantidad de gases contaminantes, por eso es aconsejable utilizar medios de transporte alternativos de bajas emisiones, como el tren, la bicicleta o incluso caminar."
                         author="Fotografías de: Facebook Muévete en Bici(Tip) y (Coin)">
                     </x-tipcard>
@@ -223,7 +222,7 @@
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="{{ secure_asset('js/slide.js') }}"></script>
-    <script src="{{ secure_asset('js/coinCard.js') }}"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
+    <script src="{{ asset('js/coinCard.js') }}"></script>
 
 @endsection

@@ -112,7 +112,7 @@
                 </div>
                 {{-- boton de compensar --}}
 
-                <x-button route="compensar" text="Compensar"></x-button>
+                <x-button route="{{ route('offset') }}" text="Compensar"></x-button>
 
             @endisset
         </div>
