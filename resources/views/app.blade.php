@@ -51,7 +51,7 @@
                     class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Compensar</a>
 
                 <a href="{{ route('transport') }}"
-                    class="w-full flex flex-grow items-center justify-center transition duration-200">Medios de
+                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Medios alternativos de
                     transporte</a>
 
                 <a href="#"

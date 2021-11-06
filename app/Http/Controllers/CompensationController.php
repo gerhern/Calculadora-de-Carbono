@@ -23,5 +23,30 @@ class CompensationController extends Controller
             'footprint' => number_format($request->footprint,2)
         ]);
     }
+
+    public function transport(Request $request){
+
+        if($request->currentVehicle != null){
+            $vehicleCarbonFootprint = $request->currentVehicle * $request->distance;
+            $trainCarbonFootprint = $request->distance * 41;
+            $bicycleCarbonFootprint = $request->distance * 5;
+            $trainSavedFootprint = $vehicleCarbonFootprint - $trainCarbonFootprint;
+            $bicycleSavedFootprint = $vehicleCarbonFootprint - $bicycleCarbonFootprint;
+            return view('transport', [
+                'vehicleCarbonFootprint' => number_format($vehicleCarbonFootprint),
+                'trainCarbonFootprint' => number_format($trainCarbonFootprint),
+                'bicycleCarbonFootprint' => number_format($bicycleCarbonFootprint),
+
+                'trainSavedFootprint' => number_format($trainSavedFootprint),
+                'bicycleSavedFootprint' => number_format($bicycleSavedFootprint),
+                'distance' => $request->distance,
+            ]);
+
+        }else{
+
+            return view('transport', [
+            ]);
+        }
+    }
     
 }

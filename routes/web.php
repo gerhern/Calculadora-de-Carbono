@@ -17,7 +17,7 @@ use App\Http\Controllers\CompensationController;
 Route::view('/', 'index')->name('home');
 Route::get('calcular', [CompensationController::class, 'calculate'])->name('calcular');
 Route::view('compensar', 'offset')->name('offset');
-Route::view('medios-alternativos-de-transporte','transport')->name('transport');
+Route::get('medios-alternativos-de-transporte', [CompensationController::class, 'transport'])->name('transport');
 
 // Route::get('/', function () {
 //     return view('welcome');
