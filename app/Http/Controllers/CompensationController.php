@@ -39,7 +39,7 @@ class CompensationController extends Controller
 
                 'trainSavedFootprint' => number_format($trainSavedFootprint),
                 'bicycleSavedFootprint' => number_format($bicycleSavedFootprint),
-                'distance' => $request->distance,
+                'distance' => number_format($request->distance),
             ]);
 
         }else{
