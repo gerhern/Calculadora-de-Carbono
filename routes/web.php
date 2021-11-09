@@ -14,9 +14,13 @@ use App\Http\Controllers\CompensationController;
 |
 */
 
+// Vistas sin logica
 Route::view('/', 'index')->name('home');
-Route::get('calcular', [CompensationController::class, 'calculate'])->name('calcular');
 Route::view('compensar', 'offset')->name('offset');
+Route::view('bicicleta-como-medio-de-transporte', 'bicycle')->name('bicycle');
+
+// Vistas con logica
+Route::get('calcular', [CompensationController::class, 'calculate'])->name('calcular');
 Route::get('medios-alternativos-de-transporte', [CompensationController::class, 'transport'])->name('transport');
 
 // Route::get('/', function () {

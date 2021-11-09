@@ -150,7 +150,7 @@
         <div class="py-8 px-3">
             <h3 class="lg:text-5xl text-3xl text-center font-medium italic">¿Quieres conocer más?</h3>
             <div class="flex">
-                <x-button route="#" text="Conoce sobre la bicicleta"></x-button>
+                <x-button route="{{ route('bicycle') }}" text="Conoce sobre la bicicleta"></x-button>
                 <x-button route="#" text="Conoce sobre el tren"></x-button>
             </div>
         </div>
