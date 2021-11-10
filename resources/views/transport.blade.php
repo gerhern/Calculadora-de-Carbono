@@ -66,7 +66,7 @@
                     <p class="leading-snug lg:text-2xl text-lg text-center pb-16 px-3">Si recorrieras esa distancia en bicicleta
                         evitarias que <span class="text-forest font-bold italic">{{ $bicycleSavedFootprint }}</span> gramos de
                         carbono sean producidos y liberados, es decir que solo producirias el <span
-                            class="text-forest font-bold italic"> 2.92% </span>de la huella de carbono original.</p>
+                            class="text-forest font-bold italic"> {{ $percent }}% </span>de la huella de carbono original.</p>
 
                 </div>
 
@@ -81,10 +81,10 @@
                 {{-- <p class="leading-snug lg:text-2xl text-lg text-center pb-16 px-3">No todos los vehiculos en circulacion generan la misma cantidad de contaminantes, la mayor parte de los vehiculos que usan gasolina o diesel como combustible son los que liberan grandes cantidades de CO<sub>2</sub>.</p> --}}
 
                 {{-- grafica --}}
-                <div class="flex lg:flex-row flex-col items-center lg:justify-evenly my-7">
+                <div class="flex lg:flex-row flex-col items-start lg:justify-evenly my-7">
                     <img src=" {{ asset('img/carbonftprnt.jpeg') }} " alt="Comparativa de huellas de carbono por kilometro" class="lg:w-6/12 w-11/12 rounded-md">
 
-                    <p class="leading-snug lg:text-2xl text-lg text-center p-8 px-3 lg:w-5/12 w-11/12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ex, facilis temporibus nesciunt vitae obcaecati quae possimus eum tenetur quo exercitationem, natus id nisi, quis sapiente laboriosam. Provident, aut praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero eius sed odio pariatur facilis dolore consequuntur? Dolorem praesentium, cum facilis, asperiores amet, temporibus tempore excepturi nulla fugiat eligendi at.</p>
+                    <p class="leading-snug lg:text-2xl text-lg text-center px-3 lg:w-5/12 w-11/12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ex, facilis temporibus nesciunt vitae obcaecati quae possimus eum tenetur quo exercitationem, natus id nisi, quis sapiente laboriosam. Provident, aut praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero eius sed odio pariatur facilis dolore consequuntur? Dolorem praesentium, cum facilis, asperiores amet, temporibus tempore excepturi nulla fugiat eligendi at.</p>
                 </div>
             
             </div>
@@ -141,7 +141,7 @@
                 </div>
 
                 <input type="submit" value="Comenzar"
-                    class="rounded-md shadow-lg bg-forest text-white mx-6 p-2 lg:text-lg hover:bg-marine transition duration-200 lg:w-1/12">
+                    class="rounded-md shadow-lg bg-forest text-white mx-6 p-2 lg:text-lg hover:bg-marine transition duration-200 lg:w-2/12">
 
             </form>
         </div>

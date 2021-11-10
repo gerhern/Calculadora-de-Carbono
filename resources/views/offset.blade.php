@@ -9,7 +9,7 @@
             style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
 
             <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-60">Alternativas para compensar la huella de carbono
+            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-32">Alternativas para compensar la huella de carbono
             </h1>
 
             <x-tooltip-index text="Fotografía de: Tara Winstead from Pexels"></x-tooltip-index>

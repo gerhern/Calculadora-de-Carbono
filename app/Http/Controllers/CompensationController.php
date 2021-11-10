@@ -32,6 +32,7 @@ class CompensationController extends Controller
             $bicycleCarbonFootprint = $request->distance * 5;
             $trainSavedFootprint = $vehicleCarbonFootprint - $trainCarbonFootprint;
             $bicycleSavedFootprint = $vehicleCarbonFootprint - $bicycleCarbonFootprint;
+            $percent = 500 / $request->currentVehicle;
             return view('transport', [
                 'vehicleCarbonFootprint' => number_format($vehicleCarbonFootprint),
                 'trainCarbonFootprint' => number_format($trainCarbonFootprint),
@@ -40,6 +41,7 @@ class CompensationController extends Controller
                 'trainSavedFootprint' => number_format($trainSavedFootprint),
                 'bicycleSavedFootprint' => number_format($bicycleSavedFootprint),
                 'distance' => number_format($request->distance),
+                'percent' => number_format($percent, 2)
             ]);
 
         }else{
