@@ -25,7 +25,7 @@
 
         <div class="flex flex-col w-full h-full justify-between bg-black bg-opacity-30">
             {{-- Texto --}}
-            <div class="flex flex-col w-full justify-center items-center text-center py-28 lg:py-56 px-8">
+            <div class="flex flex-col w-full justify-center items-center text-center py-28 lg:py-28">
                 <h2 class="text-7xl lg:text-9xl italic">¡404!</h2>
                 <p class="text-2xl lg:text-3xl mt-10">La página que estas buscando no esta disponible o no existe.</p>
             </div>
