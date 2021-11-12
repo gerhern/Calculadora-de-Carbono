@@ -45,12 +45,12 @@
             <div class="flex flex-col">
 
                 <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                    <p class="leading-snug lg:text-2xl text-lg text-center py-8 px-3 ">La
+                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La
                         huella de carbono es una forma de medir la cantidad de emisiones de gases de efecto invernadero que
                         son
                         producidas y liberadas a la atmósfera directa o indirectamente por una organización o individuo.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg text-center pt-8 pb-16 px-3">Estos gases contribuyen al
+                    <p class="leading-snug lg:text-2xl text-lg pt-4 pb-16 px-3">Estos gases contribuyen al
                         cambio climático el cual tiene consecuencias como cambios en los ecosistemas, fenómenos
                         meteorológicos extremos, migraciones masivas, extinción de especies, acidificación y subida del
                         nivel del mar, etc.</p>
@@ -68,7 +68,7 @@
 
             <div class="flex flex-col pb-40">
                 <div class="w-3/4 mx-auto my-8 rounded-md">
-                    <p class="leading-snug lg:text-xl text-lg text-center py-8
+                    <p class="leading-snug lg:text-xl text-lg py-8
                     pb-8">Para poder realizar
                         una estimación sobre tu huella de carbono personal te recomendamos los
                         siguientes sitios:</p>

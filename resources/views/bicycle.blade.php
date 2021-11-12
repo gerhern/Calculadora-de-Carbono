@@ -23,7 +23,7 @@
                 {{-- info --}}
                 <div class="lg:w-9/12 px-6 flex flex-col items-center">
 
-                    <div class="lg:w-8/12 mt-16 has-tooltip">
+                    <div class="lg:w-11/12 mt-16 has-tooltip">
                         <img src="https://blog.vivanuncios.com.mx/wp-content/uploads/2018/11/CDMXbicicleta.jpg"
                         alt="Bicicletas_en_CDMX"
                         class="rounded-md shadow-2xl">
@@ -31,7 +31,7 @@
                     </div>
 
                         <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                            <p class="leading-tight lg:text-2xl text-xl text-center py-8 px-3 ">Con el pasar de los años la
+                            <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Con el pasar de los años la
                                 bicicleta ha tomado una mayor importancia en la movilidad y la
                                 salud de las personas, he aquí las principales razones por las cuales deberias pensar en utilizar
                                 este medio de transporte.</p>
@@ -59,7 +59,7 @@
 
                     </div>
 
-                    <div class="lg:w-8/12 has-tooltip">
+                    <div class="lg:w-11/12 has-tooltip">
                         <img src="http://www.cms.sedema.cdmx.gob.mx/storage/app/uploads/public/5bd/9f8/1b5/5bd9f81b5553c316339026.jpg"
                         alt="Bicycle-parking"
                         class="rounded-md shadow-2xl w-full">
@@ -79,7 +79,7 @@
                             personas de edad avanzada pueden usarla.</p>
                     </div>
 
-                    <div class="lg:w-8/12 has-tooltip">
+                    <div class="lg:w-11/12 has-tooltip">
                         <img src="https://dam.ngenespanol.com/wp-content/uploads/2020/06/bicicleta-mexico-UNAM-770x385.jpg"
                         alt="Bicycle-old"
                         class="rounded-md shadow-2xl w-full">
@@ -104,7 +104,7 @@
                             contaminación auditiva.</p>
                     </div>
 
-                    <div class="lg:w-8/12 has-tooltip">
+                    <div class="lg:w-11/12 has-tooltip">
                         <img src="https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         alt="Ride-bicycle"
                         class="rounded-md shadow-2xl w-full">

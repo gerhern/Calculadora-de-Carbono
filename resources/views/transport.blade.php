@@ -73,25 +73,21 @@
             </div>
 
             {{-- informacion medios alternativos --}}
-            <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
+            <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 p-3 rounded-md">
                 <h3 class="lg:text-5xl text-3xl text-center my-16  py-2 font-medium italic">Alternativas Ecologicas</h3>
 
-                <p class="leading-snug lg:text-2xl text-lg text-center py-8 px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam iure voluptate commodi tempora. Aspernatur iusto, at fugit magni mollitia sunt quis. Similique voluptatibus quis, ipsum impedit quam provident suscipit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, nobis voluptates quasi voluptate accusantium facilis quo aliquid! Voluptatum possimus, reprehenderit molestias ipsum hic rerum quaerat quidem ipsa repudiandae debitis esse.</p>
+                <p class="leading-snug lg:text-2xl text-lg px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor totam iure voluptate commodi tempora. Aspernatur iusto, at fugit magni mollitia sunt quis. Similique voluptatibus quis, ipsum impedit quam provident suscipit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, nobis voluptates quasi voluptate accusantium facilis quo aliquid! Voluptatum possimus, reprehenderit molestias ipsum hic rerum quaerat quidem ipsa repudiandae debitis esse.</p>
 
                 {{-- <p class="leading-snug lg:text-2xl text-lg text-center pb-16 px-3">No todos los vehiculos en circulacion generan la misma cantidad de contaminantes, la mayor parte de los vehiculos que usan gasolina o diesel como combustible son los que liberan grandes cantidades de CO<sub>2</sub>.</p> --}}
 
                 {{-- grafica --}}
                 <div class="flex lg:flex-row flex-col items-start lg:justify-evenly my-7">
-                    <img src=" {{ asset('img/carbonftprnt.jpeg') }} " alt="Comparativa de huellas de carbono por kilometro" class="lg:w-6/12 w-11/12 rounded-md">
+                    <img src=" {{ asset('img/carbonftprnt.jpeg') }} " alt="Comparativa de huellas de carbono por kilometro" class="lg:w-6/12 w-11/12 rounded-md shadow-md my-4 mx-auto">
 
-                    <p class="leading-snug lg:text-2xl text-lg text-center px-3 lg:w-5/12 w-11/12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ex, facilis temporibus nesciunt vitae obcaecati quae possimus eum tenetur quo exercitationem, natus id nisi, quis sapiente laboriosam. Provident, aut praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero eius sed odio pariatur facilis dolore consequuntur? Dolorem praesentium, cum facilis, asperiores amet, temporibus tempore excepturi nulla fugiat eligendi at.</p>
+                    <p class="leading-snug lg:text-2xl text-lg px-3 lg:w-5/12 w-11/12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum ex, facilis temporibus nesciunt vitae obcaecati quae possimus eum tenetur quo exercitationem, natus id nisi, quis sapiente laboriosam. Provident, aut praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vero eius sed odio pariatur facilis dolore consequuntur? Dolorem praesentium, cum facilis, asperiores amet, temporibus tempore excepturi nulla fugiat eligendi at.</p>
                 </div>
             
             </div>
-
-
-
-
         @endisset
 
         {{-- Formulario --}}
@@ -156,10 +152,5 @@
         </div>
 
     </div>
-    <script>
-        var range = document.getElementById("distance");
-        range.oninput = function() {
-            document.getElementById("distanceShow").innerHTML = this.value + " km";
-        };
-    </script>
+    <script src="{{ asset('js/rangeForm.js') }}"></script>
 @endsection

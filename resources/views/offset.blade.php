@@ -9,7 +9,7 @@
             style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
 
             <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-32">Alternativas para compensar la huella de carbono
+            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-60">Alternativas para compensar la huella de carbono
             </h1>
 
             <x-tooltip-index text="Fotografía de: Tara Winstead from Pexels"></x-tooltip-index>
@@ -20,7 +20,7 @@
         {{-- 1er seccion informativa --}}
         <div class="bg-feather">
 
-            <h3 class="lg:text-5xl text-3xl text-center my-40 py-2 font-medium italic">¿Por qué conocer y compensar nuestra
+            <h3 class="lg:text-5xl text-3xl text-center my-36 py-2 font-medium italic">¿Por qué conocer y compensar nuestra
                 huella de carbono?</h3>
 
             <div class="flex flex-col">
@@ -52,12 +52,12 @@
                 {{-- fin carrusel --}}
 
                 <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                    <p class="leading-snug lg:text-2xl text-lg text-center py-8 px-3 ">Conocer el tamaño de nuestra huella
+                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">Conocer el tamaño de nuestra huella
                         de carbono es importante
                         ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de
                         CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg text-center pt-8 pb-16 px-3">Compensar nuestra huella de
+                    <p class="leading-snug lg:text-2xl text-lg pt-8 pb-16 px-3">Compensar nuestra huella de
                         carbono consiste en la
                         aportacion voluntaria de una cantidad económica variable a diversos proyectos de reforestación,
                         generación y ahorro
