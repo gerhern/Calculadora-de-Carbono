@@ -12,6 +12,9 @@ module.exports = {
         'sleek'  : '#a5a5af'   
       },
     },
+    scale:{
+      '200':'2'
+    },
   },
   variants: {
     extend: {},

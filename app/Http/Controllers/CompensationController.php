@@ -33,18 +33,18 @@ class CompensationController extends Controller
 
         if($request->vehicle != null){
             $vehicleCarbonFootprint = $request->vehicle * $request->distance;
-            $trainCarbonFootprint = $request->distance * 41;
+            $trainCarbonFootprint = $request->distance * 41.15;
             $bicycleCarbonFootprint = $request->distance * 5;
 
             $trainSavedFootprint = $vehicleCarbonFootprint - $trainCarbonFootprint;
             $bicycleSavedFootprint = $vehicleCarbonFootprint - $bicycleCarbonFootprint;
             $footprintTon = ($vehicleCarbonFootprint / 1000000) * 365;
 
-            $trainPercent = 4100 / $request->vehicle;
+            $trainPercent = 4115 / $request->vehicle;
             $bicyclePercent = 500 / $request->vehicle;
             return view('transport', [
                 'vehicleCarbonFootprint' => number_format($vehicleCarbonFootprint),
-                'footprintTon' => number_format($footprintTon, 3),
+                'footprintTon' => $footprintTon,
                 'trainCarbonFootprint' => number_format($trainCarbonFootprint),
                 'bicycleCarbonFootprint' => number_format($bicycleCarbonFootprint),
 

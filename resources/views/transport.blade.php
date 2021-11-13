@@ -1,5 +1,6 @@
 @extends('app')
 @section('content')
+<link href="{{ asset('css/modal.css') }}" rel="stylesheet">
 
     {{-- div principal --}}
     <div class="flex flex-col text-white bg-gradient-to-b from-feather via-marine to-forest">
@@ -59,16 +60,16 @@
                     <div class="flex flex-col justify-evenly items-center py-10">
 
                         <p class="w-11/12 lg:text-2xl text-lg"> Si recorrieras la misma distancia en <span
-                            class="text-forest font-bold italic">tren</span>
+                            class="text-forest font-bold italic">ferrocarril nacional</span>
                             evitarías liberar a la atmósfera <span
-                                class="text-forest font-bold italic">{{ $trainSavedFootprint }}</span> gramos de carbono (<span
+                                class="text-forest font-bold italic">{{ $trainSavedFootprint }}</span> gramos de CO<sub>2</sub> (<span
                                 class="text-forest font-bold italic">{{ $trainPercent }}%</span>).
                         </p>
 
                         <p class="w-11/12 lg:text-2xl text-lg my-10"> Si recorrieras la misma distancia en <span
                             class="text-forest font-bold italic">bicicleta</span>
                             evitarías liberar a la atmósfera <span
-                                class="text-forest font-bold italic">{{ $bicycleSavedFootprint }}</span> gramos de carbono (<span
+                                class="text-forest font-bold italic">{{ $bicycleSavedFootprint }}</span> gramos de CO<sub>2</sub> (<span
                                 class="text-forest font-bold italic">{{ $bicyclePercent }}%</span>).
                         </p>
 
@@ -81,7 +82,7 @@
                             class="text-forest font-bold italic">{{ $distance }}</span> kms 
                              los <span
                              class="text-forest font-bold italic">365</span> días del año generarías<span
-                             class="text-forest font-bold italic"> {{ $footprintTon }} </span>toneladas de
+                             class="text-forest font-bold italic"> {{ number_format($footprintTon, 2) }} </span>toneladas de
                             CO<sub>2</sub></p>
 
                         <p class="w-11/12 lg:text-2xl text-center text-lg">¿Sabes cuantos árboles necesitarías para cubrir esta huella de carbono?
@@ -98,7 +99,7 @@
 
             {{-- informacion medios alternativos --}}
             <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 p-3 rounded-md">
-                <h3 class="lg:text-5xl text-3xl text-center my-16  py-2 font-medium italic">Alternativas Ecologicas</h3>
+                <h3 class="lg:text-5xl text-3xl text-center my-16  py-2 font-medium italic">Alternativas Ecológicas</h3>
 
                 <p class="leading-snug lg:text-2xl text-lg px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                     totam iure voluptate commodi tempora. Aspernatur iusto, at fugit magni mollitia sunt quis. Similique
@@ -111,7 +112,7 @@
                 {{-- grafica --}}
                 <div class="flex lg:flex-row flex-col items-start lg:justify-evenly my-7">
                     <img src=" {{ asset('img/carbonftprnt.jpeg') }} " alt="Comparativa de huellas de carbono por kilometro"
-                        class="lg:w-6/12 w-11/12 rounded-md shadow-md my-4 mx-auto">
+                        class="lg:w-6/12 w-11/12 rounded-md shadow-md my-4 mx-auto cursor-pointer" id="img">
 
                     <p class="leading-snug lg:text-2xl text-lg px-3 lg:w-5/12 w-11/12">Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Laborum ex, facilis temporibus nesciunt vitae obcaecati quae possimus eum tenetur quo
@@ -131,29 +132,35 @@
                     usas?</label>
 
                 {{-- radio group --}}
-                <div class="flex lg:flex-row flex-col lg:justify-evenly py-10">
+                <div class="flex flex-col lg:justify-evenly py-10">
                     {{-- radio auto mediano diesel --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carMedDies" value="171" checked>
-                        <label for="carMedDies">Auto mediano (A diesel)</label>
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carMedDies" value="171.061" checked>
+                        <label for="carMedDies">Automóvil mediano (A diesel)</label>
                     </div>
 
                     {{-- radio auto mediano gas --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carMedGas" value="192">
-                        <label for="carMedGas">Auto mediano (A gasolina)</label>
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carMedGas" value="192.28">
+                        <label for="carMedGas">Automóvil mediano (A gasolina)</label>
                     </div class="flex items-center">
 
                     {{-- radio auto chico gas --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carSmGas" value="96">
-                        <label for="carSmGas">Auto chico (A gasolina)</label>
-                    </div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carSmGas" value="96.14">
+                        <label for="carSmGas">Automóvil chico 2 pasajeros (A gasolina)</label>
+                    </div>
 
                     {{-- radio moto --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bike" value="103">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bike" value="102.89">
                         <label for="bike">Motocicleta mediana</label>
+                    </div>
+
+                    {{-- radio moto grande --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bikeBig" value="135.01">
+                        <label for="bikeBig">Motocicleta grande</label>
                     </div>
                 </div>
 
@@ -178,12 +185,43 @@
         {{-- enlaces --}}
         <div class="py-8 px-3">
             <h3 class="lg:text-5xl text-3xl text-center font-medium italic">¿Quieres conocer más?</h3>
-            <div class="flex">
-                <x-button route="{{ route('bicycle') }}" text="Conoce sobre la bicicleta"></x-button>
-                <x-button route="#" text="Conoce sobre el tren"></x-button>
+            <div class="flex justify-evenly">
+                <x-button route="{{ route('bicycle') }}" text="Bicicleta"></x-button>
+                <x-button route="#" text="Tren"></x-button>
             </div>
         </div>
 
     </div>
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="imgModal">
+        <div id="caption"></div>
+    </div>
+
     <script src="{{ asset('js/rangeForm.js') }}"></script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('modal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('img');
+        var modalImg = document.getElementById("imgModal");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 @endsection
