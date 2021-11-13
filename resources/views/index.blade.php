@@ -7,11 +7,12 @@
         {{-- Imagen y titulo principal --}}
         <x-cover-page img="https://visitachihuahua.com/wp-content/uploads/2019/12/chepe-regional-1.jpg"
             coverText="Cálculo y compensación de huella de carbono"
-            tooltipText="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido."></x-cover-page>
+            tooltipText="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido.">
+        </x-cover-page>
 
         {{-- div para mostrar informacion --}}
         <div class="bg-feather">
-            
+
             {{-- 1er seccion informativa --}}
             <h3 class="lg:text-5xl text-3xl text-center my-40 py-2 font-medium italic">¿Qué es la huella de carbono?</h3>
 
@@ -46,12 +47,20 @@
 
                 <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                     <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La
-                        huella de carbono es una forma de medir la cantidad de emisiones de gases de efecto invernadero que
-                        son
-                        producidas y liberadas a la atmósfera directa o indirectamente por una organización o individuo.</p>
+                        huella de carbono es una métrica ambiental que calcula la totalidad de emisiones de gases de efecto
+                        invernadero (GEI) generadas directa o indirectamente por una persona, organizacion, empresa o
+                        incluso productos o servicios.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg pt-4 pb-16 px-3">Estos gases contribuyen al
-                        cambio climático el cual tiene consecuencias como cambios en los ecosistemas, fenómenos
+                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La huella de carbono se mide en masa de
+                        CO<sub>2</sub> equivalente, el CO<sub>2</sub> equivalente se trata de equiparar los otros gases de
+                        efecto invernadero que son producidos a la par que el CO<sub>2</sub>, esto debido a que el
+                        CO<sub>2</sub> es el principal y más abundante de estos gases.</p>
+
+                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La importancia de conocer nuestra huella de carbono radica en la posibilidad de cuantificar con mayor certeza la forma en la que los gases de efecto invernadero contribuyen al calentamiento global y de esta forma implementar medidas para contrarrestar los
+                        efectos.
+                    </p>
+
+                    <p class="leading-snug lg:text-2xl text-lg pt-4 pb-16 px-3">Entre los efectos del cambio climático se encuentran graves consecuencias como cambios en los ecosistemas, fenómenos
                         meteorológicos extremos, migraciones masivas, extinción de especies, acidificación y subida del
                         nivel del mar, etc.</p>
                 </div>
@@ -83,7 +92,7 @@
                         <x-calculatorcard link="https://footprintcalculator.henkel.com/mx"
                             img="https://footprintcalculator.henkel.com/assets/images/HENKEL.png" alt="Henkel-Logo"
                             title="Calculadora de huella de carbono Henkel" description="Calculadora creada
-                                    por la empresa alemana de productos de limpieza Henkel"></x-calculatorcard>
+                                        por la empresa alemana de productos de limpieza Henkel"></x-calculatorcard>
 
 
                         {{-- div card 2 --}}
@@ -115,7 +124,8 @@
                     </div>
                 </div>
 
-                <x-button route="{{ route('calcular') }}" text="Si ya cuentas con tu huella de carbono da click aquí"></x-button>
+                <x-button route="{{ route('calcular') }}" text="Si ya cuentas con tu huella de carbono da click aquí">
+                </x-button>
 
             </div>
         </div>

@@ -14,34 +14,45 @@ class CompensationController extends Controller
         if($request->footprint != null){
             $aux = new Tree($request->footprint);
             $data = $aux->calculateCompensation();
+
+            return view('tol', [
+                'data' => $data,
+                'footprint' => number_format($request->footprint,2)
+            ]);
+
         }else{
-            $data = null;
+
+            return view('tol', [
+            ]);
         }
 
-        return view('tol', [
-            'data' => $data,
-            'footprint' => number_format($request->footprint,2)
-        ]);
+        
     }
 
     public function transport(Request $request){
 
-        if($request->currentVehicle != null){
-            $vehicleCarbonFootprint = $request->currentVehicle * $request->distance;
+        if($request->vehicle != null){
+            $vehicleCarbonFootprint = $request->vehicle * $request->distance;
             $trainCarbonFootprint = $request->distance * 41;
             $bicycleCarbonFootprint = $request->distance * 5;
+
             $trainSavedFootprint = $vehicleCarbonFootprint - $trainCarbonFootprint;
             $bicycleSavedFootprint = $vehicleCarbonFootprint - $bicycleCarbonFootprint;
-            $percent = 500 / $request->currentVehicle;
+            $footprintTon = ($vehicleCarbonFootprint / 1000000) * 365;
+
+            $trainPercent = 4100 / $request->vehicle;
+            $bicyclePercent = 500 / $request->vehicle;
             return view('transport', [
                 'vehicleCarbonFootprint' => number_format($vehicleCarbonFootprint),
+                'footprintTon' => number_format($footprintTon, 3),
                 'trainCarbonFootprint' => number_format($trainCarbonFootprint),
                 'bicycleCarbonFootprint' => number_format($bicycleCarbonFootprint),
 
                 'trainSavedFootprint' => number_format($trainSavedFootprint),
                 'bicycleSavedFootprint' => number_format($bicycleSavedFootprint),
                 'distance' => number_format($request->distance),
-                'percent' => number_format($percent, 2)
+                'bicyclePercent' => number_format($bicyclePercent, 2),
+                'trainPercent' => number_format($trainPercent, 2)
             ]);
 
         }else{
