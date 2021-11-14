@@ -13,23 +13,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tooltip.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
-
-<style>
-    .tooltip {
-        visibility: hidden;
-    }
-
-    .has-tooltip:hover .tooltip {
-        visibility: visible;
-        z-index: 100;
-    }
-
-</style>
 
 <body class="flex relative bg-marine">
 

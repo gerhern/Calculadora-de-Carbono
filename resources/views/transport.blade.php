@@ -101,7 +101,7 @@
             <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 p-3 rounded-md">
                 <h3 class="lg:text-5xl text-3xl text-center my-16  py-2 font-medium italic">Alternativas Ecológicas</h3>
 
-                <p class="leading-snug lg:text-2xl text-lg px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+                <p class="leading-snug lg:text-2xl text-lg px-3">CLorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                     totam iure voluptate commodi tempora. Aspernatur iusto, at fugit magni mollitia sunt quis. Similique
                     voluptatibus quis, ipsum impedit quam provident suscipit Lorem ipsum dolor sit amet consectetur, adipisicing
                     elit. Error, nobis voluptates quasi voluptate accusantium facilis quo aliquid! Voluptatum possimus,
@@ -200,28 +200,5 @@
     </div>
 
     <script src="{{ asset('js/rangeForm.js') }}"></script>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById('modal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('img');
-        var modalImg = document.getElementById("imgModal");
-        var captionText = document.getElementById("caption");
-        img.onclick = function() {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            modalImg.alt = this.alt;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-    </script>
+    <script src="{{ asset('js/modal.js') }}"></script>
 @endsection

@@ -1,0 +1,8 @@
+.tooltip {
+    visibility: hidden;
+}
+
+.has-tooltip:hover .tooltip {
+    visibility: visible;
+    z-index: 100;
+}
