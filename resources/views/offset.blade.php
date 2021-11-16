@@ -31,23 +31,26 @@
 
                     {{-- slide1 --}}
                     <x-carrusel-slide slide="slide1"
-                    img1="https://www.eleconomista.com.mx/__export/1566424039592/sites/eleconomista/img/2019/08/21/parque-eolico-engie-cortesia-gober-tamaulipas.jpg_132249826.jpg"
-                    img2="https://www.altonivel.com.mx/wp-content/uploads/2018/03/paneles-solares.jpg"
-                    tooltip="Fotos: El Economista twitter/@fgcabezadevaca (Parque Eólico Tres Mesas, Tamaulipas) y Altonivel/Roberto Arteaga (Campo de paneles solares, Viesca, Coahuila)."></x-carrusel-slide>
-                   
+                        img1="https://www.eleconomista.com.mx/__export/1566424039592/sites/eleconomista/img/2019/08/21/parque-eolico-engie-cortesia-gober-tamaulipas.jpg_132249826.jpg"
+                        img2="https://www.altonivel.com.mx/wp-content/uploads/2018/03/paneles-solares.jpg"
+                        tooltip="Fotos: El Economista twitter/@fgcabezadevaca (Parque Eólico Tres Mesas, Tamaulipas) y Altonivel/Roberto Arteaga (Campo de paneles solares, Viesca, Coahuila).">
+                    </x-carrusel-slide>
+
 
                     {{-- slide2 --}}
                     <x-carrusel-slide slide="slide2"
-                    img1="https://images.pexels.com/photos/7655920/pexels-photo-7655920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    img2="https://www.archivo.cdmx.gob.mx/storage/app/uploads/public/58e/d61/4c3/thumb_4487_1153_706_0_0_crop.jpg"
-                    tooltip="Fotos: Pexels/Thirdman(Save the planet) y Archivo.cdmx.gob(Parque Nacional Viveros Coyoacán)."></x-carrusel-slide>
+                        img1="https://images.pexels.com/photos/7655920/pexels-photo-7655920.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        img2="https://www.archivo.cdmx.gob.mx/storage/app/uploads/public/58e/d61/4c3/thumb_4487_1153_706_0_0_crop.jpg"
+                        tooltip="Fotos: Pexels/Thirdman(Save the planet) y Archivo.cdmx.gob(Parque Nacional Viveros Coyoacán).">
+                    </x-carrusel-slide>
 
 
                     {{-- slide3 --}}
                     <x-carrusel-slide slide="slide3"
-                    img1="https://cdn.ntmx.me/media/2020/02/12/_hdb291065bfb66d0b59805bf3ebc6d217bcad87d50.jpg"
-                    img2="https://www.gob.mx/cms/uploads/image/file/563418/_WWF_Mexico__2019_LOBOS_DEL_ZOOLOGICO_COYOTES_ALTA-0849.jpg"
-                    tooltip="Fotos: Netnoticias.mx (Jaguar, especie en peligro de extinción) y Wwf/ (Lobo Mexicano, especie que desafía la extinción)."></x-carrusel-slide>
+                        img1="https://cdn.ntmx.me/media/2020/02/12/_hdb291065bfb66d0b59805bf3ebc6d217bcad87d50.jpg"
+                        img2="https://www.gob.mx/cms/uploads/image/file/563418/_WWF_Mexico__2019_LOBOS_DEL_ZOOLOGICO_COYOTES_ALTA-0849.jpg"
+                        tooltip="Fotos: Netnoticias.mx (Jaguar, especie en peligro de extinción) y Wwf/ (Lobo Mexicano, especie que desafía la extinción).">
+                    </x-carrusel-slide>
                 </div>
                 {{-- fin carrusel --}}
 
@@ -57,11 +60,20 @@
                         ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de
                         CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg pt-8 pb-16 px-3">Compensar nuestra huella de
+                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3">Compensar nuestra huella de
                         carbono consiste en la
                         aportacion voluntaria de una cantidad económica variable a diversos proyectos de reforestación,
                         generación y ahorro
                         de energía sustentables o tratamiento de residuos para así contribuir con el medio ambiente.</p>
+
+                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3">Realizar una compensación económica no es
+                        la única forma en la que podemos regresar a la naturaleza un
+                        poco de lo que tomamos de ella día con día, entre las acciones que podemos realizar se encuentra el
+                        apoyar como voluntarios a organizaciones en sus labores de reforestación.</p>
+
+                    <p class="leading-snug lg:text-2xl text-lg pt-8 pb-16 px-3">Otra forma de apoyar es mediante pequeñas acciones que listamos en la sección de <span class="italic">"¿Cómo reducir tu huella de carbono?"</span>, ubicada al final de esta página, si realizas a partir de ahora algunas de estas ideas, tu huella de carbono comenzara a disminuir  y así podrás ayudar al medio ambiente y su conservación. </p>
+
+
                 </div>
 
             </div>
@@ -98,9 +110,10 @@
                         <x-calculatorcard link="https://www.reforestamosmexico.org/adoptaunarbol"
                             img="https://static.wixstatic.com/media/b1748a_e68a34ab791443259e1dce6cd0cc520e~mv2.png/v1/fill/w_222,h_117,al_c,lg_1,q_85/221x116.webp"
                             alt="Reforestamos-Logo" title="Adopta un arbol con
-                                                                                Reforestamos México" description="Mediante una contribución
-                                                                                económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
-                                                                                adopción">
+                                                                                            Reforestamos México"
+                            description="Mediante una contribución
+                                                                                            económica mínima adopta un árbol durante un periodo de 3 años y recibe un certificado de
+                                                                                            adopción">
                         </x-calculatorcard>
 
                         {{-- div card 3 --}}
@@ -116,7 +129,8 @@
 
                                 <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Proximamente</h3>
 
-                                <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Nos encontramos en negociacion para brindarles una nueva forma de compensar, disculpe las molestias.</p>
+                                <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Nos encontramos en
+                                    negociacion para brindarles una nueva forma de compensar, disculpe las molestias.</p>
                             </a>
                         </div>
                     </div>

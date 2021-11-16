@@ -32,7 +32,7 @@
                 <a href="{{ route('home') }}"
                     class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Inicio</a>
 
-                <a href="{{ route('calcular') }}"
+                <a href="{{ route('calculate') }}"
                     class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Calcular
                     compensación</a>
 
@@ -42,9 +42,6 @@
                 <a href="{{ route('transport') }}"
                     class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Medios alternativos de
                     transporte</a>
-
-                <a href="#"
-                    class="w-full flex flex-grow items-center justify-center transition duration-200">Proximamente</a>
 
             </nav>
         </header>

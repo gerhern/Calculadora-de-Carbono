@@ -17,10 +17,11 @@ use App\Http\Controllers\CompensationController;
 // Vistas sin logica
 Route::view('/', 'index')->name('home');
 Route::view('compensar', 'offset')->name('offset');
-Route::view('bicicleta-como-medio-de-transporte', 'bicycle')->name('bicycle');
+Route::view('bicicleta-como-medio-de-transporte', 'bicycleAsTransport')->name('bicycle');
+Route::view('ferrocarril-como-medio-de-transporte', 'trainAsTransport')->name('train');
 
 // Vistas con logica
-Route::get('calcular', [CompensationController::class, 'calculate'])->name('calcular');
+Route::get('calcular', [CompensationController::class, 'treeCalculator'])->name('calculate');
 Route::get('medios-alternativos-de-transporte', [CompensationController::class, 'transport'])->name('transport');
 
 // Route::get('/', function () {

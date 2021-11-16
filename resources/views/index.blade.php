@@ -124,7 +124,7 @@
                     </div>
                 </div>
 
-                <x-button route="{{ route('calcular') }}" text="Si ya cuentas con tu huella de carbono da click aquí">
+                <x-button route="{{ route('calculate') }}" text="Si ya cuentas con tu huella de carbono da click aquí">
                 </x-button>
 
             </div>

@@ -4,32 +4,32 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 Use App\Classes\Tree;
-use App\Http\Requests\TreeRequest;
+use App\Http\Requests\{TreeRequest, alternativeTransportRequest};
 
 class CompensationController extends Controller
 {
     //
-    public function calculate(TreeRequest $request){
+    public function treeCalculator(TreeRequest $request){
 
         if($request->footprint != null){
             $aux = new Tree($request->footprint);
             $data = $aux->calculateCompensation();
 
-            return view('tol', [
+            return view('treeCalculator', [
                 'data' => $data,
                 'footprint' => number_format($request->footprint,2)
             ]);
 
         }else{
 
-            return view('tol', [
+            return view('treeCalculator', [
             ]);
         }
 
         
     }
 
-    public function transport(Request $request){
+    public function transport(alternativeTransportRequest $request){
 
         if($request->vehicle != null){
             $vehicleCarbonFootprint = $request->vehicle * $request->distance;
@@ -38,11 +38,12 @@ class CompensationController extends Controller
 
             $trainSavedFootprint = $vehicleCarbonFootprint - $trainCarbonFootprint;
             $bicycleSavedFootprint = $vehicleCarbonFootprint - $bicycleCarbonFootprint;
-            $footprintTon = ($vehicleCarbonFootprint / 1000000) * 365;
+            $footprintTon = ($vehicleCarbonFootprint / 1000000) * 200;
 
             $trainPercent = 4115 / $request->vehicle;
             $bicyclePercent = 500 / $request->vehicle;
-            return view('transport', [
+
+            return view('alternativeTransport', [
                 'vehicleCarbonFootprint' => number_format($vehicleCarbonFootprint),
                 'footprintTon' => $footprintTon,
                 'trainCarbonFootprint' => number_format($trainCarbonFootprint),
@@ -57,7 +58,7 @@ class CompensationController extends Controller
 
         }else{
 
-            return view('transport', [
+            return view('alternativeTransport', [
             ]);
         }
     }

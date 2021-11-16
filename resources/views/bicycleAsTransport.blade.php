@@ -9,7 +9,7 @@
         <div class="w-full bg-feather">
 
             <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-32">La bicicleta como medio de transporte
+            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-32 italic">La bicicleta como medio de transporte
             </h1>
         </div>
 

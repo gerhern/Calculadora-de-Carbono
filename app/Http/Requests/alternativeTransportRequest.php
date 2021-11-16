@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class TreeRequest extends FormRequest
+class alternativeTransportRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,15 +25,15 @@ class TreeRequest extends FormRequest
     {
         return [
             //
-            'footprint' => 'numeric | between:0.01,2000000'
+            'distance' => 'numeric | between:1 , 100',
         ];
     }
 
     public function messages(){
         
         return [
-            'footprint.between' => 'La huella de carbono debe estar entre 0.01 y 2,000,000',
-            'footprint.numeric' => 'La huella de carbono es un número requerido'
+            'distance.between' => 'La distancia debe estar entre 1 y 100',
+            'distance.numeric' => 'La distancia es un número requerido'
         ];
     }
 }
