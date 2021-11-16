@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-    <link href="{{ asset('css/modal.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/modal.css') }}" rel="stylesheet">
 
     {{-- div principal --}}
     <div class="flex flex-col text-white bg-gradient-to-b from-feather via-marine to-forest">
@@ -224,6 +224,6 @@
         <div id="caption"></div>
     </div>
 
-    <script src="{{ asset('js/rangeForm.js') }}"></script>
-    <script src="{{ asset('js/modal.js') }}"></script>
+    <script src="{{ secure_asset('js/rangeForm.js') }}"></script>
+    <script src="{{ secure_asset('js/modal.js') }}"></script>
 @endsection

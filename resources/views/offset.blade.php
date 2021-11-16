@@ -236,7 +236,7 @@
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="{{ asset('js/slide.js') }}"></script>
-    <script src="{{ asset('js/coinCard.js') }}"></script>
+    <script src="{{ secure_asset('js/slide.js') }}"></script>
+    <script src="{{ secure_asset('js/coinCard.js') }}"></script>
 
 @endsection
