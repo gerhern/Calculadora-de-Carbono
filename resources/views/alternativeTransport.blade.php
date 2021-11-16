@@ -24,7 +24,7 @@
                     <div class="py-4">
 
                         <p class="w-11/12 leading-snug lg:text-2xl text-lg mx-auto my-10">Cuando realizas un viaje de <span
-                                class="text-forest font-bold italic">{{ $distance }} </span> kms generas:</p>
+                                class="text-forest font-bold italic">{{ $distance }} </span> km generas:</p>
 
                         {{-- vehiculo seleccionado --}}
                         <div class="flex">
@@ -89,7 +89,7 @@
                             huella de carbono?
                         </p>
 
-                        <x-button route="{{ route('calculate', 'footprint=' . $footprintTon) }}" text="¡Descubrelo ahora!">
+                        <x-button route="{{ route('calculate', 'footprint=' . $footprintTon) }}" text="¡Descúbrelo ahora!">
                         </x-button>
 
                     </div>
@@ -102,20 +102,11 @@
             <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 p-3 rounded-md">
                 <h3 class="lg:text-5xl text-3xl text-center my-16  py-2 font-medium italic">Alternativas Ecológicas</h3>
 
-                <p class="leading-snug lg:text-2xl text-lg px-3">Con el constante aumento de gases de egfecto invernadero
-                    acumulandose en la atmosfera debido al uso de medios de transporte contaminantes y poco eficientes y la cada
-                    vez mayor cantidad de congestionamiento vial debido a la gran cantidad de vehiculos ocupando espacio, nace
-                    la necesidad de recurrir a medios de transporte con bajas emisiones de contaminates y mas eficientes en
-                    cuanto a la capacidad de pasajeros.</p>
+                <p class="leading-snug lg:text-2xl text-lg px-3">Con el constante aumento de gases de efecto invernadero acumulándose en la atmósfera debido al uso de medios de transporte contaminantes y poco eficientes y la cada vez mayor cantidad de congestionamiento vial debido a la gran cantidad de vehículos ocupando espacio, nace la necesidad de recurrir a medios de transporte con bajas emisiones de contaminantes y más eficientes en cuanto a la capacidad de pasajeros.</p>
 
-                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Segun el Instituto Nacional de Estadistica y Geografia
-                    (INEGI) en México entre 2017 y 2019 la cantidad de vehiculos en el valle de Méxicose elevo a casi 12
-                    millones de unidades de los aproximadamente mas de 33 millones de unidades registradas en el pais a
-                    dicienbre de 2020*.</p>
+                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Según el Instituto Nacional de Estadística y Geografía (INEGI) en México entre 2017 y 2019 la cantidad de vehículos en el valle de México se elevó a casi 12 millones de unidades de los aproximadamente más de 33 millones de unidades registradas en el país a diciembre de 2020*.</p>
 
-                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Ademas de acuerdo al Instituto Mexicano para la
-                    Competitividad en 2017 se registro que en la zona del Valle de México la velocidad de traslado promedio en
-                    horas pico es de 6.42 km/h.**</p>
+                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Además de acuerdo al Instituto Mexicano para la Competitividad en 2017 se registró que en la zona del Valle de México la velocidad de traslado promedio en horas pico es de 6.42 km/h.**</p>
 
                 {{-- Img1 --}}
                 <div class="lg:w-11/12 mt-16 has-tooltip">
@@ -124,13 +115,7 @@
                     <x-tooltip-index text="Fotografía de: Cycling Promotion Fund/PuebloBicicletero.org"></x-tooltip-index>
                 </div>
 
-                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">La creciente cantidad de vehiculos y la baja eficiencia de
-                    movilidad en horas pico hacen que elegir el automóvil particular como medio de transporte regular no
-                    sea lo ideal, sin embargo si esto no es suficiente para considerar cambiar de vehiculo, aun nos queda el
-                    impacto ambiental que este tipo de vehiculos genera.</p>
-
-
-                {{-- <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Por este motivo la necesidad de utilizar transportes alternativos y lograr asi un sistema de transporte sostenible gracias a la micromovilidad, la movilidad compartida y la movilidad sustentable. Usar medios de transporte como bicicletas, patinetas y patines es una opcion en contra de los automoviles particulares y lograr asi una movilidad mas eficiente se ha convertido en una opción contra a los tradicionales vehículos automotor (principalmente el automóvil particular) con el fin de moverse más rápidamente, reducir la contaminación y hacer más sustentable la calidad de vida.</p> --}}
+                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">La creciente cantidad de automóviles en la ciudad y la baja eficiencia de movilidad en horas pico hacen que elegir el automóvil particular como medio de transporte regular no sea lo ideal, sin embargo, si esto no es suficiente para considerar cambiar de tipo de transporte, aún nos queda el impacto ambiental que este tipo de vehículos genera.</p>
 
 
                 {{-- grafica --}}
@@ -139,24 +124,17 @@
                         class="lg:w-6/12 w-11/12 rounded-md shadow-md my-4 mx-auto cursor-pointer" id="img">
 
                     <div class="lg:w-5/12 w-11/12">
-                        <p class="leading-snug lg:text-2xl text-lg px-3 ">El uso de medios de transporte ha cambiado a lo largo
-                            de los años, desde los motores a vapor, motores a gasolina, diesel e incluso motores electricos o
-                            hibridos, de la misma forma la cantidad de contaminantes que son emitidos a la atmosfera tambien es
-                            variable, esta depende principalmente del tipo de motor del vehiculo y del peso de su carga entre
-                            muchas otras variables.</p>
+                        <p class="leading-snug lg:text-2xl text-lg px-3 ">El uso de medios de transporte ha cambiado a lo largo de los años, desde los motores a vapor, motores a gasolina, diesel e incluso motores eléctricos o híbridos, de la misma forma la cantidad de contaminantes que son emitidos a la atmósfera también es variable y esta depende principalmente del tipo de motor del vehículo y del peso de su carga entre muchas otras variables.</p>
                     </div>
                 </div>
 
-                <p class="leading-snug lg:text-2xl text-lg px-3 my-10">En el valle de México la distancia promedio de un viaje en
-                    automovil es de 7 a 10 km y teniendo en cuenta la cantidad de emisiones en gramos de CO<sub>2</sub>
-                    que generan distintos tipos de vehiculos por kilometro (ver grafica anterior), podremos calcular la cantidad
-                    de emisiones que generamos por un cada viaje. </p>
+                <p class="leading-snug lg:text-2xl text-lg px-3 my-10">En el valle de México la distancia promedio de un viaje en automóvil es de 7 a 10 km y teniendo en cuenta la cantidad de emisiones en gramos de CO<sub>2</sub> que generan distintos tipos de vehículos por kilómetro (ver gráfica anterior), podremos calcular la cantidad de emisiones que generamos por un cada viaje.</p>
 
-                <p class="leading-snug lg:text-2xl text-lg px-3 my-10">El uso de vehiculos impulsados por gasolina es un gran foco de contaminantes pues teniendo en cuenta lo anterior dicho podemos obsrvar que los automoviles de este tipo generan alrededor de 2.54 kg de CO<sub>2</sub> (automovil grande) por un solo viaje de 9 km, teniendo en cuenta que un viaje de ida y vuelta (18 km) suele realizarse alrededor de unas 200 veces en un periodo de un año tenemos una huella de carbono de 1,018.62 kg de CO<sub>2</sub>, es decir 1.01 toneladas de CO<sub>2</sub> en un año. </p>
+                <p class="leading-snug lg:text-2xl text-lg px-3 my-10">El uso de vehículos impulsados por gasolina es un gran foco de contaminantes pues teniendo en cuenta lo anterior dicho podemos observar que los automóviles de este tipo generan alrededor de 2.54 kg de CO<sub>2</sub> (automóvil grande) por un solo viaje de 9 km, teniendo en cuenta que un viaje de ida y vuelta (18 km) suele realizarse alrededor de unas 200 veces en un periodo de un año tenemos una huella de carbono de 1,018.62 kg de CO<sub>2</sub>, es decir 1.01 toneladas de CO<sub>2</sub> en un año. </p>
 
-                <p class="leading-snug lg:text-2xl text-lg px-3 pb-16 ">Si en cambio usamos un vehiculo mas eficiente ecologicamente hablando como lo es el ferrocarril podemos obsrvar que por un viaje de 9 km se generan alrededor de 370.35 gr de CO<sub>2</sub> y si hacemos el ejemplo anterior obtenemos que un viaje de ida y vuelta (18 km) genera una huella de carbono de 148.14 kg de CO<sub>2</sub> en un año.</p>
+                <p class="leading-snug lg:text-2xl text-lg px-3 pb-16 ">Si en cambio usamos un vehículo mas eficiente ecológicamente hablando como lo es el ferrocarril podemos observar que por un viaje de 9 km se generan alrededor de 370.35 gramos de CO<sub>2</sub> y si hacemos el ejemplo anterior obtenemos que un viaje de ida y vuelta (18 km) genera una huella de carbono de 148.14 kg de CO<sub>2</sub> en un año.</p>
 
-                <p class="leading-snug text-xs text-center px-3">*Fuente: Instituto Nacional de Estadistica y Geografia <a
+                <p class="leading-snug text-xs text-center px-3">*Fuente: Instituto Nacional de Estadística y Geografía <a
                         href="https://www.inegi.org.mx/temas/vehiculos/"
                         class="font-bold underline">https://www.inegi.org.mx/temas/vehiculos/</a></p>
 

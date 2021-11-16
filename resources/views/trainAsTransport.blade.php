@@ -31,15 +31,12 @@
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Entre la gran variedad de transportes
-                            terrestres el ferrocarril es uno de los mas destacados ya que cuenta con ventajas como bajas
-                            emisiones de gases de efecto invernadero o la capacidad de transportar cargas voluminosas, entre
-                            otras mas de las que aqui hablaresmos a continuacion.</p>
+                        <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Entre la gran variedad de transportes terrestres el ferrocarril es uno de los más destacados, ya que cuenta con ventajas como bajas emisiones de gases de efecto invernadero o la capacidad de transportar cargas voluminosas, entre otras más de las que aquí hablaremos a continuación.</p>
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start p-3">Ecológico</h5>
-                        <p class="leading-tight lg:text-xl text-lg  p-3">El ferrocarril es uno de los medios de transporte con menor tasa de emisiones de gases contaminantes, emitiendo .   </p>
+                        <p class="leading-tight lg:text-xl text-lg  p-3">El ferrocarril es uno de los medios de transporte con menor tasa de emisiones de gases contaminantes.   </p>
 
 
                     </div>
