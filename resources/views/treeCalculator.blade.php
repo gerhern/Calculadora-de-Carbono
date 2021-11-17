@@ -16,14 +16,13 @@
             <form class="w-11/12 mx-auto max-w-lg lg:max-w-none bg-forest bg-opacity-30 p-3">
                 <div class="flex flex-wrap -mx-3 lg:flex-col">
                     <div class="w-full lg:w-1/2 px-3 mb-6 lg:mb-0">
-                        <label class=" text-white block uppercase tracking-wide text-xs font-bold mb-2"
-                            for="grid-first-name">
+                        <label class=" text-white block uppercase tracking-wide text-xs font-bold mb-2">
                             Huella de carbono*
                         </label>
                         <input
                             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-forest rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                            type="number" step="0.001" name="footprint"
-                            placeholder="Ingrese huella de carbono en toneladas">
+                            type="number" step="0.001" name="footprint" min="0.001" max="2000000"
+                            placeholder="Ingrese huella de carbono en toneladas" required>
 
                     </div>
                     <input type="submit" value="Calcular"

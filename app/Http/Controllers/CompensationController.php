@@ -17,7 +17,7 @@ class CompensationController extends Controller
 
             return view('treeCalculator', [
                 'data' => $data,
-                'footprint' => number_format($request->footprint,2)
+                'footprint' => number_format($request->footprint,3)
             ]);
 
         }else{
@@ -38,7 +38,7 @@ class CompensationController extends Controller
 
             $trainSavedFootprint = $vehicleCarbonFootprint - $trainCarbonFootprint;
             $bicycleSavedFootprint = $vehicleCarbonFootprint - $bicycleCarbonFootprint;
-            $footprintTon = ($vehicleCarbonFootprint / 1000000) * 200;
+            $footprintTon = ($vehicleCarbonFootprint / 1000000) * $request->daysPerYear;
 
             $trainPercent = 4115 / $request->vehicle;
             $bicyclePercent = 500 / $request->vehicle;
@@ -53,7 +53,8 @@ class CompensationController extends Controller
                 'bicycleSavedFootprint' => number_format($bicycleSavedFootprint),
                 'distance' => number_format($request->distance),
                 'bicyclePercent' => number_format($bicyclePercent, 2),
-                'trainPercent' => number_format($trainPercent, 2)
+                'trainPercent' => number_format($trainPercent, 2),
+                'daysPerYear' => $request->daysPerYear
             ]);
 
         }else{

@@ -26,6 +26,7 @@ class alternativeTransportRequest extends FormRequest
         return [
             //
             'distance' => 'numeric | between:1 , 100',
+            'daysPerYear' => 'numeric | between:0 , 365'
         ];
     }
 
@@ -33,7 +34,9 @@ class alternativeTransportRequest extends FormRequest
         
         return [
             'distance.between' => 'La distancia debe estar entre 1 y 100',
-            'distance.numeric' => 'La distancia es un número requerido'
+            'distance.numeric' => 'La distancia es un número requerido',
+            'daysPerYear.between' => 'La cantidad de dias al año debe estar entre 1 y 365',
+            'daysPerYear.numeric' => 'La cantidad de dias al año es un requerido'
         ];
     }
 }
