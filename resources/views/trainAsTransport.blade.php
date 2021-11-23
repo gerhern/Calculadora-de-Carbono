@@ -21,7 +21,7 @@
             <div class="flex lg:flex-row flex-col items-center lg:items-start">
 
                 {{-- info --}}
-                <div class="lg:w-9/12 px-6 flex flex-col items-center">
+                <div class="lg:w-9/12 p-6 flex flex-col items-center">
 
                     {{-- Img1 --}}
                     <div class="lg:w-11/12 mt-16 has-tooltip">
@@ -31,17 +31,61 @@
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Entre la gran variedad de transportes terrestres el ferrocarril es uno de los más destacados, ya que cuenta con ventajas como bajas emisiones de gases de efecto invernadero o la capacidad de transportar cargas voluminosas, entre otras más de las que aquí hablaremos a continuación.</p>
+                        <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Entre la gran variedad de transportes
+                            terrestres el ferrocarril es uno de los más destacados, ya que cuenta con ventajas como bajas
+                            emisiones de gases de efecto invernadero o la capacidad de transportar cargas voluminosas, entre
+                            otras más de las que aquí hablaremos a continuación.</p>
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start p-3">Ecológico</h5>
-                        <p class="leading-tight lg:text-xl text-lg  p-3">El ferrocarril es uno de los medios de transporte con menor tasa de emisiones de gases contaminantes.   </p>
-
-
+                        <p class="leading-tight lg:text-xl text-lg  p-3">El ferrocarril es uno de los medios de transporte
+                            con menor tasa de emisiones de gases contaminantes, pues el ferrocarril nacional emite
+                            únicamente 41 gramos de CO<sub>2</sub> por cada kilómetro recorrido, mientras que los trenes más modernos
+                            emiten solamente 6 gramos de CO<sub>2</sub> por kilómetro.
+                        <p class="leading-tight lg:text-xl text-lg p-3">
+                            El migrar la forma en la que las empresas transportan mercancías de camiones de carga a
+                            ferrocarril generaría un ahorro de emisiones enorme, migrar tan solo el 10% de carga y pasaje al
+                            transporte ferroviario disminuiría cerca de 8.38 millones de toneladas las emisiones de CO<sub>2</sub> que son liberadas a la atmosfera.</p>
+                        </p>
                     </div>
 
-                    
+                    <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
+                        <h5 class="text-2xl self-start p-3">Flexible</h5>
+                        <p class="leading-tight lg:text-xl text-lg  p-3">El ferrocarril puede mover grandes cantidades y gran variedad  de mercancías, pues existen muchos tipos de carros de carga permitiendo que sea posible llevar desde productos agroindustriales como café, maíz o trigo, permitiendo también el transporte de líquidos y gaseosos como vino, jugos, hidrogeno u oxígeno e incluso es posible transportar hasta automóviles nuevos, a pesar de los anteriormente mencionados, aún hay más variedad de tipos de mercancías que los ferrocarriles son capaces de transportar.
+                        </p>
+
+                        <p class="leading-tight lg:text-xl text-lg p-3">El transporte ferroviario además de contar con la flexibilidad de mover variedad de tipos de mercancía, también es uno de los medios de transporte más económicos pues las tarifas suelen ser fijas.</p>
+                    </div>
+
+                    <div class="lg:w-11/12 has-tooltip">
+                        <img src="https://img.freepik.com/foto-gratis/clasificacion-vagones-mercancias-ferrocarril-mientras-forma-tren_165577-417.jpg?size=626&ext=jpg"
+                        alt="Carros_de_ferrocarril"
+                        class="rounded-md shadow-2xl w-full">
+                        <x-tooltip-index text="Fotografía de: Aapsky from freepik.es"></x-tooltip-index>
+                    </div>
+
+
+                    <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
+                        <h5 class="text-2xl self-start p-3">Seguro</h5>
+                        <p class="leading-tight lg:text-xl text-lg  p-3">El transporte ferroviario es uno de los medios de transporte más seguros pues la cantidad de siniestros es muy baja, tan solo 264 reportes de siniestros durante el segundo trimestre de 2020, mientras que los accidentes viales ascienden hasta 301,678 registrados durante todo el 2020.</p>
+                    </div>
+
+                    <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
+                        <h5 class="text-2xl self-start p-3">Veloz</h5>
+                        <p class="leading-tight lg:text-xl text-lg  p-3">El transporte ferroviario es uno de los medios de transporte más veloces con una velocidad récord de 600 km/h (Tren bala de Maglev en China).</p>
+
+                        <p class="leading-tight lg:text-xl text-lg p-3">La mayoría de los  trenes comerciales no alcanzan la velocidad récord, sin embargo, el promedio de velocidad se encuentra entre los 60 y 350 km/h, comparado con la velocidad promedio de viajar en automóvil en la ciudad de México (14 km/h) nos permite ahorrar mucho tiempo de viaje.</p>
+                    </div>
+
+                    <div class="lg:w-11/12 has-tooltip">
+                        <img src="https://static.dw.com/image/58580338_6.jpg"
+                        alt="Tren_bala_Maglev"
+                        class="rounded-md shadow-2xl w-full">
+                        <x-tooltip-index text="Fotografía de: Li Ziheng/Xinhua News Agency/picture alliance"></x-tooltip-index>
+                    </div>
+
+
                 </div>
 
                 {{-- aside --}}
@@ -55,13 +99,11 @@
                         description="División de transporte de Grupo México, entre sus servicios se encuentra el transporte de mercancías.">
                     </x-bicyclecard>
 
-                    <x-bicyclecard
-                        link="https://www.kcsouthern.com/es-mx/ship-with-us/explore-shipping-options/carload"
+                    <x-bicyclecard link="https://www.kcsouthern.com/es-mx/ship-with-us/explore-shipping-options/carload"
                         img="https://www.kcsouthern.com/application/themes/kcs/images/kcs-logo-stacked.png"
-                        alt="Kansas_city_Southern"
-                        title="Kansas City Southern"
-                        description="Empresa ferroviaria dedicada al transporte de cargas con servicio de transporte entre ciudades del noreste y centro de México y algunos estados de EE.UU."
-                    ></x-bicyclecard>
+                        alt="Kansas_city_Southern" title="Kansas City Southern"
+                        description="Empresa ferroviaria dedicada al transporte de cargas con servicio de transporte entre ciudades del noreste y centro de México y algunos estados de EE.UU.">
+                    </x-bicyclecard>
 
                     <h5 class=" my-10 text-3xl self-start px-8">Principales proyectos ferroviarios en México</h5>
                     <x-bicyclecard link="https://www.trenmaya.gob.mx"
@@ -83,7 +125,7 @@
                         description="El Ferrocarril del Istmo de Tehuantepec podrá transportar contenedores y pasajeros, a fin de conectar los puertos de Salina Cruz, en Oaxaca y Coatzacoalcos, en Veracruz.">
                     </x-bicyclecard>
 
-                    
+
                 </div>
 
             </div>
