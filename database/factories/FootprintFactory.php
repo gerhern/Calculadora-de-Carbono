@@ -25,7 +25,7 @@ class FootprintFactory extends Factory
             //
             'distance' => $this->faker->numberBetween(1,1000),
             'carbon_footprint' => $this->faker->randomFloat(3, 0, 500),
-            'change_transport' => $this->faker->boolean(50),
+            'change_transport' => $this->faker->boolean(80),
             'vehicle_id' => $this->faker->numberBetween(1,5)
         ];
     }

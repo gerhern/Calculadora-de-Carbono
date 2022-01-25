@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
     <!-- Styles -->
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/tooltip.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tooltip.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
-    <script src="{{ secure_asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 
@@ -40,8 +40,12 @@
                     class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Compensar</a>
 
                 <a href="{{ route('transport') }}"
-                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Medios alternativos de
+                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Medios
+                    alternativos de
                     transporte</a>
+
+                <a href="{{ route('stats') }}"
+                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Estadisticas</a>
 
             </nav>
         </header>

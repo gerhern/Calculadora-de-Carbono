@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 Use App\Classes\Tree;
 use App\Http\Requests\{TreeRequest, alternativeTransportRequest};
+use App\Models\Footprint;
+use App\Models\Vehicle;
 
 class CompensationController extends Controller
 {
@@ -62,6 +64,41 @@ class CompensationController extends Controller
             return view('alternativeTransport', [
             ]);
         }
+    }
+
+    public function stats(TreeRequest $request){
+
+            $vehicles = Vehicle::all();
+            $footprints = Footprint::all();
+
+            $data = [];
+            $footprintData = [];
+            $true = 0;
+            $false = 0;
+
+            foreach ($vehicles as $vehicle){
+                $data['label'][] = $vehicle->vehicle_name;
+                $data['data'][] = $vehicle->times_used;
+            }
+
+            foreach($footprints as $footprint){
+                if($footprint->change_transport){
+                    $true++;
+                }else{
+                    $false++;
+                }
+            }
+            $footprintData['data'][] = $true;
+            $footprintData['data'][] = $false;
+
+            $data['data'] = json_encode($data);
+            $footprintData['data'] = json_encode($footprintData);
+
+            return view('statsViews', [
+                'data' => $data['data'],
+                'footprint' => $footprintData['data']
+            ]);
+        
     }
     
 }

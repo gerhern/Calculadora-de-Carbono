@@ -23,6 +23,7 @@ Route::view('ferrocarril-como-medio-de-transporte', 'trainAsTransport')->name('t
 // Vistas con logica
 Route::get('calcular', [CompensationController::class, 'treeCalculator'])->name('calculate');
 Route::get('medios-alternativos-de-transporte', [CompensationController::class, 'transport'])->name('transport');
+Route::get('estadisticas', [CompensationController::class, 'stats'])->name('stats');
 
 // Route::get('/', function () {
 //     return view('welcome');
