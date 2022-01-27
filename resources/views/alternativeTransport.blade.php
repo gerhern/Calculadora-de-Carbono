@@ -82,7 +82,7 @@
                         <p class="w-11/12 leading-snug lg:text-2xl text-lg mt-10 text-center">Si realizaras este viaje de <span
                                 class="text-forest font-bold italic">{{ $distance }}</span> kms por <span
                                 class="text-forest font-bold italic">{{ $daysPerYear }}</span> días al año generarías<span
-                                class="text-forest font-bold italic"> {{ number_format($footprintTon, 3) }} </span>toneladas
+                                class="text-forest font-bold italic"> {{ number_format($footprintTon, 2) }} </span>toneladas
                             de
                             CO<sub>2</sub></p>
 
