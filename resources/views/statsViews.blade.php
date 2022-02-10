@@ -16,10 +16,10 @@
 
             <h3 class="lg:text-5xl text-3xl text-center font-medium italic">Medio de transporte más usado</h3>
 
-            <p class="leading-snug lg:text-2xl text-lg py-8 px-3">De acuerdo a la informacion ingresada por los usuarios de
+            <p class="leading-snug lg:text-xl text-lg py-8 px-3">De acuerdo a la informacion ingresada por los usuarios de
                 esta calculadora podemos observar la cantidad de uso de los siguientes medios de transporte.</p>
-            <div class="w-11/12 mx-auto bg-white bg-opacity-80">
-                <canvas id="vehicleChart" height="130"></canvas>
+            <div class="w-10/12 mx-auto bg-white bg-opacity-80">
+                <canvas id="vehicleChart"></canvas>
             </div>
 
         </div>
@@ -30,8 +30,7 @@
             <h3 class="lg:text-5xl text-3xl text-center font-medium italic">¿Estarias dispuesto a cambiar tu medio de transporte habitual?</h3>
 
             <div class="w-10/12 mx-auto bg-white bg-opacity-80">
-                hi
-                <canvas id="useChart" width="100" height="100"></canvas>
+                <canvas id="useChart"></canvas>
             </div>
 
         </div>

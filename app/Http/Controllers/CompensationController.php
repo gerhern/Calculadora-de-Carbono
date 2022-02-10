@@ -66,7 +66,7 @@ class CompensationController extends Controller
         }
     }
 
-    public function stats(TreeRequest $request){
+    public function stats(){
 
             $vehicles = Vehicle::all();
             $footprints = Footprint::all();
