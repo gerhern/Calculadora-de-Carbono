@@ -22,7 +22,7 @@ class VisitFactory extends Factory
     public function definition()
     {
         return [
-            'total_visits' => $this->faker->randomNumber()
+            'total_visits' => 0
         ];
     }
 }
