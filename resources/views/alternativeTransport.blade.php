@@ -174,11 +174,13 @@
         @endisset
 
         {{-- Formulario --}}
-        <div class="py-10">
+        <p class="w-11/12 lg:text-2xl text-center text-lg py-10 bg-black bg-opacity-30 mx-auto">{{ $visits }} Usuarios han calculado su huella de carbono.
+        </p>
+        <div class="pb-10">
             <form class="w-11/12 mx-auto bg-black bg-opacity-30 p-10">
                 <label class="text-white uppercase font-bold tracking-wide my-10">¿Cúal es el medio de transporte que más
                     usas?</label>
-
+                    
                 {{-- radio group --}}
                 <div class="flex flex-col lg:justify-evenly py-10">
                     {{-- radio auto mediano diesel --}}
