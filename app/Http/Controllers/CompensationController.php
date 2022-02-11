@@ -18,7 +18,7 @@ class CompensationController extends Controller
 
             return view('treeCalculator', [
                 'data' => $data,
-                'footprint' => number_format($request->footprint,3)
+                'footprint' => number_format($request->footprint,2)
             ]);
 
         }else{

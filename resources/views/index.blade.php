@@ -106,7 +106,7 @@
                         <div
                             class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
 
-                            <a href="#">
+                            <a href="{{route('transport')}}">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4"
                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -116,8 +116,7 @@
                                 <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">Calculadora de la
                                     Agencia Reguladora de Transporte Ferroviario</h3>
 
-                                <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Calculadora en proceso
-                                    de creación, disculpe las molestias </p>
+                                <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Calculadora de CO<sub>2 </sub> para calcular la huella de carbono generada a partir de viajes constantes. </p>
                             </a>
                         </div>
 
