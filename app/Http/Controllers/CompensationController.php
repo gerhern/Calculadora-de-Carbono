@@ -32,7 +32,7 @@ class CompensationController extends Controller
 
     public function transport(alternativeTransportRequest $request){
         
-        $visits = Visit::first();
+        $visits = Visit::firstOrFail();
 
         if($request->vehicle != null){
             $vehicleCarbonFootprint = $request->vehicle * $request->distance;
