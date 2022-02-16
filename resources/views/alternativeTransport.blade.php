@@ -61,17 +61,17 @@
                     <div class="flex flex-col justify-evenly items-center py-10">
 
                         <p class="w-11/12 lg:text-2xl text-lg"> Si recorrieras la misma distancia en <span
-                                class="text-forest font-bold italic">ferrocarril nacional</span>
+                                class="text-forest font-bold italic">ferrocarril</span>
                             evitarías liberar a la atmósfera <span
                                 class="text-forest font-bold italic">{{ $trainSavedFootprint }}</span> gramos de
-                            CO<sub>2</sub> (<span class="text-forest font-bold italic">{{ $trainPercent }}%</span>).
+                            CO<sub>2</sub> (<span class="text-forest font-bold italic">-{{ $trainPercent }}%</span>).
                         </p>
 
                         <p class="w-11/12 lg:text-2xl text-lg my-10"> Si recorrieras la misma distancia en <span
                                 class="text-forest font-bold italic">bicicleta</span>
                             evitarías liberar a la atmósfera <span
                                 class="text-forest font-bold italic">{{ $bicycleSavedFootprint }}</span> gramos de
-                            CO<sub>2</sub> (<span class="text-forest font-bold italic">{{ $bicyclePercent }}%</span>).
+                            CO<sub>2</sub> (<span class="text-forest font-bold italic">-{{ $bicyclePercent }}%</span>).
                         </p>
 
                         <p class="w-11/12 leading-snug lg:text-2xl text-lg mt-6">La cantidad de CO<sub>2</sub>
@@ -103,19 +103,17 @@
             <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 p-3 rounded-md">
                 <h3 class="lg:text-5xl text-3xl text-center my-16  py-2 font-medium italic">Alternativas Ecológicas</h3>
 
-                <p class="leading-snug lg:text-2xl text-lg px-3">Con el constante aumento de gases de efecto invernadero
-                    acumulándose en la atmósfera debido al uso de medios de transporte contaminantes y poco eficientes y la cada
-                    vez mayor cantidad de congestionamiento vial debido a la gran cantidad de vehículos ocupando espacio, nace
-                    la necesidad de recurrir a medios de transporte con bajas emisiones de contaminantes y más eficientes en
+                <p class="leading-snug lg:text-2xl text-lg px-3">Con el constante aumento de gases de efecto invernadero,
+                    acumulándose en la atmósfera debido al uso de medios de transporte contaminantes y poco eficientes, así como la creciente cantidad de congestionamiento vial, debido al número de vehículos ocupando espacio, nace
+                    la necesidad de recurrir a medios de transporte con bajas emisiones contaminantes y más eficientes en
                     cuanto a la capacidad de pasajeros.</p>
 
                 <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Según el Instituto Nacional de Estadística y Geografía
-                    (INEGI) en México entre 2017 y 2019 la cantidad de vehículos en el valle de México se elevó a casi 12
-                    millones de unidades de los aproximadamente más de 33 millones de unidades registradas en el país a
-                    diciembre de 2020*.</p>
+                    (INEGI), entre 2017 y 2019 la cantidad de vehículos en el valle de México se elevó a casi 12
+                    millones de unidades, de las aproximadamente más de 33 millones de unidades registradas en el país.*</p>
 
-                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Además de acuerdo al Instituto Mexicano para la
-                    Competitividad en 2017 se registró que en la zona del Valle de México la velocidad de traslado promedio en
+                <p class="leading-snug lg:text-2xl text-lg my-6 px-3">Además, de acuerdo al Instituto Mexicano para la
+                    Competitividad, en 2017 se registró que en la zona del Valle de México la velocidad de traslado promedio en
                     horas pico es de 6.42 km/h.**</p>
 
                 {{-- Img1 --}}
@@ -126,9 +124,9 @@
                 </div>
 
                 <p class="leading-snug lg:text-2xl text-lg my-6 px-3">La creciente cantidad de automóviles en la ciudad y la
-                    baja eficiencia de movilidad en horas pico hacen que elegir el automóvil particular como medio de transporte
-                    regular no sea lo ideal, sin embargo, si esto no es suficiente para considerar cambiar de tipo de
-                    transporte, aún nos queda el impacto ambiental que este tipo de vehículos genera.</p>
+                    baja eficiencia de movilidad en horas pico, hacen que elegir el automóvil particular como medio de transporte
+                    regular no sea lo ideal. Sin embargo, si esto no es suficiente para considerar cambiar de tipo de
+                    transporte, aún nos queda el impacto ambiental que este tipo de vehículos genera, como se ilustra en la siguiente grafíca.</p>
 
 
                 {{-- grafica --}}
@@ -146,20 +144,20 @@
                 </div>
 
                 <p class="leading-snug lg:text-2xl text-lg px-3 my-10">En el valle de México la distancia promedio de un viaje
-                    en automóvil es de 7 a 10 km y teniendo en cuenta la cantidad de emisiones en gramos de CO<sub>2</sub> que
+                    en automóvil es de 7 a 10 km** y teniendo en cuenta la cantidad de emisiones en gramos de CO<sub>2</sub> que
                     generan distintos tipos de vehículos por kilómetro (ver gráfica anterior), podremos calcular la cantidad de
                     emisiones que generamos por un cada viaje.</p>
 
                 <p class="leading-snug lg:text-2xl text-lg px-3 my-10">El uso de vehículos impulsados por gasolina es un gran
-                    foco de contaminantes pues teniendo en cuenta lo anterior dicho podemos observar que los automóviles de este
+                    foco de contaminantes, pues teniendo en cuenta lo anterior, podemos observar que los automóviles de este
                     tipo generan alrededor de 2.54 kg de CO<sub>2</sub> (automóvil grande) por un solo viaje de 9 km, teniendo
                     en cuenta que un viaje de ida y vuelta (18 km) suele realizarse alrededor de unas 200 veces en un periodo de
                     un año tenemos una huella de carbono de 1,018.62 kg de CO<sub>2</sub>, es decir 1.01 toneladas de
                     CO<sub>2</sub> en un año. </p>
 
-                <p class="leading-snug lg:text-2xl text-lg px-3 pb-16 ">Si en cambio usamos un vehículo mas eficiente
-                    ecológicamente hablando como lo es el ferrocarril podemos observar que por un viaje de 9 km se generan
-                    alrededor de 370.35 gramos de CO<sub>2</sub> y si hacemos el ejemplo anterior obtenemos que un viaje de ida
+                <p class="leading-snug lg:text-2xl text-lg px-3 pb-16 ">Si en cambio usamos un vehículo más eficiente,
+                    ecológicamente hablando, como lo es el ferrocarril, podemos observar que por un viaje de 9 km se generan
+                    alrededor de 370.35 gramos de CO<sub>2</sub> y si hacemos el ejemplo anterior, obtenemos que un viaje de ida
                     y vuelta (18 km) genera una huella de carbono de 148.14 kg de CO<sub>2</sub> en un año.</p>
 
                 <p class="leading-snug text-xs text-center px-3">*Fuente: Instituto Nacional de Estadística y Geografía <a

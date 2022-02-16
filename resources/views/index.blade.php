@@ -48,11 +48,11 @@
                 <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                     <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La
                         huella de carbono es una métrica ambiental que calcula la totalidad de emisiones de gases de efecto
-                        invernadero (GEI) generadas directa o indirectamente por una persona, organizacion, empresa o
+                        invernadero (GEI), generadas directa o indirectamente por una persona, organizacion, empresa o
                         incluso productos o servicios.</p>
 
                     <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La huella de carbono se mide en masa de
-                        CO<sub>2</sub> equivalente, el CO<sub>2</sub> equivalente se trata de equiparar los otros gases de
+                        CO<sub>2</sub> equivalente (CO<sub>2</sub>-eq), que trata de equiparar los otros gases de
                         efecto invernadero que son producidos a la par que el CO<sub>2</sub>, esto debido a que el
                         CO<sub>2</sub> es el principal y más abundante de estos gases.</p>
 

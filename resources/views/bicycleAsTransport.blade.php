@@ -31,31 +31,31 @@
                     </div>
 
                         <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                            <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Con el pasar de los años la
+                            <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Con el paso de los años, la
                                 bicicleta ha tomado una mayor importancia en la movilidad y la
-                                salud de las personas, he aquí las principales razones por las cuales deberias pensar en utilizar
+                                salud de las personas, por lo que aquí te presentamos las principales razones por las cuales deberías pensar en utilizar
                                 este medio de transporte.</p>
                         </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start p-3">Eficaz</h5>
+                        <h5 class="text-2xl self-start p-3">Eficiente</h5>
                         <p class="leading-tight lg:text-xl text-lg  p-3">Una bicicleta puede cubrir de manera
-                            eficiente viajes de hasta 7 km, esto es un dato importante ya que la mitad de los viajes en
-                            automóvil recorren menos de 5 km, distancia que en terreno plano puede recorrer una bici de 10 a
-                            20 minutos alcanzando velocidades de hasta 30 km/h.</p>
+                            eficiente viajes de hasta 7 km*, lo que es un dato importante, ya que la mitad de los viajes en
+                            automóvil recorren menos de 5 km, distancia que en terreno plano puede recorrer una bici entre 10 y
+                            20 minutos, alcanzando velocidades de hasta 30 km/h.</p>
 
                         <p class="leading-tight lg:text-xl text-lg p-3">La bicicleta permite una flexibilidad en la
-                            duración de viaje, ya que esta al ocupar menos espacio es mas fácil evitar el embotellamiento
-                            vial de los viajes en automóvil.</p>
+                            duración del viaje, ya que al ocupar menos espacio, evita con mayor facilidad los embotellamientos
+                            viales de los viajes en automóvil.</p>
 
-                        <p class="leading-tight lg:text-xl text-lg p-3">De la misma forma en trayectos cortos(~5 km)
-                            la velocidad de la bicicleta es competitiva con la del transporte público debido a que el ciclo
-                            "caminar-esperar-autobús-caminar" suele tomar mas tiempo que el transporte de un punto A a un B
+                        <p class="leading-tight lg:text-xl text-lg p-3">De la misma forma, en trayectos cortos (menores a 7 km),
+                            la velocidad de la bicicleta es competitiva con la del transporte público, debido a que el ciclo
+                            "caminar-esperar-autobús-caminar" suele tomar más tiempo que el transporte de un punto A a un B
                             en bicicleta.</p>
 
                         <p class="leading-tight lg:text-xl text-lg p-3">Las bicicletas son vehículos pequeños,
                             ligeros, ecológicos y silenciosos, lo que los hace faciles de conducir y aparcar, ademas son de
-                            facil manutencion ya que una bici cuesta 30-40 veces menos que un automóvil.</p>
+                            fácil manutención, ya que una bici cuesta 30-40 veces menos que un automóvil.</p>
 
                     </div>
 
@@ -69,7 +69,7 @@
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start px-8">Autónoma</h5>
                         <p class="leading-tight lg:text-xl text-lg p-3">El uso de bicicleta se puede realizar a
-                            cualquier hora del día, por lo que es mas práctico que esperar por un autobús.</p>
+                            cualquier hora del día, por lo que es más práctico que esperar por un autobús.</p>
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
@@ -91,12 +91,12 @@
                         <p class="leading-tight lg:text-xl text-lg p-3">Realizar ciclismo constantemente
                             ayuda a reducir peso y quemar grasas, es un deporte de bajo impacto lo cual es ideal para
                             personas
-                            con problemas de articulaciones, y ayuda a fortalecer el sistema cardiovascular.</p>
+                            con problemas de articulaciones y ayuda a fortalecer el sistema cardiovascular.</p>
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                         <h5 class="text-2xl self-start px-8">Ecológica</h5>
-                        <p class="leading-tight lg:text-xl p-3">En circulación una bicicleta no emite
+                        <p class="leading-tight lg:text-xl p-3">Cuando circula una bicicleta no emite
                             contaminantes a la atmósfera aunque durante su ciclo de vida completo desde fabricación hasta la
                             conversión en residuo la cantidad de contaminantes que genera es tan solo de 5g de
                             CO<sub>2</sub> por km*.</p>
@@ -105,10 +105,10 @@
                     </div>
 
                     <div class="lg:w-11/12 has-tooltip">
-                        <img src="https://images.pexels.com/photos/763398/pexels-photo-763398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        <img src="https://www.santafixie.com/blog/wp-content/uploads/2016/10/en-bici-con-lluvia.jpg"
                         alt="Ride-bicycle"
                         class="rounded-md shadow-2xl w-full">
-                        <x-tooltip-index text="Fotografía de: Genaro Servín/Pexels"></x-tooltip-index>
+                        <x-tooltip-index text="Fotografía de: Santafixie Stories/santafie.com"></x-tooltip-index>
                     </div>
 
                     <div class="w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">

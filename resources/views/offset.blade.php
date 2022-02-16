@@ -56,22 +56,22 @@
 
                 <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
                     <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">Conocer el tamaño de nuestra huella
-                        de carbono es importante
-                        ya que nos permite concientizar y modificar nuestros habitos para conseguir reducir las emisiones de
+                        de carbono es importante,
+                        ya que nos permite concientizar y modificar nuestros habitos para reducir las emisiones de
                         CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
 
                     <p class="leading-snug lg:text-2xl text-lg py-8 px-3">Compensar nuestra huella de
                         carbono consiste en la
-                        aportacion voluntaria de una cantidad económica variable a diversos proyectos de reforestación,
+                        aportacion voluntaria de una cantidad económica variable,para diversos proyectos de reforestación,
                         generación y ahorro
-                        de energía sustentables o tratamiento de residuos para así contribuir con el medio ambiente.</p>
+                        de energía sostenible o tratamiento de residuos para así contribuir con el medio ambiente.</p>
 
                     <p class="leading-snug lg:text-2xl text-lg py-8 px-3">Realizar una compensación económica no es
                         la única forma en la que podemos regresar a la naturaleza un
-                        poco de lo que tomamos de ella día con día, entre las acciones que podemos realizar se encuentra el
+                        poco de lo que tomamos de ella día con día. Entre las acciones que podemos realizar, se encuentra el
                         apoyar como voluntarios a organizaciones en sus labores de reforestación.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg pt-8 pb-16 px-3">Otra forma de apoyar es mediante pequeñas acciones que listamos en la sección de <span class="italic">"¿Cómo reducir tu huella de carbono?"</span>, ubicada al final de esta página, si realizas a partir de ahora algunas de estas ideas, tu huella de carbono comenzara a disminuir  y así podrás ayudar al medio ambiente y su conservación. </p>
+                    <p class="leading-snug lg:text-2xl text-lg pt-8 pb-16 px-3">Otra forma de apoyar es mediante pequeñas acciones que listamos en la sección de <span class="italic">"¿Cómo reducir tu huella de carbono?"</span>, ubicada al final de esta página. Si realizas a partir de ahora algunas de estas ideas, tu huella de carbono comenzará a disminuir  y así podrás ayudar al medio ambiente y su conservación. </p>
 
 
                 </div>
