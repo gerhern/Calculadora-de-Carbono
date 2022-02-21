@@ -27,12 +27,36 @@
         {{-- segunda grafica --}}
         <div class="py-10 w-full">
 
-            <h3 class="lg:text-5xl text-3xl text-center font-medium italic">¿Estarias dispuesto a cambiar tu medio de transporte habitual?</h3>
+            <h3 class="lg:text-5xl text-3xl text-center font-medium italic">¿Estarias dispuesto a cambiar tu medio de
+                transporte habitual?</h3>
 
             <div class="w-10/12 mx-auto bg-white bg-opacity-80">
                 <canvas id="useChart"></canvas>
             </div>
 
+        </div>
+
+        {{-- Tercera grafica --}}
+        <div class="py-10 w-full">
+            <h3 class="lg:text-5xl text-3xl text-center font-medium italic ">Huella de carbono</h3>
+
+            <div class="flex">
+                <div class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
+                        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">México</h3>
+                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 4 Toneladas</p>
+                </div>
+    
+                <div class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
+                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">El mundo</h3>
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 4.5 Toneladas</p>
+                </div>
+
+                <div class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
+                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">ArtfCO2</h3>
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 10 Toneladas</p>
+                </div>
+
+            </div>
         </div>
 
     </div>
@@ -72,16 +96,16 @@
             }
         });
 
-        const useChart = new Chart(ctx2,{
-            type:'doughnut',
-            data:{
-                labels:[
+        const useChart = new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: [
                     'Sí',
                     'No'
                 ],
-                datasets:[{
-                    data:fData.data,
-                    backgroundColor:[
+                datasets: [{
+                    data: fData.data,
+                    backgroundColor: [
                         '#77c9d4',
                         '#57bc90'
                     ]
