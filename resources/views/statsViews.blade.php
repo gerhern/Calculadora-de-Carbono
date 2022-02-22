@@ -18,8 +18,20 @@
 
             <p class="leading-snug lg:text-xl text-lg py-8 px-3">De acuerdo a la informacion ingresada por los usuarios de
                 esta calculadora podemos observar la cantidad de uso de los siguientes medios de transporte.</p>
-            <div class="w-10/12 mx-auto bg-white bg-opacity-80">
-                <canvas id="vehicleChart"></canvas>
+                {{-- area grafica --}}
+            <div>
+                {{-- grafica --}}
+                <div class="lg:w-10/12 mx-auto bg-white bg-opacity-80">
+                    <canvas id="vehicleChart"></canvas>
+                </div>
+                {{-- tags --}}
+                <div class="lg:flex justify-evenly bg-black lg:w-10/12 mx-auto bg-opacity-80 p-4">
+                   <p>A -> Taxi</p>
+                   <p>B -> Autobús</p>
+                   <p>C -> Automóvil Grande (Gasolina)</p>
+                   <p>D -> Automóvil Mediano (Gasolina)</p>
+                   <p>E -> Motocicleta</p>
+                </div>
             </div>
 
         </div>
@@ -40,20 +52,35 @@
         <div class="py-10 w-full">
             <h3 class="lg:text-5xl text-3xl text-center font-medium italic ">Huella de carbono</h3>
 
-            <div class="flex">
-                <div class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
-                        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">México</h3>
-                        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 4 Toneladas</p>
-                </div>
-    
-                <div class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
-                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">El mundo</h3>
-                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 4.5 Toneladas</p>
+            <div class="lg:flex text-center">
+                <div
+                    class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex flex-col justify-evenly items-center hover:bg-marine transition duration-200">
+                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">México</h3>
+                    <div class="mx-auto my-2 flex justify-center">
+                        <x-svg-footprint width="40"></x-svg-footprint>
+                    </div>
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 4
+                        Toneladas</p>
                 </div>
 
-                <div class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
+                <div
+                    class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
+                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">El mundo</h3>
+                    <div class="mx-auto my-2 flex justify-center">
+                        <x-svg-footprint width="60"></x-svg-footprint>
+                    </div>
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 4.5
+                        Toneladas</p>
+                </div>
+
+                <div
+                    class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
                     <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">ArtfCO2</h3>
-                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 10 Toneladas</p>
+                    <div class="mx-auto my-2 flex justify-center">
+                        <x-svg-footprint width="100"></x-svg-footprint>
+                    </div>
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 10
+                        Toneladas</p>
                 </div>
 
             </div>
@@ -73,29 +100,80 @@
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: cData.label,
+                labels: 'ABCDE',
                 datasets: [{
-                    label: '# de viajes',
-                    data: cData.data,
-                    backgroundColor: [
-                        '#ce93d8',
-                        '#ba68c8',
-                        '#ab47bc',
-                        '#9c27b0',
-                        '#8e24aa'
-                    ],
-                    borderWidth: 1
-                }]
+                    label:cData.label[0],
+                    data: [cData.data[0], null, null, null, null],
+                    backgroundColor: ['#ce93d8'],
+                    borderWidth: 1,
+                    skipNull: true, 
+                },
+                {   
+                    label:cData.label[1],
+                    data: [null,cData.data[1], null, null, null],
+                    backgroundColor: ['#ba68c8'],
+                    borderWidth: 1,
+                    skipNull: true, 
+                },
+                {   
+                    label:cData.label[2],
+                    data: [null, null, cData.data[2], null, null],
+                    backgroundColor: ['#ab47bc'],
+                    borderWidth: 1,
+                    skipNull: true, 
+                },
+                {   
+                    label:cData.label[3],
+                    data: [null, null, null, cData.data[3], null],
+                    backgroundColor: ['#9c27b0'],
+                    borderWidth: 1,
+                    skipNull: true, 
+                },
+                {   
+                    label:cData.label[4],
+                    data: [null, null, null, null, cData.data[4]],
+                    backgroundColor: ['#8e24aa'],
+                    borderWidth: 1,
+                    skipNull: true, 
+                }
+                ],
             },
             options: {
+                responsive: true,
                 scales: {
+                    x: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: 'Medio de transporte',
+                            color: 'black',
+                            font: {
+                                family: 'Nunito',
+                            },
+                        },
+                    },
                     y: {
+                        display: true,
+                        title: {
+                            display: true,
+                            text: '# de usos',
+                            color: 'black',
+                            font: {
+                                family: 'Nunito',
+                            },
+                        },
                         beginAtZero: true
                     }
                 },
+                plugins: {
+                    legend:{
+                        display:false
+                    }
+                }
             }
         });
 
+        //Segunda grafica
         const useChart = new Chart(ctx2, {
             type: 'doughnut',
             data: {
@@ -110,8 +188,24 @@
                         '#57bc90'
                     ]
                 }]
+            },
+            options:{
+                layout:{
+                    padding:16
+                },
+                plugins:{
+                    legend:{
+                        position:'bottom',
+                        labels:{
+                            color:'black',
+                            font:{
+                                family:'Nunito',
+                                size:25
+                            }
+                        }
+                    }
+                }
             }
         });
     </script>
-
 @endsection

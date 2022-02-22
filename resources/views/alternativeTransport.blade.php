@@ -62,16 +62,16 @@
 
                         <p class="w-11/12 lg:text-2xl text-lg"> Si recorrieras la misma distancia en <span
                                 class="text-forest font-bold italic">ferrocarril</span>
-                            evitarías liberar a la atmósfera <span
-                                class="text-forest font-bold italic">{{ $trainSavedFootprint }}</span> gramos de
-                            CO<sub>2</sub> (<span class="text-forest font-bold italic">-{{ $trainPercent }}%</span>).
+                             liberarías a la atmósfera <span
+                                class="text-forest font-bold italic">{{ $trainSavedFootprint }}</span> gramos menos de
+                            CO<sub>2</sub>.
                         </p>
 
                         <p class="w-11/12 lg:text-2xl text-lg my-10"> Si recorrieras la misma distancia en <span
                                 class="text-forest font-bold italic">bicicleta</span>
-                            evitarías liberar a la atmósfera <span
-                                class="text-forest font-bold italic">{{ $bicycleSavedFootprint }}</span> gramos de
-                            CO<sub>2</sub> (<span class="text-forest font-bold italic">-{{ $bicyclePercent }}%</span>).
+                             liberarías a la atmósfera <span
+                                class="text-forest font-bold italic">{{ $bicycleSavedFootprint }}</span> gramos menos de
+                            CO<sub>2</sub>.
                         </p>
 
                         <p class="w-11/12 leading-snug lg:text-2xl text-lg mt-6">La cantidad de CO<sub>2</sub>
@@ -181,35 +181,36 @@
                     
                 {{-- radio group --}}
                 <div class="flex flex-col lg:justify-evenly py-10">
-                    {{-- radio auto mediano diesel --}}
+                    {{-- radio Taxi --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carMedDies" value="171.061" checked>
-                        <label for="carMedDies">Automóvil mediano (A diesel)</label>
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Taxi" value="211.76" checked>
+                        <label for="Taxi">Taxi</label>
                     </div>
 
-                    {{-- radio auto mediano gas --}}
+                    {{-- radio Autobus --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carMedGas" value="192.28">
-                        <label for="carMedGas">Automóvil mediano (A gasolina)</label>
-                    </div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Autobus" value="104.71">
+                        <label for="Autobus">Autobús</label>
+                    </div>
 
-                    {{-- radio auto chico gas --}}
+                    {{-- radio auto gde gas --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="carSmGas" value="96.14">
-                        <label for="carSmGas">Automóvil chico 2 pasajeros (A gasolina)</label>
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="camioneta" value="282.95">
+                        <label for="camioneta">Automóvil Grande (Gasolina)</label>
+                    </div>
+
+                    {{-- radio auto med gas --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="automovil" value="192.28">
+                        <label for="automovil">Automóvil Mediano (Gasolina)</label>
                     </div>
 
                     {{-- radio moto --}}
                     <div class="flex items-center">
                         <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bike" value="102.89">
-                        <label for="bike">Motocicleta mediana</label>
+                        <label for="bike">Motocicleta</label>
                     </div>
 
-                    {{-- radio moto grande --}}
-                    <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bikeBig" value="135.01">
-                        <label for="bikeBig">Motocicleta grande</label>
-                    </div>
                 </div>
 
                 {{-- range --}}
