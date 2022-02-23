@@ -57,7 +57,7 @@
                     class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex flex-col justify-evenly items-center hover:bg-marine transition duration-200">
                     <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">México</h3>
                     <div class="mx-auto my-2 flex justify-center">
-                        <x-svg-footprint width="40"></x-svg-footprint>
+                        <x-svg-footprint width="55"></x-svg-footprint>
                     </div>
                     <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 4
                         Toneladas</p>
@@ -77,7 +77,7 @@
                     class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
                     <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">ArtfCO2</h3>
                     <div class="mx-auto my-2 flex justify-center">
-                        <x-svg-footprint width="100"></x-svg-footprint>
+                        <x-svg-footprint width="55"></x-svg-footprint>
                     </div>
                     <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: {{ $avgFootprint }}
                         Toneladas</p>

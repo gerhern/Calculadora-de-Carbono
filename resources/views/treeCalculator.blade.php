@@ -58,7 +58,7 @@
                     {{-- Arboles --}}
                     <div class="my-2 flex flex-wrap justify-evenly w-full ">
                         @foreach ($trees as $tree)
-                            <div class="m-2 rounded-md shadow-2xl flex lg:flex-col has-tooltip relative">
+                            <div class="m-2 rounded-md flex lg:flex-col has-tooltip relative">
                                 <img src="{{ $tree->url_img }}" alt="{{ $tree->name }}"
                                     class="lg:w-60 lg:h-60 w-36 lg:rounded-t-2xl lg:rounded-none rounded-l-2xl">
                                 <div
@@ -69,8 +69,14 @@
                                     <h3 class="lg:text-4xl text-3xl my-2 px-2 w-full text-center">{{ $data[$tree->id-1] }}
                                         <p class="lg:text-3xl text-lg">individuos</p>
                                     </h3>
-                                    <h3 class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre cientifico:</h3>
-                                    <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree->scientific_name }}</h3>
+                                    @if ($cost[$tree->id-1])
+                                        <p class="lg:text-lg text-sm px-2 w-full font-semibold">Con un costo total de:</p>
+                                        <p class="lg:text-lg text-sm px-2 w-full italic">${{ $cost[$tree->id-1] }}</p>
+                                    @else
+                                        <p class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre científico:</p>
+                                        <p class="lg:text-lg text-sm px-2 w-full italic">{{ $tree->scientific_name }}</p>
+                                    @endif
+                                    
                                     <p class="lg:text-lg text-sm px-2 w-full font-semibold">Capacidad de absorcion:</p>
                                     <p class="lg:text-lg text-sm px-2 w-full italic">{{ $tree->absorption_capacity }} kg/año</p>
                                 </div>

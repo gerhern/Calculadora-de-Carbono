@@ -12,7 +12,8 @@ class Tree
     //2.- calculateCompensation
     
     public $co2;
-    public $result=[];
+    public $qty=[];
+    public $cost=[];
 
     //Metodo constructor que inicializa la conversion de toneladas a kg
     public function __construct(Float $footprint)
@@ -26,10 +27,26 @@ class Tree
     public function calculateCompensation($trees){
         foreach($trees as $tree){
             $result = $this->co2 / $tree->absorption_capacity;
-            array_push($this->result, number_format($result));
+            array_push($this->qty, $result);
 
         }
-        return $this->result;
+        return $this->qty;
+    }
+
+    public function calculateCost($trees, $qty){
+        
+        $i = 0;
+        foreach($trees as $tree){
+            if($tree != null){
+                $result = $tree->cost * (int)$qty[$i];
+                // dd($result);
+                array_push($this->cost, $result);
+            }else{
+                array_push($this->cost, null);
+            }
+            $i++;
+        }
+        return $this->cost;
     }
 
     //Metodo que requiere la huella de carbono(toneladas) y realiza la conversion a kg mediante la formula kg = ton * 1000
@@ -37,5 +54,18 @@ class Tree
     public function convertCo2(Float $footprint)
     {
         return $footprint * 1000;
+    }
+
+    public function getFormat($numbers, $decimals){
+
+        $result = [];
+        foreach($numbers as $number){
+            if($number != null){
+                array_push($result, number_format($number, $decimals));
+            }else{
+                array_push($result, null);
+            }
+        }
+        return $result;
     }
 }

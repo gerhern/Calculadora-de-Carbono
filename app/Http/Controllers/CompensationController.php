@@ -19,10 +19,15 @@ class CompensationController extends Controller
             $aux = new Tree($request->footprint);
             $trees = ModelsTree::all();
             $data = $aux->calculateCompensation($trees);
+            $data = $aux->getFormat($data, 0);
+            $cost = $aux->calculateCost($trees, $data);
+            $cost = $aux->getFormat($cost, 2);
+
 
             return view('treeCalculator', [
                 'trees' => $trees,
                 'data' => $data,
+                'cost' => $cost,
                 'footprint' => number_format($request->footprint,2)
             ]);
 
