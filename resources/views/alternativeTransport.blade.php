@@ -185,15 +185,35 @@
 
                 {{-- radio group --}}
                 <div class="flex flex-col lg:justify-evenly py-10">
+                    {{-- radio Taxi --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Taxi" value="1" checked>
+                        <label for="Taxi">Taxi</label>
+                    </div>
 
-                    @foreach ($allVehicles as $vehicle)
-                        {{-- radio --}}
-                        <div class="flex items-center">
-                            <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="{{ $vehicle->vehicle_name }}"
-                                value="{{ $vehicle->id }}" >
-                            <label for="{{ $vehicle->vehicle_name }}">{{ $vehicle->vehicle_name }}</label>
-                        </div>
-                    @endforeach
+                    {{-- radio Autobus --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Autobus" value="2">
+                        <label for="Autobus">Autobús</label>
+                    </div>
+
+                    {{-- radio auto gde gas --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="camioneta" value="3">
+                        <label for="camioneta">Automóvil Grande (Gasolina)</label>
+                    </div>
+
+                    {{-- radio auto med gas --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="automovil" value="4">
+                        <label for="automovil">Automóvil Mediano (Gasolina)</label>
+                    </div>
+
+                    {{-- radio moto --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bike" value="5">
+                        <label for="bike">Motocicleta</label>
+                    </div>
                 </div>
 
                 {{-- range --}}

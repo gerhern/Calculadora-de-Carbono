@@ -42,7 +42,6 @@ class CompensationController extends Controller
     public function transport(alternativeTransportRequest $request){
         
         $visits = Visit::firstOrFail();
-        $allVehicles = Vehicle::all();
         $vehicle = Vehicle::find($request->vehicle);
 
         if($request->vehicle != null){
@@ -83,13 +82,11 @@ class CompensationController extends Controller
                 'daysPerYear' => $request->daysPerYear,
                 'visits' => number_format($visits->total_visits),
 
-                'allVehicles' => $allVehicles
             ]);
 
         }else{
             return view('alternativeTransport', [
-                'visits' => number_format($visits->total_visits),
-                'allVehicles' => $allVehicles
+                'visits' => number_format($visits->total_visits)
             ]);
         }
     }
