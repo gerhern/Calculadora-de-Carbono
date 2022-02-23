@@ -57,24 +57,24 @@
 
                     {{-- Arboles --}}
                     <div class="my-2 flex flex-wrap justify-evenly w-full ">
-                        @foreach ($data['data'] as $tree)
+                        @foreach ($trees as $tree)
                             <div class="m-2 rounded-md shadow-2xl flex lg:flex-col has-tooltip relative">
-                                <img src="{{ $tree[3] }}" alt="{{ $tree[1] }}"
+                                <img src="{{ $tree->url_img }}" alt="{{ $tree->name }}"
                                     class="lg:w-60 lg:h-60 w-36 lg:rounded-t-2xl lg:rounded-none rounded-l-2xl">
                                 <div
                                     class="flex flex-col justify-around lg:w-60 p-2 items-center bg-black bg-opacity-60 lg:rounded-b-2xl lg:rounded-none rounded-r-2xl">
                                     {{-- nombre --}}
-                                    <h3 class="lg:text-xl text-md px-2 w-full text-center font-bold">{{ $tree[1] }}</h3>
+                                    <h3 class="lg:text-xl text-md px-2 w-full text-center font-bold">{{ $tree->name }}</h3>
                                     {{-- cantidad --}}
-                                    <h3 class="lg:text-4xl text-3xl my-2 px-2 w-full text-center">{{ $tree[5] }}
+                                    <h3 class="lg:text-4xl text-3xl my-2 px-2 w-full text-center">{{ $data[$tree->id-1] }}
                                         <p class="lg:text-3xl text-lg">individuos</p>
                                     </h3>
                                     <h3 class="lg:text-lg text-sm px-2 w-full font-semibold">Nombre cientifico:</h3>
-                                    <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[2] }}</h3>
+                                    <h3 class="lg:text-lg text-sm px-2 w-full italic">{{ $tree->scientific_name }}</h3>
                                     <p class="lg:text-lg text-sm px-2 w-full font-semibold">Capacidad de absorcion:</p>
-                                    <p class="lg:text-lg text-sm px-2 w-full italic">{{ $tree[0] }} kg/año</p>
+                                    <p class="lg:text-lg text-sm px-2 w-full italic">{{ $tree->absorption_capacity }} kg/año</p>
                                 </div>
-                                <x-tooltip-tree text="Fotografia de: {{ $tree[4] }}"></x-tooltip-tree>
+                                <x-tooltip-tree text="Fotografia de: {{ $tree->author_img }}"></x-tooltip-tree>
                             </div>
                         @endforeach
                     </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 Use App\Classes\Tree;
 use App\Http\Requests\{TreeRequest, alternativeTransportRequest};
 use App\Models\Footprint;
+use App\Models\Tree as ModelsTree;
 use App\Models\Vehicle;
 use App\Models\Visit;
 
@@ -16,9 +17,11 @@ class CompensationController extends Controller
 
         if($request->footprint != null){
             $aux = new Tree($request->footprint);
-            $data = $aux->calculateCompensation();
+            $trees = ModelsTree::all();
+            $data = $aux->calculateCompensation($trees);
 
             return view('treeCalculator', [
+                'trees' => $trees,
                 'data' => $data,
                 'footprint' => number_format($request->footprint,2)
             ]);

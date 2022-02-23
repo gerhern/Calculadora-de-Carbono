@@ -20,6 +20,7 @@ class CreateTreesTable extends Migration
             $table->string('url_img');
             $table->string('author_img', 120);
             $table->float('absorption_capacity');
+            $table->float('cost')->nullable();
             $table->timestamps();
         });
     }
