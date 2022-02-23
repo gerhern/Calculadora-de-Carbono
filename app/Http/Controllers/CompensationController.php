@@ -86,14 +86,14 @@ class CompensationController extends Controller
 
         }else{
             return view('alternativeTransport', [
-                'visits' => number_format($visits->total_visits)
+                'visits' => number_format($visits->total_visits),
             ]);
         }
     }
 
     public function stats(){
 
-            $vehicles = Vehicle::all();
+            $vehicles = Vehicle::all()->orderBy('id', 'ASC');
             $footprints = Footprint::all();
 
             $data = [];
