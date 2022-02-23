@@ -93,7 +93,7 @@ class CompensationController extends Controller
 
     public function stats(){
 
-            $vehicles = Vehicle::all()->orderBy('id', 'ASC');
+            $vehicles = Vehicle::all()->sortBy('id');
             $footprints = Footprint::all();
 
             $data = [];
