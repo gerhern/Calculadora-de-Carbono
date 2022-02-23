@@ -35,9 +35,11 @@ class CompensationController extends Controller
     public function transport(alternativeTransportRequest $request){
         
         $visits = Visit::firstOrFail();
+        $vehicle = Vehicle::find($request->vehicle);
+
 
         if($request->vehicle != null){
-            $vehicleCarbonFootprint = $request->vehicle * $request->distance;
+            $vehicleCarbonFootprint = $vehicle->carbon_generated * $request->distance;
             $trainCarbonFootprint = $request->distance * 41.15;
             $bicycleCarbonFootprint = $request->distance * 5;
 
@@ -45,12 +47,20 @@ class CompensationController extends Controller
             $bicycleSavedFootprint = $vehicleCarbonFootprint - $bicycleCarbonFootprint;
             $footprintTon = ($vehicleCarbonFootprint / 1000000) * $request->daysPerYear;
 
-            $trainPercent = 4115 / $request->vehicle;
-            $bicyclePercent = 500 / $request->vehicle;
+            $trainPercent = 4115 / $vehicle->carbon_generated;
+            $bicyclePercent = 500 / $vehicle->carbon_generated;
 
             $visits->total_visits++;
             $visits->save();
 
+            $footprint = new Footprint();
+            $footprint->distance = $request->distance;
+            $footprint->carbon_footprint = $footprintTon;
+            $footprint->change_transport = $request->changeTransport;
+            $footprint->vehicle_id = $request->vehicle;
+            $footprint->vehicle->times_used++;
+            $footprint->vehicle->saveOrFail();
+            $footprint->saveOrFail();
 
             return view('alternativeTransport', [
                 'vehicleCarbonFootprint' => number_format($vehicleCarbonFootprint),
@@ -84,8 +94,15 @@ class CompensationController extends Controller
             $footprintData = [];
             $true = 0;
             $false = 0;
+            $avgFootprint = 0;
 
-            foreach ($vehicles as $vehicle){
+            foreach($footprints as $foot){
+                $avgFootprint += $foot->carbon_footprint;
+            }
+
+            $avgFootprint /= $footprints->count();
+
+            foreach($vehicles as $vehicle){
                 $data['label'][] = $vehicle->vehicle_name;
                 $data['data'][] = $vehicle->times_used;
             }
@@ -105,7 +122,8 @@ class CompensationController extends Controller
 
             return view('statsViews', [
                 'data' => $data['data'],
-                'footprint' => $footprintData['data']
+                'footprint' => $footprintData['data'],
+                'avgFootprint' => number_format($avgFootprint, 2)
             ]);
         
     }

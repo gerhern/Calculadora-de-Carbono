@@ -183,31 +183,31 @@
                 <div class="flex flex-col lg:justify-evenly py-10">
                     {{-- radio Taxi --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Taxi" value="211.76" checked>
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Taxi" value="1" checked>
                         <label for="Taxi">Taxi</label>
                     </div>
 
                     {{-- radio Autobus --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Autobus" value="104.71">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Autobus" value="2">
                         <label for="Autobus">Autobús</label>
                     </div>
 
                     {{-- radio auto gde gas --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="camioneta" value="282.95">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="camioneta" value="3">
                         <label for="camioneta">Automóvil Grande (Gasolina)</label>
                     </div>
 
                     {{-- radio auto med gas --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="automovil" value="192.28">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="automovil" value="4">
                         <label for="automovil">Automóvil Mediano (Gasolina)</label>
                     </div>
 
                     {{-- radio moto --}}
                     <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bike" value="102.89">
+                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bike" value="5">
                         <label for="bike">Motocicleta</label>
                     </div>
 
@@ -237,6 +237,25 @@
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-forest rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
                         type="number" max="365" min="1" required step="1" name="daysPerYear" placeholder="200" id="days">
+                </div>
+
+                {{-- Cambiar medio de transporte --}}
+                <div class="w-full lg:w-full px-3 py-10">
+                    <label class=" text-white uppercase font-bold tracking-wide justify-self-start" for="days">
+                        ¿Estarías dispuesto a cambiar tu medio de transporte habitual, sí esto redujera las emisiones de contaminantes?
+                    </label>
+
+                    {{-- radio Si --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="changeTransport" id="yes" value="1" checked>
+                        <label for="yes">Sí</label>
+                    </div>
+
+                    {{-- radio No --}}
+                    <div class="flex items-center">
+                        <input class="w-6 h-6 m-2" type="radio" name="changeTransport" id="no" value="0">
+                        <label for="no">No</label>
+                    </div>
                 </div>
 
 

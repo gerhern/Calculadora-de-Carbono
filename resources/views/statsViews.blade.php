@@ -79,7 +79,7 @@
                     <div class="mx-auto my-2 flex justify-center">
                         <x-svg-footprint width="100"></x-svg-footprint>
                     </div>
-                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: 10
+                    <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">Huella de carbono promedio: {{ $avgFootprint }}
                         Toneladas</p>
                 </div>
 
