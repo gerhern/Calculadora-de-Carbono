@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 Use App\Classes\Tree;
 use App\Http\Requests\{TreeRequest, alternativeTransportRequest};
 use App\Models\Footprint;
@@ -43,8 +42,8 @@ class CompensationController extends Controller
     public function transport(alternativeTransportRequest $request){
         
         $visits = Visit::firstOrFail();
+        $allVehicles = Vehicle::all();
         $vehicle = Vehicle::find($request->vehicle);
-
 
         if($request->vehicle != null){
             $vehicleCarbonFootprint = $vehicle->carbon_generated * $request->distance;
@@ -59,7 +58,7 @@ class CompensationController extends Controller
             $bicyclePercent = 500 / $vehicle->carbon_generated;
 
             $visits->total_visits++;
-            $visits->save();
+            $visits->saveOrFail();
 
             $footprint = new Footprint();
             $footprint->distance = $request->distance;
@@ -82,13 +81,15 @@ class CompensationController extends Controller
                 'bicyclePercent' => number_format($bicyclePercent, 2),
                 'trainPercent' => number_format($trainPercent, 2),
                 'daysPerYear' => $request->daysPerYear,
-                'visits' => number_format($visits->total_visits)
+                'visits' => number_format($visits->total_visits),
+
+                'allVehicles' => $allVehicles
             ]);
 
         }else{
-
             return view('alternativeTransport', [
-                'visits' => number_format($visits->total_visits)
+                'visits' => number_format($visits->total_visits),
+                'allVehicles' => $allVehicles
             ]);
         }
     }

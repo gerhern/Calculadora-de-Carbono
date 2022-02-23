@@ -62,14 +62,14 @@
 
                         <p class="w-11/12 lg:text-2xl text-lg"> Si recorrieras la misma distancia en <span
                                 class="text-forest font-bold italic">ferrocarril</span>
-                             liberarías a la atmósfera <span
+                            liberarías a la atmósfera <span
                                 class="text-forest font-bold italic">{{ $trainSavedFootprint }}</span> gramos menos de
                             CO<sub>2</sub>.
                         </p>
 
                         <p class="w-11/12 lg:text-2xl text-lg my-10"> Si recorrieras la misma distancia en <span
                                 class="text-forest font-bold italic">bicicleta</span>
-                             liberarías a la atmósfera <span
+                            liberarías a la atmósfera <span
                                 class="text-forest font-bold italic">{{ $bicycleSavedFootprint }}</span> gramos menos de
                             CO<sub>2</sub>.
                         </p>
@@ -104,7 +104,8 @@
                 <h3 class="lg:text-5xl text-3xl text-center my-16  py-2 font-medium italic">Alternativas Ecológicas</h3>
 
                 <p class="leading-snug lg:text-2xl text-lg px-3">Con el constante aumento de gases de efecto invernadero,
-                    acumulándose en la atmósfera debido al uso de medios de transporte contaminantes y poco eficientes, así como la creciente cantidad de congestionamiento vial, debido al número de vehículos ocupando espacio, nace
+                    acumulándose en la atmósfera debido al uso de medios de transporte contaminantes y poco eficientes, así como
+                    la creciente cantidad de congestionamiento vial, debido al número de vehículos ocupando espacio, nace
                     la necesidad de recurrir a medios de transporte con bajas emisiones contaminantes y más eficientes en
                     cuanto a la capacidad de pasajeros.</p>
 
@@ -124,9 +125,11 @@
                 </div>
 
                 <p class="leading-snug lg:text-2xl text-lg my-6 px-3">La creciente cantidad de automóviles en la ciudad y la
-                    baja eficiencia de movilidad en horas pico, hacen que elegir el automóvil particular como medio de transporte
+                    baja eficiencia de movilidad en horas pico, hacen que elegir el automóvil particular como medio de
+                    transporte
                     regular no sea lo ideal. Sin embargo, si esto no es suficiente para considerar cambiar de tipo de
-                    transporte, aún nos queda el impacto ambiental que este tipo de vehículos genera, como se ilustra en la siguiente grafíca.</p>
+                    transporte, aún nos queda el impacto ambiental que este tipo de vehículos genera, como se ilustra en la
+                    siguiente grafíca.</p>
 
 
                 {{-- grafica --}}
@@ -172,51 +175,31 @@
         @endisset
 
         {{-- Formulario --}}
-        <p class="w-11/12 lg:text-2xl text-center text-lg py-10 bg-black bg-opacity-30 mx-auto">{{ $visits }} Usuarios han calculado su huella de carbono.
+        <p class="w-11/12 lg:text-2xl text-center text-lg py-10 bg-black bg-opacity-30 mx-auto">{{ $visits }}
+            Usuarios han calculado su huella de carbono.
         </p>
         <div class="pb-10">
             <form class="w-11/12 mx-auto bg-black bg-opacity-30 p-10">
                 <label class="text-white uppercase font-bold tracking-wide my-10">¿Cúal es el medio de transporte que más
                     usas?</label>
-                    
+
                 {{-- radio group --}}
                 <div class="flex flex-col lg:justify-evenly py-10">
-                    {{-- radio Taxi --}}
-                    <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Taxi" value="1" checked>
-                        <label for="Taxi">Taxi</label>
-                    </div>
 
-                    {{-- radio Autobus --}}
-                    <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="Autobus" value="2">
-                        <label for="Autobus">Autobús</label>
-                    </div>
-
-                    {{-- radio auto gde gas --}}
-                    <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="camioneta" value="3">
-                        <label for="camioneta">Automóvil Grande (Gasolina)</label>
-                    </div>
-
-                    {{-- radio auto med gas --}}
-                    <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="automovil" value="4">
-                        <label for="automovil">Automóvil Mediano (Gasolina)</label>
-                    </div>
-
-                    {{-- radio moto --}}
-                    <div class="flex items-center">
-                        <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="bike" value="5">
-                        <label for="bike">Motocicleta</label>
-                    </div>
-
+                    @foreach ($allVehicles as $vehicle)
+                        {{-- radio --}}
+                        <div class="flex items-center">
+                            <input class="w-6 h-6 m-2" type="radio" name="vehicle" id="{{ $vehicle->vehicle_name }}"
+                                value="{{ $vehicle->id }}" >
+                            <label for="{{ $vehicle->vehicle_name }}">{{ $vehicle->vehicle_name }}</label>
+                        </div>
+                    @endforeach
                 </div>
 
                 {{-- range --}}
                 <div id="rangeInput">
-                    <label for="distance" class="text-white uppercase font-bold tracking-wide justify-self-start">Distancia
-                        aproximada</label>
+                    <label for="distance"
+                        class="text-white uppercase font-bold tracking-wide justify-self-start">Distancia</label>
                     <div class="flex lg:flex-row flex-col justify-evenly">
                         <input class="lg:w-9/12 my-4 cursor-pointer" value="50" type="range" id="distance" max="100"
                             min="1">
@@ -232,7 +215,7 @@
                 {{-- Numero de dias al año --}}
                 <div class="w-full lg:w-1/2 px-3 py-10">
                     <label class=" text-white uppercase font-bold tracking-wide justify-self-start" for="days">
-                        ¿Cuantos dias al año realizas este viaje?
+                        ¿Cuantos días al año realizas este viaje?
                     </label>
                     <input
                         class="appearance-none block w-full bg-gray-200 text-gray-700 border border-forest rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
@@ -242,7 +225,8 @@
                 {{-- Cambiar medio de transporte --}}
                 <div class="w-full lg:w-full px-3 py-10">
                     <label class=" text-white uppercase font-bold tracking-wide justify-self-start" for="days">
-                        ¿Estarías dispuesto a cambiar tu medio de transporte habitual, sí esto redujera las emisiones de contaminantes?
+                        ¿Estarías dispuesto a cambiar tu medio de transporte habitual, si esto redujera las emisiones de
+                        contaminantes?
                     </label>
 
                     {{-- radio Si --}}
@@ -265,17 +249,17 @@
             </form>
         </div>
 
-         {{-- div de muestra de errores --}}
-         @if ($errors->any())
-         <div
-             class="text-center w-2/3 mx-auto my-6 p-4 bg-red-600 text-white rounded-md shadow-md lg:text-2xl text-xl lg:w-1/3">
-             <ul>
-                 @foreach ($errors->all() as $error)
-                     <li>{{ $error }}</li>
-                 @endforeach
-             </ul>
-         </div>
-     @endif
+        {{-- div de muestra de errores --}}
+        @if ($errors->any())
+            <div
+                class="text-center w-2/3 mx-auto my-6 p-4 bg-red-600 text-white rounded-md shadow-md lg:text-2xl text-xl lg:w-1/3">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
         {{-- enlaces --}}
         <div class="py-8 px-3">

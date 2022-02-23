@@ -120,13 +120,13 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Vehicle::create([
-            'vehicle_name' => 'Automóvil Grande (Gasolina)',
+            'vehicle_name' => 'Automóvil Grande (Camioneta)',
             'carbon_generated' => 282.95,
             'times_used' => 0
         ]);
 
         Vehicle::create([
-            'vehicle_name' => 'Automóvil Mediano (Gasolina)',
+            'vehicle_name' => 'Automóvil Mediano (4 pasajeros)',
             'carbon_generated' => 192.28,
             'times_used' => 0
         ]);

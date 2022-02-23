@@ -16,8 +16,7 @@ class Tree
     public $cost=[];
 
     //Metodo constructor que inicializa la conversion de toneladas a kg
-    public function __construct(Float $footprint)
-    {
+    public function __construct(Float $footprint){
         $this->co2 = $this->convertCo2($footprint);
     }
 
@@ -32,14 +31,13 @@ class Tree
         }
         return $this->qty;
     }
-
+    //Metodo que calcula los costos de un determinado numero de arboles retorna un array con los costos
     public function calculateCost($trees, $qty){
         
         $i = 0;
         foreach($trees as $tree){
             if($tree != null){
                 $result = $tree->cost * (int)$qty[$i];
-                // dd($result);
                 array_push($this->cost, $result);
             }else{
                 array_push($this->cost, null);
@@ -51,14 +49,16 @@ class Tree
 
     //Metodo que requiere la huella de carbono(toneladas) y realiza la conversion a kg mediante la formula kg = ton * 1000
     //(1ton = 1,000kg)
-    public function convertCo2(Float $footprint)
-    {
+    public function convertCo2(Float $footprint){
         return $footprint * 1000;
     }
 
+
+    // Metodo que regresa un array con formato numerico (number_format para muchos datos en un array)
     public function getFormat($numbers, $decimals){
 
         $result = [];
+        
         foreach($numbers as $number){
             if($number != null){
                 array_push($result, number_format($number, $decimals));
