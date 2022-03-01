@@ -9,7 +9,7 @@
             style="background-image: url('https://images.pexels.com/photos/7111160/pexels-photo-7111160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
 
             <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-60">Alternativas para compensar la huella de carbono
+            <h1 class="cover--title">Alternativas para compensar la huella de carbono
             </h1>
 
             <x-tooltip-index text="Fotografía de: Tara Winstead from Pexels"></x-tooltip-index>
@@ -20,7 +20,7 @@
         {{-- 1er seccion informativa --}}
         <div class="bg-feather">
 
-            <h3 class="lg:text-5xl text-3xl text-center my-36 py-2 font-medium italic">¿Por qué conocer y compensar nuestra
+            <h3 class="first--title my-36 py-2">¿Por qué conocer y compensar nuestra
                 huella de carbono?</h3>
 
             <div class="flex flex-col">
@@ -55,23 +55,23 @@
                 {{-- fin carrusel --}}
 
                 <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">Conocer el tamaño de nuestra huella
+                    <p class="xxl--text py-8 px-3 ">Conocer el tamaño de nuestra huella
                         de carbono es importante,
                         ya que nos permite concientizar y modificar nuestros habitos para reducir las emisiones de
                         CO<sub>2</sub> asociadas a nuestro estilo de vida.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3">Compensar nuestra huella de
+                    <p class="xxl--text py-8 px-3">Compensar nuestra huella de
                         carbono consiste en la
                         aportacion voluntaria de una cantidad económica variable,para diversos proyectos de reforestación,
                         generación y ahorro
                         de energía sostenible o tratamiento de residuos para así contribuir con el medio ambiente.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3">Realizar una compensación económica no es
+                    <p class="xxl--text py-8 px-3">Realizar una compensación económica no es
                         la única forma en la que podemos regresar a la naturaleza un
                         poco de lo que tomamos de ella día con día. Entre las acciones que podemos realizar, se encuentra el
                         apoyar como voluntarios a organizaciones en sus labores de reforestación.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg pt-8 pb-16 px-3">Otra forma de apoyar es mediante pequeñas acciones que listamos en la sección de <span class="italic">"¿Cómo reducir tu huella de carbono?"</span>, ubicada al final de esta página. Si realizas a partir de ahora algunas de estas ideas, tu huella de carbono comenzará a disminuir  y así podrás ayudar al medio ambiente y su conservación. </p>
+                    <p class="xxl--text pt-8 pb-16 px-3">Otra forma de apoyar es mediante pequeñas acciones que listamos en la sección de <span class="italic">"¿Cómo reducir tu huella de carbono?"</span>, ubicada al final de esta página. Si realizas a partir de ahora algunas de estas ideas, tu huella de carbono comenzará a disminuir  y así podrás ayudar al medio ambiente y su conservación. </p>
 
 
                 </div>
@@ -83,12 +83,12 @@
         {{-- 2da seccion informativa --}}
         <div class="bg-gradient-to-b from-marine to-forest">
 
-            <h3 class="lg:text-5xl text-3xl text-center pt-20 px-6 font-medium italic">¿Cómo compensar tu huella de carbono?
+            <h3 class="first--title pt-20 px-6">¿Cómo compensar tu huella de carbono?
             </h3>
 
             <div class="flex flex-col">
                 <div class="w-3/4 mx-auto my-8 rounded-md">
-                    <p class="leading-snug lg:text-xl text-lg text-center py-8
+                    <p class="xl--text py-8
                     pb-8">Para realizar una
                         compensación de tu huella de carbono
                         personal te recomendamos las siguientes opciones:</p>

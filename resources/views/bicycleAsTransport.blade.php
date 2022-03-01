@@ -9,7 +9,7 @@
         <div class="w-full bg-feather">
 
             <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-32 italic">La bicicleta como medio de transporte
+            <h1 class="first--title my-32">La bicicleta como medio de transporte
             </h1>
         </div>
 
@@ -31,29 +31,29 @@
                     </div>
 
                         <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                            <p class="leading-tight lg:text-2xl text-xl py-8 px-3 ">Con el paso de los años, la
+                            <p class="xxl--text italic py-8 px-3 ">Con el paso de los años, la
                                 bicicleta ha tomado una mayor importancia en la movilidad y la
                                 salud de las personas, por lo que aquí te presentamos las principales razones por las cuales deberías pensar en utilizar
                                 este medio de transporte.</p>
                         </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start p-3">Eficiente</h5>
-                        <p class="leading-tight lg:text-xl text-lg  p-3">Una bicicleta puede cubrir de manera
+                        <h5 class="xxl--text self-start p-3">Eficiente</h5>
+                        <p class="xl--text  p-3">Una bicicleta puede cubrir de manera
                             eficiente viajes de hasta 7 km*, lo que es un dato importante, ya que la mitad de los viajes en
                             automóvil recorren menos de 5 km, distancia que en terreno plano puede recorrer una bici entre 10 y
                             20 minutos, alcanzando velocidades de hasta 30 km/h.</p>
 
-                        <p class="leading-tight lg:text-xl text-lg p-3">La bicicleta permite una flexibilidad en la
+                        <p class="xl--text p-3">La bicicleta permite una flexibilidad en la
                             duración del viaje, ya que al ocupar menos espacio, evita con mayor facilidad los embotellamientos
                             viales de los viajes en automóvil.</p>
 
-                        <p class="leading-tight lg:text-xl text-lg p-3">De la misma forma, en trayectos cortos (menores a 7 km),
+                        <p class="xl--text p-3">De la misma forma, en trayectos cortos (menores a 7 km),
                             la velocidad de la bicicleta es competitiva con la del transporte público, debido a que el ciclo
                             "caminar-esperar-autobús-caminar" suele tomar más tiempo que el transporte de un punto A a un B
                             en bicicleta.</p>
 
-                        <p class="leading-tight lg:text-xl text-lg p-3">Las bicicletas son vehículos pequeños,
+                        <p class="xl--text p-3">Las bicicletas son vehículos pequeños,
                             ligeros, ecológicos y silenciosos, lo que los hace faciles de conducir y aparcar, ademas son de
                             fácil manutención, ya que una bici cuesta 30-40 veces menos que un automóvil.</p>
 
@@ -67,14 +67,14 @@
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start px-8">Autónoma</h5>
-                        <p class="leading-tight lg:text-xl text-lg p-3">El uso de bicicleta se puede realizar a
+                        <h5 class="xxl--text self-start px-8">Autónoma</h5>
+                        <p class="xl--text p-3">El uso de bicicleta se puede realizar a
                             cualquier hora del día, por lo que es más práctico que esperar por un autobús.</p>
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start px-8">Accesible</h5>
-                        <p class="leading-tight lg:text-xl text-lg p-3">Cualquier persona con un estado de
+                        <h5 class="xxl--text self-start px-8">Accesible</h5>
+                        <p class="xl--text p-3">Cualquier persona con un estado de
                             salud normal puede usar bicicleta, no es necesario ser atleta: hombres, mujeres, niños y hasta
                             personas de edad avanzada pueden usarla.</p>
                     </div>
@@ -87,20 +87,20 @@
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start px-8">Saludable</h5>
-                        <p class="leading-tight lg:text-xl text-lg p-3">Realizar ciclismo constantemente
+                        <h5 class="xxl--text self-start px-8">Saludable</h5>
+                        <p class="xl--text p-3">Realizar ciclismo constantemente
                             ayuda a reducir peso y quemar grasas, es un deporte de bajo impacto lo cual es ideal para
                             personas
                             con problemas de articulaciones y ayuda a fortalecer el sistema cardiovascular.</p>
                     </div>
 
                     <div class="py-6 w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <h5 class="text-2xl self-start px-8">Ecológica</h5>
+                        <h5 class="xxl--text self-start px-8">Ecológica</h5>
                         <p class="leading-tight lg:text-xl p-3">Cuando circula una bicicleta no emite
                             contaminantes a la atmósfera aunque durante su ciclo de vida completo desde fabricación hasta la
                             conversión en residuo la cantidad de contaminantes que genera es tan solo de 5g de
                             CO<sub>2</sub> por km*.</p>
-                        <p class="leading-tight lg:text-xl text-lg p-3 ">La circulación de bicicletas reduce notablemente la
+                        <p class="xl--text p-3 ">La circulación de bicicletas reduce notablemente la
                             contaminación auditiva.</p>
                     </div>
 
@@ -112,13 +112,13 @@
                     </div>
 
                     <div class="w-11/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                        <p class="leading-snug lg:text-xl text-lg text-center py-8 px-3 ">Pese a la gran cantidad de ventajas
+                        <p class="xl--text text-center py-8 px-3 ">Pese a la gran cantidad de ventajas
                             con las que contamos al usar este medio de transporte, este no es perfecto y aun cuenta con algunas
                             desventajas como es la barrera climática.</p>
                     </div>
                         
 
-                    <p>*Fuente: Ecoticias.com <a
+                    <p class="leading-tight text-sm px-3 underline my-4">*Fuente: Ecoticias.com <a
                             href="https://www.ecoticias.com/co2/185973/EL-uso-de-la-Bicicleta-y-el-CO2" class="font-bold underline">https://www.ecoticias.com</a>
                     </p>
 
@@ -166,7 +166,7 @@
 
                     <x-bicyclecard
                         link="https://www.facebook.com/muyu.bikers/"
-                        img="https://scontent-qro1-2.xx.fbcdn.net/v/t39.30808-6/222431659_247465797276063_588141798271356116_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFtsJInqgtzo_nH3gsCo0meUFU_41oTzKxQVT_jWhPMrNmfFKgBX6ZDnVahLB6t4HnBCH9TuNnrsss6T4gDjfuQ&_nc_ohc=g5NRA36bPq8AX_qo_Zp&_nc_ht=scontent-qro1-2.xx&oh=f0985908be9e3f2a5c2ca72530fb3a25&oe=618F9321"
+                        img="https://scontent.fmex3-1.fna.fbcdn.net/v/t39.30808-6/222431659_247465797276063_588141798271356116_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFtsJInqgtzo_nH3gsCo0meUFU_41oTzKxQVT_jWhPMrNmfFKgBX6ZDnVahLB6t4HnBCH9TuNnrsss6T4gDjfuQ&_nc_ohc=YUjsqqXzO0sAX_NvGVt&_nc_ht=scontent.fmex3-1.fna&oh=00_AT9eqjxbU_DTM_4Ex5jvS9XmBnzhJxPb-etSv1PGzRvG2Q&oe=6223E3E1"
                         alt="Muyu-Bikers"
                         title="Club de ciclismo Muyu Bikers"
                         description="Grupo de ciclismo nocturno con salidas cada jueves y domingo."

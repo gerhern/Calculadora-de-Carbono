@@ -40,7 +40,7 @@
                     <p class="text-2xl mb-8 lg:text-4xl">¿Cuanto debemos esperar para actuar?</p>
                     <p class="text-base lg:text-2xl"> El tiempo se esta agotando poco a poco, pero no temas, aun estamos a
                         tiempo de ayudar al planeta.</p>
-                    <a href="{{ route('home') }}" class="cursor-pointer underline text-2xl lg:text-3xl lg:my-4">¡Da click aqui!</a>
+                    <a href="{{ route('home') }}" class="cursor-pointer underline text-2xl lg:text-3xl lg:my-4">¡ Da click aquí !</a>
                 </div>
                 <p class="text-xs lg:w-1/12 ">Fotografia de: Fox from Pexels</p>
             </div>

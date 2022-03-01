@@ -14,7 +14,7 @@
         <div class="bg-feather">
 
             {{-- 1er seccion informativa --}}
-            <h3 class="lg:text-5xl text-3xl text-center my-40 py-2 font-medium italic">¿Qué es la huella de carbono?</h3>
+            <h3 class="first--title my-40 py-2">¿Qué es la huella de carbono?</h3>
 
             {{-- Carrusel --}}
             <div class=" w-11/12 mx-auto rounded-md py-8 bg-gradient-to-b from-white to-feather bg-opacity-20 shadow-2xl">
@@ -46,21 +46,21 @@
             <div class="flex flex-col">
 
                 <div class="lg:w-11/12 w-10/12 mx-auto border border-black bg-black shadow-md bg-opacity-10 my-8 rounded-md">
-                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La
+                    <p class="xxl--text py-8 px-3 ">La
                         huella de carbono es una métrica ambiental que calcula la totalidad de emisiones de gases de efecto
                         invernadero (GEI), generadas directa o indirectamente por una persona, organizacion, empresa o
                         incluso productos o servicios.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La huella de carbono se mide en masa de
+                    <p class="xxl--text py-8 px-3 ">La huella de carbono se mide en masa de
                         CO<sub>2</sub> equivalente (CO<sub>2</sub>-eq), que trata de equiparar los otros gases de
                         efecto invernadero que son producidos a la par que el CO<sub>2</sub>, esto debido a que el
                         CO<sub>2</sub> es el principal y más abundante de estos gases.</p>
 
-                    <p class="leading-snug lg:text-2xl text-lg py-8 px-3 ">La importancia de conocer nuestra huella de carbono radica en la posibilidad de cuantificar con mayor certeza la forma en la que los gases de efecto invernadero contribuyen al calentamiento global y de esta forma implementar medidas para contrarrestar los
+                    <p class="xxl--text py-8 px-3 ">La importancia de conocer nuestra huella de carbono radica en la posibilidad de cuantificar con mayor certeza la forma en la que los gases de efecto invernadero contribuyen al calentamiento global y de esta forma implementar medidas para contrarrestar los
                         efectos.
                     </p>
 
-                    <p class="leading-snug lg:text-2xl text-lg pt-4 pb-16 px-3">Entre los efectos del cambio climático se encuentran graves consecuencias como cambios en los ecosistemas, fenómenos
+                    <p class="xxl--text pt-4 pb-16 px-3">Entre los efectos del cambio climático se encuentran graves consecuencias como cambios en los ecosistemas, fenómenos
                         meteorológicos extremos, migraciones masivas, extinción de especies, acidificación y subida del
                         nivel del mar, etc.</p>
                 </div>
@@ -72,18 +72,18 @@
         {{-- 2da seccion informativa --}}
         <div class="bg-gradient-to-b from-marine to-forest">
 
-            <h3 class="lg:text-5xl text-3xl text-center pt-40 px-6 font-medium italic">¿Cómo calcular tu huella de carbono?
+            <h3 class="first--title pt-40 px-6">¿Cómo calcular tu huella de carbono?
             </h3>
 
             <div class="flex flex-col pb-40">
                 <div class="w-3/4 mx-auto my-8 rounded-md">
-                    <p class="leading-snug lg:text-xl text-lg py-8
+                    <p class="xl--text py-8
                     pb-8">Para poder realizar
                         una estimación sobre tu huella de carbono personal te recomendamos los
                         siguientes sitios:</p>
                 </div>
 
-                <div class="flex  items-center justify-around">
+                <div class="flex items-center justify-around">
 
                     {{-- div para cards de calculdaoras --}}
                     <div class="lg:flex lg:justify-evenly lg:my-4">

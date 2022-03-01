@@ -7,16 +7,16 @@
         <div class="w-full bg-feather">
 
             <x-hammenu></x-hammenu>
-            <h1 class="text-center lg:text-6xl text-4xl font-semibold my-32">Estadísticas</h1>
+            <h1 class="first--title my-32">Estadísticas</h1>
 
         </div>
 
         {{-- primer grafica --}}
         <div class="py-10">
 
-            <h3 class="lg:text-5xl text-3xl text-center font-medium italic">Medio de transporte más usado</h3>
+            <h3 class="second--title">Medio de transporte más usado</h3>
 
-            <p class="leading-snug lg:text-xl text-lg py-8 px-3">De acuerdo a la informacion ingresada por los usuarios de
+            <p class="xl--text py-8 px-3">De acuerdo a la informacion ingresada por los usuarios de
                 esta calculadora podemos observar la cantidad de uso de los siguientes medios de transporte.</p>
                 {{-- area grafica --}}
             <div>
@@ -39,7 +39,7 @@
         {{-- segunda grafica --}}
         <div class="py-10 w-full">
 
-            <h3 class="lg:text-5xl text-3xl text-center font-medium italic">¿Estarias dispuesto a cambiar tu medio de
+            <h3 class="second--title mb-8">¿Estarias dispuesto a cambiar tu medio de
                 transporte habitual?</h3>
 
             <div class="w-10/12 mx-auto bg-white bg-opacity-80">
@@ -50,12 +50,12 @@
 
         {{-- Tercera grafica --}}
         <div class="py-10 w-full">
-            <h3 class="lg:text-5xl text-3xl text-center font-medium italic ">Huella de carbono</h3>
+            <h3 class="second--title ">Huella de carbono</h3>
 
             <div class="lg:flex text-center">
                 <div
-                    class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex flex-col justify-evenly items-center hover:bg-marine transition duration-200">
-                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">México</h3>
+                    class="card--">
+                    <h3 class="xxl--text lg:my-4 lg:text-center">México</h3>
                     <div class="mx-auto my-2 flex justify-center">
                         <x-svg-footprint width="55"></x-svg-footprint>
                     </div>
@@ -64,8 +64,8 @@
                 </div>
 
                 <div
-                    class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
-                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">El mundo</h3>
+                    class="card--">
+                    <h3 class="xxl--text lg:my-4 lg:text-center">El mundo</h3>
                     <div class="mx-auto my-2 flex justify-center">
                         <x-svg-footprint width="60"></x-svg-footprint>
                     </div>
@@ -74,8 +74,8 @@
                 </div>
 
                 <div
-                    class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
-                    <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">ArtfCO2</h3>
+                    class="card--">
+                    <h3 class="xxl--text lg:my-4 lg:text-center">ArtfCO2</h3>
                     <div class="mx-auto my-2 flex justify-center">
                         <x-svg-footprint width="55"></x-svg-footprint>
                     </div>
