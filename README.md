@@ -1,64 +1,47 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Calculadora de emisiones CO2.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Prueba el resultado en este sitio: http://artfco2.herokuapp.com
 
-## About Laravel
+### Este sitio cuenta con version móvil y desktop.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Objetivo:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### Desarrollo de una calculadora de huella de carbono para el transporte ferroviario y diseño de una página Web, para el análisis de ineteractivo de dicha huella y la valoración de sus mecanismos de compensación.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Comentarios:
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### El desarrollo de este sitio web se ha realizado utilizando el framework de Laravel 8, el framework de estilos TailwindCSS, la libreria de uso de gráficos Chart.JS y los lenguajes PHP y JS.
+#### A nivel de base de datos se utilizó el ORM Eloquent provisto por Laravel.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Esta aplicación cuenta con una barra de tareas fija en la cual se encuentran los siguientes apartados:
 
-## Laravel Sponsors
+* ### Inicio
+* ### Calcular compensación
+* ### Compensar
+* ### Medios alternativos de transporte
+* ### Estadísticas
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+# Inicio
 
-### Premium Partners
+#### En este apartado se encuentra el landing page y un poco de información sobre la huella de carbono además de algunos enlaces a sitios web donde se puede calcular la huella de carbono personal.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+# Calcular compensación
 
-## Contributing
+#### En este apartado se muestra un formulario en el cual los usuarios podran ingresar su huella de carbono (En caso de tener una ya calculada), el campo esta validado como requerido, asi como cuenta con un formato específico.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### Al momento de tratar de realizar un cálculo con datos incompletos o sin un formato adecuado la aplicacion web mostrara un cuadro con los errores registrados.
 
-## Code of Conduct
+#### Una vez utilizado este formulario mostrará un listado de los árboles que sería necesario plantar para compensar la huella de carbono correspondiente.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# Compensar
 
-## Security Vulnerabilities
+#### Esta sección fue creada para dar una muestra de la importancia de la huella de carbono y algunas ideas para reducirla.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Medios alternativos de transporte
 
-## License
+#### Sección mediante la cual se puede realizar un cálculo de estimaciones de emisiones contaminantes de acuerdo al tipo de vehículo utilizado, la distancia recorrida y la cantidad de días que se realiza este viaje, cuenta también con una parte informativa sobre los medios de transporte eficientes y la cantidad de emisiones que estos generan.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Estadísticas
+
+#### Página la cual cuenta con los resultados de los cálculos de emisiones realizados en la sección anterior, estos son mostrados mediante gráficas usando ChartJS.
