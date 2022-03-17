@@ -5,7 +5,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily:{
-      'montserrat': ['montserrat, sans-serif']
+      'montserrat': ['Montserrat, sans-serif']
     },
     extend: {
       colors:{
@@ -19,6 +19,9 @@ module.exports = {
         'secondary-color' : '#9F2241',
         'secondary-var' : '#D62853'
       },
+      fontSize:{
+        'xxs': '10px'
+      }
     },
     scale:{
       '200':'2'

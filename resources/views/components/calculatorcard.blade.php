@@ -1,12 +1,9 @@
 {{-- div card --}}
 <div
-    class="border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200">
-
-    <a href="{{ $link }}" target="_blank">
-        <img src="{{ $img }}" alt="{{ $alt }}" class="w-3/4 mx-auto my-2 cursor-pointer lg:w-2/4">
-        <h3 class="text-xl font-semibold lg:text-2xl lg:my-4 lg:text-center">{{ $title }}</h3>
-
-        <p class="lg:text-lg lg:leading-none lg:mb-6 lg:text-center lg:px-2">{{ $description }}</p>
+    class="border-2 border-primary-Color rounded-md my-4 w-5/6 mx-auto">
+    <a href="{{ $link }}" target="_blank" class="flex justify-evenly items-center py-6">
+        <img src="{{ $img }}" alt="{{ $alt }}" class="w-28 h-16 my-2 cursor-pointer lg:w-2/4">
+        <p class="text--calculator w-2/5">{{ $description }}</p>
     </a>
 
 </div>

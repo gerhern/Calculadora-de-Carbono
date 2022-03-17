@@ -1,8 +1,8 @@
 {{-- Imagen y titulo principal --}}
-<div class="lg:bg-bottom bg-cover w-full has-tooltip"
+<div class="bg-cover w-full has-tooltip h-80"
 style="background-image: url('{{ $img }}')">
 
-<h1 class="text-center lg:text-6xl text-4xl font-semibold my-52 py-12 bg-black bg-opacity-20">{{ $coverText }}</h1>
+<h1 class="title--h5 w-9/12 mx-auto">{{ $coverText }}</h1>
 
 <x-tooltip-index text="{{ $tooltipText }}"></x-tooltip-index>
 

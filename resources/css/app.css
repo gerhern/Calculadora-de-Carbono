@@ -6,6 +6,27 @@
     @apply leading-4 font-montserrat font-semibold text-sm;
 }
 
+.title--h5{
+    @apply font-montserrat font-semibold text-2xl leading-7 text-center text-white my-52 py-12;
+}
+
+.subtitle--first{
+    @apply font-montserrat font-medium text-lg text-primary-var;
+}
+
+.body--second{
+    @apply font-montserrat font-light;
+}
+
+.img--tooltip{
+    @apply font-montserrat italic text-sm text-white mb-1;
+}
+
+.text--calculator{
+    @apply font-montserrat italic text-xxs;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
 .first--title {
     @apply lg:text-5xl text-3xl text-center font-medium italic;
 }
