@@ -10,45 +10,46 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ secure_asset('css/tooltip.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/tooltip.css') }}" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
 </head>
 
-<body class="flex relative bg-marine">
+<body>
+
+    {{-- Header --}}
+    <header class="bg-primary-Color w-full sticky flex justify-around items-center">
+        <x-svg-artf-logo></x-svg-artf-logo>
+        <x-hammenu></x-hammenu>
+    </header>
+
+    <!-- Modal--Menu -->
+
+    <nav id="modal-bg" class="w-full h-full bg-primary-Color top-0 absolute hidden flex justify-center items-center">
+
+        <div id="modal-box"
+            class="flex flex-col items-center -translate-y-1/2 -translate-x-1/2 absolute hidden w-full h-3/5 justify-evenly text-white text--menu">
+            <a href="{{ route('home') }}" class="w-10/12  border-2 rounded-sm text-center py-2">Inicio</a>
+            <a href="{{ route('calculate') }}" class="w-10/12  border-2 rounded-sm text-center py-2">Calculo de
+                arboles</a>
+            <a href="{{ route('offset') }}" class="w-10/12  border-2 rounded-sm text-center py-2">Alternativa para
+                compensar huella de carbono</a>
+            <a href="{{ route('transport') }}" class="w-10/12  border-2 rounded-sm text-center py-2">Medios
+                alternativos de
+                transporte</a>
+            <a href="{{ route('stats') }}" class="w-10/12  border-2 rounded-sm text-center py-2">Estadisticas</a>
+        </div>
+    </nav>
+
+
 
     <main class="flex w-screen h-screen overflow-y-auto">
-
-        {{-- Header/menu vertical --}}
-        <header
-            class="sidebar h-screen flex flex-col text-center lg:w-48 w-2/5 lg:sticky top-0 z-50 bg-forest shadow-lg space-y-6 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out  lg:translate-x-0">
-            <nav class="h-screen lg:text-2xl text-lg flex flex-col justify-evenly items-center relative text-white ">
-
-                <a href="{{ route('home') }}"
-                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Inicio</a>
-
-                <a href="{{ route('calculate') }}"
-                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Calcular
-                    compensación</a>
-
-                <a href="{{ route('offset') }}"
-                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Compensar</a>
-
-                <a href="{{ route('transport') }}"
-                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Medios
-                    alternativos de
-                    transporte</a>
-
-                <a href="{{ route('stats') }}"
-                    class="hover:text-sleek w-full flex flex-grow items-center justify-center transition duration-200">Estadisticas</a>
-
-            </nav>
-        </header>
         <section class="w-full">
             @yield('content')
         </section>
@@ -56,10 +57,17 @@
 </body>
 
 <script>
-    const btn = document.querySelector('.mobile-menu-button');
-    const sidebar = document.querySelector('.sidebar');
-    btn.addEventListener("click", () => {
-        sidebar.classList.toggle("-translate-x-full");
+    const modalbg = document.getElementById('modal-bg');
+    const modalSwitch = document.getElementById('modal-switch');
+    const modalBox = document.getElementById('modal-box');
+    const modalClose = document.getElementById('modal-close');
+    modalbg.addEventListener("click", function() {
+        modalBox.classList.add('hidden')
+        modalbg.classList.add('hidden')
+    });
+    modalSwitch.addEventListener("click", function() {
+        modalBox.classList.remove('hidden')
+        modalbg.classList.remove('hidden')
     });
 </script>
 

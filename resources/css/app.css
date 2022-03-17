@@ -2,6 +2,10 @@
 @tailwind base;
 @tailwind components;
 
+.text--menu{
+    @apply leading-4 font-montserrat font-semibold text-sm;
+}
+
 .first--title {
     @apply lg:text-5xl text-3xl text-center font-medium italic;
 }
