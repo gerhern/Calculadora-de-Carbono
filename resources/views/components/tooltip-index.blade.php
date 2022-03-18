@@ -1,4 +1,4 @@
-<div class="tooltip bg-black bg-opacity-60 p-4 rounded-md text-xs text-white">
+<div class="tooltip  p-4 overline-- -mt-{{$margin}}">
     <p>{{ $text }}</p>
 </div>
 

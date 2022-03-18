@@ -2,48 +2,54 @@
 @tailwind base;
 @tailwind components;
 
-.text--menu{
-    @apply leading-4 font-montserrat font-semibold text-sm;
+/* FUentes */
+
+.h4--headline{
+    @apply font-montserrat text-4xl;
 }
 
-.title--h5{
-    @apply font-montserrat font-semibold text-2xl leading-7 text-center text-white my-52 py-12;
+.h5--headline{
+    @apply font-montserrat text-2xl leading-7 text-white text-center;
 }
 
-.subtitle--first{
-    @apply font-montserrat font-medium text-lg text-primary-var;
+.h6--headline{
+    @apply font-montserrat font-medium text-xl leading-6;
 }
 
-.subtitle--second{
-    @apply font-montserrat font-medium leading-4 text-primary-var;
+.subtitle--1{
+    @apply font-montserrat leading-5 text-primary-var;
 }
 
-.body--second{
-    @apply font-montserrat font-light;
+.subtitle--2{
+    @apply font-montserrat font-medium text-sm left-4 text-primary-var;
 }
 
-.img--tooltip{
-    @apply font-montserrat italic text-sm text-white mb-1;
+.body--1{
+    @apply font-montserrat font-light leading-5;
 }
 
-.text--calculator{
-    @apply font-montserrat italic text-xxs;
+.body--2{
+    @apply font-montserrat font-light text-sm left-4;
 }
 
-.label--{
-    @apply font-montserrat italic text-xs;
+.button--text{
+    @apply font-montserrat font-semibold text-sm leading-4 text-primary-Color text-center;
 }
 
-.input--{
+.caption--{
+    @apply font-montserrat font-semibold italic text-xs;
+}
+
+.overline--{
+    @apply font-montserrat italic text-xs text-white;
+}
+
+.overline--movil{
+    @apply font-montserrat italic text-xxs leading-3;
+}
+/* Inputs */
+.text--input{
     @apply appearance-none block w-full bg-gray-input border-none rounded leading-tight focus:outline-none focus:bg-gray-scale font-montserrat italic text-xs py-3 px-4 mb-3;
-}
-
-.caption--text{
-    @apply font-montserrat font-semibold italic text-xs leading-3;
-}
-
-.reference--{
-    @apply font-montserrat italic text-xs leading-3 my-2;
 }
 
 @tailwind utilities;

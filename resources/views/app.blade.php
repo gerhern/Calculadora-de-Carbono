@@ -35,7 +35,7 @@
     <nav id="modal-bg" class="w-full h-full bg-primary-Color top-0 absolute hidden flex justify-center items-center">
 
         <div id="modal-box"
-            class="flex flex-col items-center -translate-y-1/2 -translate-x-1/2 absolute hidden w-full h-3/5 justify-evenly text-white text--menu">
+            class="flex flex-col items-center -translate-y-1/2 -translate-x-1/2 absolute hidden w-full h-3/5 justify-evenly text-white button--text">
             <a href="{{ route('home') }}" class="w-10/12  border-2 rounded-sm text-center py-2">Inicio</a>
             <a href="{{ route('calculate') }}" class="w-10/12  border-2 rounded-sm text-center py-2">Calculo de
                 arboles</a>
