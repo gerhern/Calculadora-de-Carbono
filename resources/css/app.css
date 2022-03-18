@@ -14,6 +14,10 @@
     @apply font-montserrat font-medium text-lg text-primary-var;
 }
 
+.subtitle--second{
+    @apply font-montserrat font-medium leading-4 text-primary-var;
+}
+
 .body--second{
     @apply font-montserrat font-light;
 }
@@ -26,53 +30,20 @@
     @apply font-montserrat italic text-xxs;
 }
 
-/* //////////////////////////////////////////////////////////////////// */
-.first--title {
-    @apply lg:text-5xl text-3xl text-center font-medium italic;
+.label--{
+    @apply font-montserrat italic text-xs;
 }
 
-.second--title {
-    @apply lg:text-4xl text-2xl text-center;
+.input--{
+    @apply appearance-none block w-full bg-gray-input border-none rounded leading-tight focus:outline-none focus:bg-gray-scale font-montserrat italic text-xs py-3 px-4 mb-3;
 }
 
-.xxl--text {
-    @apply leading-snug lg:text-2xl text-lg;
+.caption--text{
+    @apply font-montserrat font-semibold italic text-xs leading-3;
 }
 
-.xl--text{
-    @apply leading-snug lg:text-xl text-lg;
-}
-
-.sm--label {
-    @apply text-white block uppercase tracking-wide text-xs font-bold;
-}
-
-.md--label {
-    @apply text-white uppercase font-bold tracking-wide;
-}
-
-.input-- {
-    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-forest rounded leading-tight focus:outline-none focus:bg-white;
-}
-
-.radio--input{
-    @apply w-6 h-6 m-1;
-}
-
-.warning--{
-    @apply text-center w-2/3 mx-auto my-6 p-4 bg-red-600 text-white rounded-md shadow-md lg:text-2xl text-xl;
-}
-
-.input--button{
-    @apply rounded-md shadow-lg bg-forest text-white p-2 lg:text-lg hover:bg-marine transition duration-200 lg:w-1/12;
-}
-
-.cover--title{
-    @apply text-center lg:text-6xl text-4xl font-semibold my-52 py-12 bg-black bg-opacity-20;
-}
-
-.card--{
-    @apply border border-black bg-black bg-opacity-30 rounded-md shadow-2xl p-3 my-4 lg:w-3/12 w-5/6 mx-auto lg:flex lg:flex-col lg:justify-evenly hover:bg-marine transition duration-200;
+.reference--{
+    @apply font-montserrat italic text-xs leading-3 my-2;
 }
 
 @tailwind utilities;

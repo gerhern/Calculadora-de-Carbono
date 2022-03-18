@@ -23,10 +23,9 @@
 
 </head>
 
-<body>
-
+<body class="w-screen h-screen">
     {{-- Header --}}
-    <header class="bg-primary-Color w-full sticky flex justify-around items-center">
+    <header class="bg-primary-Color w-full fixed top-0 flex justify-around items-center">
         <x-svg-artf-logo></x-svg-artf-logo>
         <x-hammenu></x-hammenu>
     </header>

@@ -17,7 +17,9 @@ module.exports = {
         'primary-Color': '#235B4E',
         'primary-var': '#5A844E',
         'secondary-color' : '#9F2241',
-        'secondary-var' : '#D62853'
+        'secondary-var' : '#D62853',
+        'gray-scale' : '#CDCDCD',
+        'gray-input' : '#E5E5E5'
       },
       fontSize:{
         'xxs': '10px'
