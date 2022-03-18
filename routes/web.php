@@ -19,10 +19,11 @@ Route::view('/', 'index')->name('home');
 Route::view('compensar', 'offset')->name('offset');
 Route::view('bicicleta-como-medio-de-transporte', 'bicycleAsTransport')->name('bicycle');
 Route::view('ferrocarril-como-medio-de-transporte', 'trainAsTransport')->name('train');
+Route::view('medios-alternativos-de-transporte','alternativeTransport')->name('transport');
 
 // Vistas con logica
 Route::get('calcular', [CompensationController::class, 'treeCalculator'])->name('calculate');
-Route::get('medios-alternativos-de-transporte', [CompensationController::class, 'transport'])->name('transport');
+// Route::get('medios-alternativos-de-transporte', [CompensationController::class, 'transport'])->name('transport');
 Route::get('estadisticas', [CompensationController::class, 'stats'])->name('stats');
 
 // Route::get('/', function () {
