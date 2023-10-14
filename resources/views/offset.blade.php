@@ -164,7 +164,8 @@
                     </div>
 
                     {{-- Card 1 --}}
-                    <x-tipcard card="1"
+                    <x-tipcard 
+                        card="1"
                         img="https://images.pexels.com/photos/397998/pexels-photo-397998.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
                         title="Usa focos ahorradores"
                         description="Realiza el cambio a focos ahorradores de energía de luz LED de bajo consumo en lugar de los tradicionales focos incandecentes, así como electrodomésticos de bajo consumo energético."
@@ -236,7 +237,7 @@
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="{{ secure_asset('js/slide.js') }}"></script>
-    <script src="{{ secure_asset('js/coinCard.js') }}"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
+    <script src="{{ asset('js/coinCard.js') }}"></script>
 
 @endsection

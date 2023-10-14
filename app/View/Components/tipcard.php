@@ -6,14 +6,25 @@ use Illuminate\View\Component;
 
 class tipcard extends Component
 {
+    public $img;
+    public $card;
+    public $title;
+    public $description;
+    public $author;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($img, $card, $title, $description, $author)
     {
         //
+        $this->img = $img;
+        $this->card = $card;
+        $this->title = $title;
+        $this->description = $description;
+        $this->author = $author;
     }
 
     /**

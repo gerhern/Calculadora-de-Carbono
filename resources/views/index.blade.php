@@ -5,7 +5,7 @@
     <div class="flex flex-col text-white">
 
         {{-- Imagen y titulo principal --}}
-        <x-cover-page img="https://visitachihuahua.com/wp-content/uploads/2019/12/chepe-regional-1.jpg"
+        <x-cover-page img="https://i0.wp.com/www.turimexico.com/wp-content/uploads/2015/10/el-chepe.jpg"
             coverText="Cálculo y compensación de huella de carbono"
             tooltipText="Ferrocarril Chihuahua al Pacífico, Fotografia de: SECTUR Chihuahua/México desconocido.">
         </x-cover-page>
@@ -89,15 +89,20 @@
                     <div class="lg:flex lg:justify-evenly lg:my-4">
 
                         {{-- div card 1 --}}
-                        <x-calculatorcard link="https://footprintcalculator.henkel.com/mx"
-                            img="https://footprintcalculator.henkel.com/assets/images/HENKEL.png" alt="Henkel-Logo"
-                            title="Calculadora de huella de carbono Henkel" description="Calculadora creada
+                        <x-calculatorcard 
+                            link="https://footprintcalculator.henkel.com/mx"
+                            img="https://footprintcalculator.henkel.com/assets/images/HENKEL.png" 
+                            alt="Henkel-Logo"
+                            title="Calculadora de huella de carbono Henkel" 
+                            description="Calculadora creada
                                         por la empresa alemana de productos de limpieza Henkel"></x-calculatorcard>
 
 
                         {{-- div card 2 --}}
-                        <x-calculatorcard link="https://www.footprintcalculator.org/home/es"
-                            img="https://www.footprintcalculator.org/assets/images/logo/logo-GFN-white.png" alt="GFN-Logo"
+                        <x-calculatorcard 
+                            link="https://www.footprintcalculator.org/home/es"
+                            img="https://www.footprintcalculator.org/assets/images/logo/logo-GFN-white.png" 
+                            alt="GFN-Logo"
                             title="Calculadora de huella de carbono de Global Footprint Network"
                             description="Calculadora creada por la ONG de protección al medio ambiente Global Footprint Network">
                         </x-calculatorcard>
@@ -123,7 +128,9 @@
                     </div>
                 </div>
 
-                <x-button route="{{ route('calculate') }}" text="Si ya cuentas con tu huella de carbono da click aquí">
+                <x-button 
+                route="{{ route('calculate') }}" 
+                text="Si ya cuentas con tu huella de carbono da click aquí">
                 </x-button>
 
             </div>
@@ -131,5 +138,5 @@
     </div>
 
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="{{ secure_asset('js/slide.js') }}"></script>
+    <script src="{{ asset('js/slide.js') }}"></script>
 @endsection

@@ -130,7 +130,7 @@
 
                     <h5 class=" my-10 text-3xl self-start px-8">¿No cuentas con una bicicleta en tu hogar?</h5>
 
-                    <x-bicyclecard
+                    <x-bicyclecard 
                         link="https://www.ecobici.cdmx.gob.mx/"
                         img="https://seeklogo.com/images/E/ecobici-logo-6DD51DF001-seeklogo.com.png"
                         alt="Ecobici"

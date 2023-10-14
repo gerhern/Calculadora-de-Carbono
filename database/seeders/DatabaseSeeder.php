@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Footprint;
 use App\Models\Tree;
 use App\Models\Vehicle;
 use App\Models\Visit;
@@ -110,37 +111,37 @@ class DatabaseSeeder extends Seeder
         Vehicle::create([
             'vehicle_name' => 'Taxi',
             'carbon_generated' => 211.76,
-            'times_used' => 0
+            'times_used' => 6
         ]);
 
         Vehicle::create([
             'vehicle_name' => 'Autobús',
             'carbon_generated' => 104.71,
-            'times_used' => 0
+            'times_used' => 48
         ]);
 
         Vehicle::create([
             'vehicle_name' => 'Automóvil Grande (Camioneta)',
             'carbon_generated' => 282.95,
-            'times_used' => 0
+            'times_used' => 3
         ]);
 
         Vehicle::create([
             'vehicle_name' => 'Automóvil Mediano (4 pasajeros)',
             'carbon_generated' => 192.28,
-            'times_used' => 0
+            'times_used' => 52
         ]);
 
         Vehicle::create([
             'vehicle_name' => 'Motocicleta',
             'carbon_generated' => 102.89,
-            'times_used' => 0
+            'times_used' => 47
         ]);
         
-        // Footprint::factory(200)->create();
+        Footprint::factory(156)->create();
 
         Visit::create([
-            'total_visits' => 0
+            'total_visits' => 156
         ]);
     }
 }

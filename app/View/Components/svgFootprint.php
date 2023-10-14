@@ -6,14 +6,16 @@ use Illuminate\View\Component;
 
 class svgFootprint extends Component
 {
+    public $width;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($width)
     {
         //
+        $this->width = $width;
     }
 
     /**
